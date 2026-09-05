@@ -886,7 +886,7 @@ Estimer la puissance de calcul (PFLOPS), la consommation électrique (MW) et les
 | Puissance par rack (GPU AI, liquid-cooled) | 60 kW |
 | PUE moyen | 1,35 (refroidissement adiabatique mixte) |
 | Tension de raccordement | ≥ 63 kV (sous-station EDF sur le site) |
-| Connectivité | Fibre optique (axe Lille-Paris, présences运营商 sur le MEL) |
+| Connectivité | Fibre optique (axe Lille-Paris, présences d'opérateur sur la MEL) |
 
 ### 8.3 Occupation du sol par composant
 
