@@ -353,7 +353,49 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 | **Consommation annuelle** | **~184 MWh** |
 | Coût électricité (0,15 €/kWh) | **~27 600 €/an** |
 
-### 5.8 Infra pour usage « meilleur raisonnement »
+### 5.8 Capacité utilisateurs simultanés (estimation indicative)
+
+**Base de calcul** : Lambda Labs rapporte 32 requêtes concurrentes sur 2× B200. Avec 16× B200 (×8 GPU), le débit théorique est multiplié par ~6-7× (scaling non linéaire à cause du TP/PP).
+
+| Scénario | Requêtes concurrentes | Utilisateurs simultanés | Utilisateurs simultanés (réel)* |
+|----------|----------------------|------------------------|--------------------------------|
+| **Think Low** (questions simples) | ~200 | **~200** | **~150-200** |
+| **Think High** (raisonnement modéré) | ~120 | **~120** | **~100-120** |
+| **Think Max** (coding, raisonnement complexe) | ~64 | **~64** | **~50-64** |
+
+*\*Utilisateurs réels = requêtes concurrentes × 0,7-0,8 (overhead réseau, KV cache, contexte long)*
+
+#### Hypothèses
+
+| Paramètre | Valeur |
+|-----------|--------|
+| Tokens moyens par réponse | 500-1 000 |
+| Temps de réponse moyen (TPOT) | ~100 ms/token |
+| Durée moyenne par réponse | 50-100 s (Think Low) / 200-600 s (Think Max) |
+| Temps moyen entre requêtes utilisateur | 30-120 s (lecture, rédaction) |
+| Ratio actif/inactif | ~1/3 actif en permanence |
+
+#### Estimation par usage
+
+| Usage cible | Utilisateurs simultanés | Utilisateurs journaliers** |
+|-------------|------------------------|---------------------------|
+| **Chat interne entreprise** (10-50 employés) | ✅ confortable | ✅ |
+| **API publique** (SaaS) | ~50-150 | ~500-1 500 |
+| **Coding assistant** (développeurs) | ~30-60 | ~300-600 |
+| **Recherche / R&D** | ~20-40 | ~100-200 |
+
+*\*\*Utilisateurs journaliers = simultanés × 5-10 (rotation active/inactive)*
+
+#### Verdict
+
+> **16× B200 suffisent pour** :
+> - une équipe interne de **50-100 personnes** en usage mixte (think Low + High)
+> - une API publique de **100-150 utilisateurs simultanés** (think Low)
+> - un coding assistant pour **30-60 développeurs** (think Max)
+
+> **Au-delà de ~150 utilisateurs simultanés**, il faut passer à **32× B200** (4 nœuds) ou **24× H200** (3 nœuds).
+
+### 5.9 Infra pour usage « meilleur raisonnement »
 
 Kimi K3 supporte 3 niveaux de « thinking effort » :
 
