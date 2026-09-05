@@ -25,13 +25,13 @@
 
 | Document | Lien |
 |----------|------|
-| Baromètre EY / France Datacenter 2025 | [cner-france.com](https://cner-france.com/content/uploads/2025/06/EY_France-Data-Center_Barometre-2025_Support conference_VF.pdf) |
+| Baromètre EY / France Datacenter 2025 | [cner-france.com](https://www.francedatacenter.com/wp-content/uploads/ressources/pfwgk7ynxi/Etude_EY_France_Datacenter_2025_VF.pdf) |
 | Avis MRAe — Datacenter Pennes-Mirabeau | [bouches-du-rhone.gouv.fr](https://www.bouches-du-rhone.gouv.fr/contenu/telechargement/61688/434897/file/AvisMRAe_PennesMirabeau13_P_ICPE_Datacenter.pdf) |
 | Avis CNPN — Datacenter Equinix Bruges | [nouvelle-aquitaine.gouv.fr](https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/IMG/pdf/urbanisation_datacenter__equinix_bruges.pdf) |
 | Guide chiroptères bâtiments — GEPMA | [gepma.org](https://gepma.org/wp-content/uploads/2024/12/guidechiropteresbatiments2023.pdf) |
 | Chauves-souris et communes — FNE | [parcduverdon.fr](https://www.parcduverdon.fr/wp-content/uploads/2025/11/2023_Livret_proteger-chiros-dans-sa-commune_FNE-GCP.pdf) |
 | Observatoire emploi infra numériques 2030 | [observatoires.afdas.com](https://observatoires.afdas.com/sites/default/files/document-ressource/EDEC_Infrastructures_numeriques_Emploi_Competences_Infographie_0.pdf) |
-| Plan chiroptère MEL | [lillemetropole.fr](https://participation.lillemetropole.fr/fi/hHODTjaSGs6/4SaAyL3D9GgGd/13a42459e8087e77736d7a9cd428780c.pdf) |
+| Présentation chiroptère rue verte | [lillemetropole.fr](https://participation.lillemetropole.fr/fi/hHODTjaSGs6/4SaAyL3D9GgGd/13a42459e8087e77736d7a9cd428780c.pdf) |
 | Plan relance chiroptères — CMNF | [cmnf.fr](https://www.cmnf.fr/fichiers/docs/bilan-plan-relance-chiros.pdf) |
 
 ### Marché bureaux
