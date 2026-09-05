@@ -991,7 +991,7 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 | **Raccordement électrique** | Sous-station 225 kV la plus proche à 2 km (Ronchin-Lesquin), travaux importants | 🟠 Majeur |
 | **Proximité résidentielle** | 800 m, Ronchin nord et Lezennes = zone urbaine | 🟡 Modéré |
 | **Bruit** | 75-85 dB datacenter (ventilateurs, tours) vs. 65 dB (ancien circuit moto) | 🟡 Modéré |
-| **Proximité golf** | Écarts de rivière déjà problématiques, eau de refroidissement = risque supplémentaire | 🔴 Critique |
+| **Proximité golf** | Site en zone TRI (inondable), 4 CatNat Ronchin, nappe alimente Deûle | 🟠 Majeur |
 | **Zones inondables** | Remontée nappe max en mars (11,45 m NGF), étiage en septembre (13,83 m) — risque critique hiver/printemps | 🔴 Critique |
 | **Risque sismique** | Zone 2 (faible), mais fondations sur pieux = vulnérabilité | 🟢 Faible |
 
@@ -1081,6 +1081,36 @@ Un datacenter de 84 MW émet **75-85 dB en continu**, 24h/24, 365 jours/an. L'an
 | ETFs.Net — L'eau et l'IA | [etfs.net](https://www.etfs.net/2026/02/12/lia-artificielle-a-t-elle-vraiment-soif-exploring-the-thirsty-side-of-ai-technology/) |
 | Engie — Datacenter : empreinte carbone et impact | [engie.com](https://www.engie.com/fr/economie-circulaire/entreprises-responsables/datacenter-empreinte-carbone-impact-environnemental) |
 | EDF — Forfaits datacenter France | [edf.fr](https://www.edf.fr/entreprise/fr/affaires/france/forfait-data-center) |
+
+### Sources nappe de la Craie et piézométrie Lille
+
+| Document | URL |
+|----------|-----|
+| Piézométrie Lille (BSS000BFVM) — Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BFVM) |
+| Piézométrie Lille (BSS000BDDQ) — Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BDDQ) |
+| Piézométrie Lille (BSS000BEXS) — Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BEXS) |
+| BRGM — Nappes d'eau souterraine mars 2026 | [brgm.fr](https://www.brgm.fr/fr/actualite/communique-presse/nappes-eau-souterraine-au-1er-mars-2026) |
+| BRGM — Note nappe avril 2026 | [brgm.fr](https://www.brgm.fr/sites/default/files/documents/2026-04/communique-nappes-eau-souterraine-2026-04-01-note.pdf) |
+| BRGM — Fonctionnement hydro-système craie sud Lille (RP-71378) | [infoterre.brgm.fr](http://infoterre.brgm.fr/rapports/RP-71378-FR.pdf) |
+| BRGM — Modélisation nappe Craie Nord-Pas-de-Calais (RP-60217) | [infoterre.brgm.fr](http://infoterre.brgm.fr/rapports/RP-60217-FR.pdf) |
+| Univ. Lille — Remontées nappe Craie bassin minier | [pepite-depot.univ-lille.fr](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1989/50376-1989-303-1.pdf) |
+| Préf. Pas-de-Calais — Remontée nappe phréatique | [pas-de-calais.gouv.fr](https://www.pas-de-calais.gouv.fr/index.php/Actions-de-l-Etat/Prevention-des-risques-majeurs/Connaissance-des-risques-dans-le-P-d-C/Les-risques-naturels/Inondation/La-remontee-de-la-nappe-phreatique) |
+
+### Sources golf, TRI et risques inondation site
+
+| Document | URL |
+|----------|-----|
+| Risques Ronchin (TRI, CatNat) | [villagesfrancais.fr](https://villagesfrancais.fr/commune/ronchin-59790/risques/) |
+| Risques Lezennes (TRI, CatNat) | [villagesfrancais.fr](https://villagesfrancais.fr/commune/lezennes-59260/risques/) |
+| Zones inondables Lille — PPRi | [floody.fr](https://floody.fr/zones-inondables-lille/) |
+| Note historique crues Deûle — DREAL | [hauts-de-france.developpement-durable.gouv.fr](https://www.hauts-de-france.developpement-durable.gouv.fr/IMG/pdf/note_historique_crues_inondations_lille.pdf) |
+| TRI Lille Lens — Phase 1 | [hauts-de-france.developpement-durable.gouv.fr](https://www.hauts-de-france.developpement-durable.gouv.fr/IMG/pdf/rapport_phase_1_tri_lille_lens.pdf) |
+| Concertation Camp français — MEL | [lillemetropole.fr](https://www.lillemetropole.fr/communique-de-presse/camp-francais-centre-equestre-golf-complexe-moto-la-metropole-engage-une) |
+| Concertation Camp français — Ville Ronchin | [ville-ronchin.fr](https://ville-ronchin.fr/concertation) |
+| Golf Lille Métropole — intérêt métropolitain (délib. MEL) | [lillemetropole.fr](https://www.lillemetropole.fr/sites/default/files/2024-12/Recueil_delib_T2_0.pdf) |
+| Golf Ronchin sécheresse 2022 — BFMTV | [bfmtv.com](https://www.bfmtv.com/grand-lille/nord-comment-le-golf-de-ronchin-s-adapte-a-la-secheresse_AV-202208090213.html) |
+| Golf Lille Métropole — ICI (sécheresse) | [ici.fr](https://www.ici.fr/infos/environnement/photos-le-golf-de-lille-metropole-face-a-la-secheresse-1659809767) |
+| La Voix du Nord — Concertation 2025 | [lavoixdunord.fr](https://www.lavoixdunord.fr/1614703/article/2025-08-12/un-cyber-centre-au-complexe-moto-une-extension-du-golf-ronchin-la-concertation) |
 
 ---
 
