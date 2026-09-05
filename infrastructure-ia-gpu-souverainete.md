@@ -12,10 +12,15 @@
 2. [NVIDIA vs Chine — Géopolitique des puces](#2-nvidia-vs-chine--géopolitique-des-puces)
 3. [Acteurs cloud et souveraineté](#3-acteurs-cloud-et-souveraineté)
 4. [Puissance de calcul par unité de surface](#4-puissance-de-calcul-par-unité-de-surface)
-5. [Infrastructure pour Kimi K3 — Cas d'étude](#5-infrastructure-pour-kimi-k3--cas-détude)
+5. [Études de cas — Modèles ouverts 2026](#5-études-de-cas--modèles-ouverts-2026)
+   - 5.1 [Gemma 4](#51-gemma-4--cas-détude)
+   - 5.2 [Qwen 3.8](#52-qwen-38--cas-détude)
+   - 5.3 [DeepSeek-R1](#53-deepseek-r1--cas-détude)
+   - 5.4 [Comparaison cross-modèles](#54-comparaison-cross-modèles)
 6. [Recommandations pour le datacenter Camp Français](#6-recommandations-pour-le-datacenter-camp-français)
-7. [Références](#7-références)
-8. [Lexique des acronymes](#8-lexique-des-acronymes)
+7. [Lexique des acronymes](#7-lexique-des-acronymes)
+8. [Estimation de capacité de calcul — 22 ha](#8-estimation-de-capacité-de-calcul--22-ha)
+9. [Références](#9-références)
 
 ---
 
@@ -240,177 +245,438 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 
 ---
 
-## 5. INFRASTRUCTURE POUR KIMI K3 — CAS D'ÉTUDE
+## 5. ÉTUDES DE CAS — MODÈLES OUVERTS 2026
 
-### 5.1 Spécifications Kimi K3
+### 5.0 Vue d'ensemble des modèles étudiés
 
-| Paramètre | Valeur |
-|-----------|--------|
-| Architecture | MoE (Mixture-of-Experts) |
-| Paramètres totaux | **2,8 trillions** |
-| Paramètres actifs/token | **104 milliards** (16/896 experts) |
-| Contexte | **1 048 576 tokens** (~1M) |
-| Poids sur disque | **1,56 TB** (MXFP4) |
-| Quantization | MXFP4 weights / MXFP8 activations |
-| Encodage vision | MoonViT-V2 (401M params) |
-| Licence | Kimi K3 License (MIT-like + clause MaaS) |
+| Paramètre | Kimi K3 | Gemma 4 31B | Gemma 4 26B A4B | Qwen 3.8 27B | DeepSeek-R1 |
+|-----------|---------|-------------|-----------------|--------------|-------------|
+| **Architecture** | MoE | Dense | MoE | Dense (hybride) | MoE (MLA) |
+| **Params totaux** | 2,8 T | 30,7 B | 25,2 B | 27 B | **671 B** |
+| **Params actifs/token** | 104 B | 30,7 B | 3,8 B | 27 B | **37 B** |
+| **Experts** | 896 (16 actifs) | — | 128 (8 actifs + 1 shared) | — | **256 (8 actifs)** |
+| **Contexte natif** | 1 048 576 | 256 K | 256 K | 262 K (→ 1M YaRN) | **128 K** |
+| **Poids BF16** | ~5,6 TB | ~62 GB | ~52 GB | ~56 GB | **~1,34 TB** |
+| **Poids quantifié** | 1,56 TB (MXFP4) | 17,5 GB (Q4) | 14,4 GB (Q4) | 17,1 GB (Q4_K_M) | **408 GB (Q4)** |
+| **Licence** | Kimi K3 (MIT-like) | Apache 2.0 | Apache 2.0 | Apache 2.0 | **MIT** |
+| **Vision** | Oui | Oui | Oui | Oui | Non |
+| **Thinking mode** | Oui | Oui | Oui | Oui | Oui (RL)
 
-### 5.2 Métriques de performance (Lambda Labs)
+---
 
-| Métrique | Valeur (2× B200) |
-|----------|-------------------|
-| Time to first token | 9 425 ms (moy) / 79 958 ms (P99) |
-| Time per output token | 102,66 ms (moy) / 140,70 ms (P99) |
-| Inter-token latency | 102,61 ms (moy) / 1 353 ms (P99) |
-| Configuration | TP=8, PP=2, 16 GPU B200 |
-| Concurrent requests | 32 |
-| Batch | 512 prompts, 8192 in / 2048 out tokens |
+## 5.1 GEMMA 4 — CAS D'ÉTUDE
 
-### 5.3 Besoin mémoire
+### 5.1.1 Spécifications Gemma 4
 
-| Composante | Taille |
-|-----------|--------|
-| Poids modèle (MXFP4) | **1,56 TB** |
-| KV cache (contexte 1M, 32 requêtes) | **~400-600 GB** |
-| Overhead framework | **~100 GB** |
-| **Total** | **~2,0-2,3 TB** |
+Gemma 4 est une famille de modèles open weights de Google DeepMind, disponible en 5 tailles. Pour un datacenter, les deux modèles pertinents sont le **31B Dense** (qualité maximale) et le **26B A4B MoE** (meilleur rapport débit/coût).
 
-### 5.4 Configurations matérielles
+| Modèle | Params totaux | Params actifs | Architecture | Contexte | Vision | Audio |
+|--------|---------------|---------------|--------------|----------|--------|-------|
+| **E2B** | 2,3 B eff. (5,1 B incl. embeddings) | 2,3 B | Dense + PLE | 128 K | Oui | Oui |
+| **E4B** | 4,5 B eff. (8 B incl. embeddings) | 4,5 B | Dense + PLE | 128 K | Oui | Oui |
+| **12B Unified** | 11,95 B | 12 B | Dense, encoder-free | 256 K | Oui | Oui |
+| **26B A4B** | 25,2 B | **3,8 B** | MoE (8/128 experts + 1 shared) | 256 K | Oui | Non |
+| **31B Dense** | 30,7 B | 30,7 B | Dense | 256 K | Oui | Non |
 
-#### Option 1 — B200 (recommandé NVIDIA)
+### 5.1.2 Mémoire requise (poids uniquement)
 
-| Paramètre | Valeur |
-|-----------|--------|
-| GPU requis | **16× B200** (2 nœuds 8 GPU) |
-| Mémoire totale | 16 × 192 GB = **3,07 TB** |
-| Nœuds | 2 × HGX B200 |
-| Interconnexion | InfiniBand 400 Gb/s |
-| Poids = 1,56 TB | ✅ tient en mémoire |
-| KV cache + overhead | ✅ marge suffisante |
-| Surface | **2 × 0,72 = 1,44 m²** |
-| Puissance | 2 × 8 kW = **16 kW** |
-| Coût GPU estimé | 16 × 50 000 = **800 000 $** |
+| Modèle | BF16 (16-bit) | SFP8 (8-bit) | Q4_0 (4-bit) | Recommandé |
+|--------|---------------|--------------|--------------|------------|
+| **31B Dense** | 69,9 GB | 34,9 GB | 17,5 GB | A100 80GB ou H100 |
+| **26B A4B MoE** | 57,7 GB | 28,8 GB | 14,4 GB | A100 40GB ou RTX 4090 |
 
-#### Option 2 — H200 (alternative)
+> ⚠️ Le modèle 26B A4B MoE n'active que 3,8 B paramètres/token, mais **les 25,2 B doivent rester en mémoire** pour le routage des experts.
 
-| Paramètre | Valeur |
-|-----------|--------|
-| GPU requis | **24× H200** (3 nœuds 8 GPU) |
-| Mémoire totale | 24 × 141 GB = **3,38 TB** |
-| Nœuds | 3 × HGX H200 |
-| Interconnexion | InfiniBand 400 Gb/s |
-| Poids = 1,56 TB | ✅ tient en mémoire |
-| KV cache + overhead | ✅ marge suffisante |
-| Surface | **3 × 0,72 = 2,16 m²** |
-| Puissance | 3 × 5,6 kW = **16,8 kW** |
-| Coût GPU estimé | 24 × 40 000 = **960 000 $** |
+### 5.1.3 KV cache (contexte 256K)
 
-#### Option 3 — Quantization agressive (llama.cpp)
+| Modèle | KV cache (256K, BF16) | + Poids | Total estimé |
+|--------|----------------------|---------|--------------|
+| **31B Dense** | ~20-30 GB | 69,9 GB | **~90-100 GB** |
+| **26B A4B MoE** | ~20-30 GB | 57,7 GB | **~78-88 GB** |
+
+### 5.1.4 Configurations matérielles — Gemma 4 31B Dense
+
+#### Option A — BF16 (qualité maximale)
 
 | Paramètre | Valeur |
 |-----------|--------|
-| Format | UD-IQ1_S (1-bit dynamique) |
-| Taille modèle | **594 GB** |
-| GPU requis | **8× H100** (1 nœud) |
-| Qualité | ~79% top-1 accuracy, PPL 2,58 |
+| GPU requis | **2× H100 80GB** (1 nœud) |
+| Mémoire totale | 2 × 80 GB = **160 GB** |
+| Poids BF16 = 69,9 GB | ✅ |
+| KV cache 256K + overhead | ✅ (~90-100 GB total) |
 | Surface | **0,72 m²** |
-| Puissance | **5,6 kW** |
-| Coût GPU estimé | 8 × 30 000 = **240 000 $** |
-| **Compromis** | Perte qualité significative |
+| Puissance | **~5,6 kW** |
+| Coût GPU estimé | 2 × 30 000 = **60 000 $** |
 
-### 5.5 Comparaison des options
-
-| Option | GPU | Surface | Puissance | Coût GPU | Qualité | tok/s |
-|--------|-----|---------|-----------|----------|---------|-------|
-| **B200 (recommandé)** | 16× B200 | 1,44 m² | 16 kW | 800 k$ | ✅ Native | ~100 tok/s |
-| **H200** | 24× H200 | 2,16 m² | 16,8 kW | 960 k$ | ✅ Native | ~70 tok/s |
-| **H100 (native)** | 24× H100 | 2,16 m² | 16,8 kW | 720 k$ | ⚠️ Tight | ~50 tok/s |
-| **Quantized 1-bit** | 8× H100 | 0,72 m² | 5,6 kW | 240 k$ | ❌ 79% | ~20 tok/s |
-
-### 5.6 Infra complète recommandée
-
-| Composant | Spécification | Coût estimé |
-|-----------|---------------|-------------|
-| **GPU** | 16× NVIDIA B200 SXM | 800 000 $ |
-| **Serveurs** | 2× HGX B200 (8 GPU, liquid cooling) | 200 000 $ |
-| **Interconnexion** | InfiniBand NDR 400 Gb/s | 50 000 $ |
-| **Stockage** | 2 TB NVMe SSD (checkpoint) | 10 000 $ |
-| **Réseau** | Switch InfiniBand, câblage | 20 000 $ |
-| **Refroidissement** | Liquid cooling CDU (2×) | 60 000 $ |
-| **Alimentation** | 30 kW alimentation redondante | 30 000 $ |
-| **Rack** | 2× OCP ORv3 (liquid cooling) | 20 000 $ |
-| **Logiciel** | vLLM, Kubernetes, monitoring | 10 000 $ |
-| **TOTAL** | | **~1,2 M$** |
-
-### 5.7 Besoin énergétique annuel
+#### Option B — Q4_0 (économique)
 
 | Paramètre | Valeur |
 |-----------|--------|
-| Puissance calcul | 16 kW |
-| Puissance refroidissement | ~5 kW |
-| Puissance totale | **~21 kW** |
-| Heures utilisation/an | 8 760 h |
-| **Consommation annuelle** | **~184 MWh** |
-| Coût électricité (0,15 €/kWh) | **~27 600 €/an** |
+| GPU requis | **1× RTX 4090 24GB** |
+| Mémoire totale | **24 GB** |
+| Poids Q4 = 17,5 GB | ✅ (tight, contexte limité à ~32K) |
+| Surface | **poste de travail** |
+| Puissance | **~450 W** |
+| Coût GPU estimé | **~2 000 $** |
 
-### 5.8 Capacité utilisateurs simultanés (estimation indicative)
+### 5.1.5 Configurations matérielles — Gemma 4 26B A4B MoE
 
-**Base de calcul** : Lambda Labs rapporte 32 requêtes concurrentes sur 2× B200. Avec 16× B200 (×8 GPU), le débit théorique est multiplié par ~6-7× (scaling non linéaire à cause du TP/PP).
-
-| Scénario | Requêtes concurrentes | Utilisateurs simultanés | Utilisateurs simultanés (réel)* |
-|----------|----------------------|------------------------|--------------------------------|
-| **Think Low** (questions simples) | ~200 | **~200** | **~150-200** |
-| **Think High** (raisonnement modéré) | ~120 | **~120** | **~100-120** |
-| **Think Max** (coding, raisonnement complexe) | ~64 | **~64** | **~50-64** |
-
-*\*Utilisateurs réels = requêtes concurrentes × 0,7-0,8 (overhead réseau, KV cache, contexte long)*
-
-#### Hypothèses
+#### Option A — BF16 (qualité max, débit élevé)
 
 | Paramètre | Valeur |
 |-----------|--------|
-| Tokens moyens par réponse | 500-1 000 |
-| Temps de réponse moyen (TPOT) | ~100 ms/token |
-| Durée moyenne par réponse | 50-100 s (Think Low) / 200-600 s (Think Max) |
-| Temps moyen entre requêtes utilisateur | 30-120 s (lecture, rédaction) |
-| Ratio actif/inactif | ~1/3 actif en permanence |
+| GPU requis | **2× H100 80GB** |
+| Mémoire totale | **160 GB** |
+| Poids BF16 = 57,7 GB | ✅ |
+| KV cache 256K + overhead | ✅ |
+| Surface | **0,72 m²** |
+| Puissance | **~5,6 kW** |
+| Coût GPU estimé | 2 × 30 000 = **60 000 $** |
+| **Avantage** | Seulement 3,8 B actifs → débit token/s très élevé |
 
-#### Estimation par usage
+#### Option B — Q4_0 (ultra-économique)
 
-| Usage cible | Utilisateurs simultanés | Utilisateurs journaliers** |
-|-------------|------------------------|---------------------------|
-| **Chat interne entreprise** (10-50 employés) | ✅ confortable | ✅ |
-| **API publique** (SaaS) | ~50-150 | ~500-1 500 |
-| **Coding assistant** (développeurs) | ~30-60 | ~300-600 |
-| **Recherche / R&D** | ~20-40 | ~100-200 |
+| Paramètre | Valeur |
+|-----------|--------|
+| GPU requis | **1× RTX 4090 24GB** |
+| Mémoire totale | **24 GB** |
+| Poids Q4 = 14,4 GB | ✅ (confortable, contexte ~64K) |
+| Surface | **poste de travail** |
+| Puissance | **~450 W** |
+| Coût GPU estimé | **~2 000 $** |
 
-*\*\*Utilisateurs journaliers = simultanés × 5-10 (rotation active/inactive)*
+### 5.1.6 Comparaison Gemma 4 — Datacenter vs Poste de travail
 
-#### Verdict
+| Configuration | GPU | Surface | Puissance | Coût | Contexte max | Usage |
+|--------------|-----|---------|-----------|------|-------------|-------|
+| **31B BF16 (datacenter)** | 2× H100 | 0,72 m² | 5,6 kW | 60 k$ | 256 K | Production, multi-utilisateurs |
+| **31B Q4 (poste)** | 1× RTX 4090 | bureau | 450 W | 2 k$ | ~32 K | Développement, test |
+| **26B MoE BF16 (datacenter)** | 2× H100 | 0,72 m² | 5,6 kW | 60 k$ | 256 K | Production, haut débit |
+| **26B MoE Q4 (poste)** | 1× RTX 4090 | bureau | 450 W | 2 k$ | ~64 K | Développement, test |
 
-> **16× B200 suffisent pour** :
-> - une équipe interne de **50-100 personnes** en usage mixte (think Low + High)
-> - une API publique de **100-150 utilisateurs simultanés** (think Low)
-> - un coding assistant pour **30-60 développeurs** (think Max)
+### 5.1.7 Capacité utilisateurs — Gemma 4 31B Dense (2× H100)
 
-> **Au-delà de ~150 utilisateurs simultanés**, il faut passer à **32× B200** (4 nœuds) ou **24× H200** (3 nœuds).
+| Scénario | Requêtes concurrentes | Utilisateurs simultanés | Utilisateurs journaliers |
+|----------|----------------------|------------------------|-------------------------|
+| **Think Low** (questions simples) | ~80-100 | **~80-100** | ~800-1 000 |
+| **Think High** (raisonnement) | ~50-60 | **~50-60** | ~500-600 |
+| **Think Max** (coding complexe) | ~30-40 | **~30-40** | ~300-400 |
 
-### 5.9 Infra pour usage « meilleur raisonnement »
+### 5.1.8 Verdict Gemma 4
 
-Kimi K3 supporte 3 niveaux de « thinking effort » :
+> **Gemma 4 31B Dense** : modèle le plus capable de la famille, nécessite **2× H100** pour le datacenter (BF16, contexte 256K). Alternativement, **1× H100** suffit en Q8 (34,9 GB).
+>
+> **Gemma 4 26B A4B MoE** : meilleur rapport débit/coût — 3,8 B actifs = token/s très élevés, idéal pour le **serving à haut débit**. Même infra que le 31B.
+>
+> **Pour le datacenter Camp Français** : le **26B A4B MoE** est le meilleur choix si l'objectif est le débit (API publique). Le **31B Dense** si l'objectif est la qualité maximale (recherche, coding agent).
 
-| Niveau | Usage | Token generating | Temps réponses |
-|--------|-------|------------------|----------------|
-| **Low** | Questions simples | Rapide | ~100 ms/tok |
-| **High** | Raisonnement modéré | Moyen | ~100 ms/tok |
-| **Max** | Raisonnement complexe, coding | Lent (beaucoup de tokens thinking) | ~100 ms/tok |
+---
 
-Pour le **meilleur raisonnement** (Max), il faut :
-- **Contexte long** : 100K-1M tokens → KV cache important
-- **Débit élevé** : 32+ requêtes concurrentes
-- **Latence faible** : <200 ms inter-token
+## 5.2 QWEN 3.8 — CAS D'ÉTUDE
 
-→ Configuration **16× B200** recommandée (Option 1).
+### 5.2.1 Spécifications Qwen 3.8
+
+Qwen 3.8 est une famille d'Alibaba, sortie en août 2026. Le modèle principal est le **27B dense** avec attention hybride (Gated DeltaNet + Attention complète).
+
+| Paramètre | Qwen 3.8 27B | Qwen 3.8 Flash-Next | Qwen 3.8 Max (2,4T) |
+|-----------|-------------|---------------------|---------------------|
+| **Architecture** | Dense, hybride | MoE sparse | MoE sparse |
+| **Params totaux** | **27 B** | 180 B (6 B actifs) | 2,4 T (95 B actifs) |
+| **Params actifs/token** | 27 B | 6 B | 95 B |
+| **Couches** | 64 (16 attention + 48 DeltaNet) | 48 | 92 |
+| **Contexte natif** | **262 K** (→ 1M YaRN) | 262 K (→ 1M YaRN) | 262 K (→ 1M) |
+| **Vision** | Oui (texte + image + vidéo) | Oui | Non (texte seul) |
+| **Licence** | **Apache 2.0** | qwen-community-1.0 | qwen3.8-max (custom) |
+
+#### Architecture hybride — Clé de voûte
+
+Le 27B utilise un système **3:1** : 3 couches Gated DeltaNet (attention linéaire, état récurrent fixe) pour 1 couche d'attention complète (KV cache croissant). Sur 64 couches, **seules 16 couches** génèrent un KV cache qui croît avec le contexte.
+
+**Conséquence** : le KV cache est **4× plus petit** qu'un modèle dense classique de même taille.
+
+### 5.2.2 Mémoire requise (Qwen 3.8 27B)
+
+| Quantization | Poids | KV cache (8K) | KV cache (256K) | Total (256K) |
+|-------------|-------|---------------|-----------------|--------------|
+| **BF16** | 55,6 GB | 0,54 GB | ~16 GB | **~72 GB** |
+| **FP8** | ~28 GB | 0,54 GB | ~16 GB | **~45 GB** |
+| **Q8_0** | 29 GB | 0,54 GB | ~16 GB | **~46 GB** |
+| **Q4_K_M** | 17,1 GB | 0,54 GB | ~16 GB | **~34 GB** |
+| **Q3_K_M** | 13,4 GB | 0,54 GB | ~16 GB | **~30 GB** |
+
+> 💡 Grâce à l'attention hybride, le KV cache à 256K ne coûte que **~16 GB** au lieu de **~64 GB** pour un modèle dense classique. C'est **l'avantage concurrentiel majeur** de Qwen 3.8.
+
+### 5.2.3 Configurations matérielles — Qwen 3.8 27B
+
+#### Option A — BF16 (qualité maximale)
+
+| Paramètre | Valeur |
+|-----------|--------|
+| GPU requis | **2× H100 80GB** (1 nœud) |
+| Mémoire totale | **160 GB** |
+| Poids BF16 = 55,6 GB | ✅ |
+| KV cache 256K = ~16 GB | ✅ |
+| Total ~72 GB | ✅ large marge |
+| Surface | **0,72 m²** |
+| Puissance | **~5,6 kW** |
+| Coût GPU estimé | 2 × 30 000 = **60 000 $** |
+
+#### Option B — FP8 (meilleur compromis)
+
+| Paramètre | Valeur |
+|-----------|--------|
+| GPU requis | **1× H100 80GB** ou **1× L40S 48GB** |
+| Mémoire totale | 80 ou 48 GB |
+| Poids FP8 = ~28 GB | ✅ |
+| KV cache 256K = ~16 GB | ✅ |
+| Total ~45 GB | ✅ sur H100, ⚠️ tight sur L40S |
+| Surface | **0,36 m²** |
+| Puissance | **~3 kW** |
+| Coût GPU estimé | **30 000 $** (H100) ou **15 000 $** (L40S) |
+
+#### Option C — Q4_K_M (économique, production)
+
+| Paramètre | Valeur |
+|-----------|--------|
+| GPU requis | **1× RTX 4090 24GB** (poste) ou **1× A6000 48GB** (datacenter) |
+| Poids Q4 = 17,1 GB | ✅ |
+| KV cache 256K = ~16 GB | ⚠️ 24 GB tight → contexte réel ~32-64K |
+| Surface | **bureau** ou **0,36 m²** |
+| Puissance | **450 W** (RTX 4090) ou **300 W** (A6000) |
+| Coût GPU estimé | **~2 000 $** (RTX 4090) ou **~5 000 $** (A6000) |
+
+### 5.2.4 Comparaison Qwen 3.8 — Options datacenter
+
+| Configuration | GPU | Surface | Puissance | Coût | Contexte | Usage |
+|--------------|-----|---------|-----------|------|----------|-------|
+| **27B BF16** | 2× H100 | 0,72 m² | 5,6 kW | 60 k$ | 256 K | Production, qualité max |
+| **27B FP8** | 1× H100 | 0,36 m² | 3 kW | 30 k$ | 256 K | Production, bon compromis |
+| **27B Q4 (A6000)** | 1× A6000 | 0,36 m² | 300 W | 5 k$ | 32-64 K | Production, budget |
+| **27B Q4 (RTX 4090)** | 1× RTX 4090 | bureau | 450 W | 2 k$ | 32-64 K | Développement |
+
+### 5.2.5 Capacité utilisateurs — Qwen 3.8 27B (2× H100, BF16)
+
+L'attention hybride de Qwen 3.8 permet un throughput plus élevé qu'un modèle dense classique de même taille, car le KV cache réduit la pression mémoire.
+
+| Scénario | Requêtes concurrentes | Utilisateurs simultanés | Utilisateurs journaliers |
+|----------|----------------------|------------------------|-------------------------|
+| **Think Low** (questions simples) | ~100-150 | **~100-150** | ~1 000-1 500 |
+| **Think High** (raisonnement) | ~60-80 | **~60-80** | ~600-800 |
+| **Think Max** (coding complexe) | ~40-50 | **~40-50** | ~400-500 |
+
+### 5.2.6 Verdict Qwen 3.8
+
+> **Qwen 3.8 27B** : le meilleur modèle **single-GPU** de cette étude. En **FP8 sur 1× H100**, il tient en **0,36 m²** avec un contexte de 256K — infiniment plus compact que les alternatives MoE géantes.
+>
+> **L'attention hybride** est l'avantage clé : KV cache 4× plus petit = plus d'utilisateurs simultanés par GB de VRAM.
+>
+> **Pour le datacenter Camp Français** : le **27B FP8 sur 1× H100** offre le meilleur ratio **coût/surface/capacité**. Idéal pour un SaaS ou un outil interne à 100+ utilisateurs.
+
+---
+
+## 5.3 DEEPSEEK-R1 — CAS D'ÉTUDE
+
+### 5.2B.1 Spécifications DeepSeek-R1
+
+DeepSeek-R1 (janvier 2025) est le modèle reasoning open emblématique — entraîné par RL pure (GRPO) sans SFT, licence MIT.
+
+| Paramètre | Valeur |
+|-----------|--------|
+| **Architecture** | MoE — DeepSeekMoE (256 experts routés + 1 shared, top-8 routing) |
+| **Params totaux** | **671 B** |
+| **Params actifs/token** | **37 B** |
+| **Couches** | 61 (3 dense + 58 MoE) |
+| **Attention** | **MLA** (Multi-head Latent Attention) — KV cache ultra-compresse |
+| **Contexte** | **128 K tokens** |
+| **Vision** | Non (texte seul) |
+| **Thinking** | Oui — chain-of-thought via RL (GRPO) |
+| **Licence** | **MIT** |
+
+> 💡 **MLA (Multi-head Latent Attention)** : DeepSeek compresse le KV cache en un vecteur latent de dimension réduite, réduisant la mémoire de 5-10× par rapport à une attention classique. Même avec 671B params, le KV reste petit.
+
+### 5.2B.2 Mémoire requise
+
+| Quantization | Poids | KV cache (8K) | KV cache (128K) | Total (128K) |
+|-------------|-------|---------------|-----------------|--------------|
+| **BF16** | 1 342 GB | 0,5 GB | ~8,8 GB | **~1 351 GB** |
+| **FP8** | ~671 GB | 0,5 GB | ~8,8 GB | **~680 GB** |
+| **Q4_K_M** | 408 GB | 0,5 GB | ~8,8 GB | **~417 GB** |
+| **Q2_K** | 256 GB | 0,5 GB | ~8,8 GB | **~265 GB** |
+
+> ⚠️ Les 671B paramètres doivent **tous rester en mémoire** (MoE), même si seuls 37B sont actifs par token. L'inférence est rapide (coût de 37B) mais la mémoire est celle de 671B.
+
+### 5.2B.3 Configurations matérielles
+
+#### Option A — Q4_K_M (recommandé production)
+
+| Paramètre | Valeur |
+|-----------|--------|
+| GPU requis | **6× H100 80GB** (1 nœud HGX) |
+| Mémoire totale | 6 × 80 GB = **480 GB** |
+| Poids Q4 = 408 GB | ✅ |
+| KV cache 128K = ~9 GB | ✅ |
+| Total ~417 GB | ✅ marge OK |
+| Surface | **0,72 m²** (1 rack 6U) |
+| Puissance | **~4,2 kW** |
+| Coût GPU estimé | 6 × 30 000 = **180 000 $** |
+
+#### Option B — Q2_K (budget)
+
+| Paramètre | Valeur |
+|-----------|--------|
+| GPU requis | **4× H100 80GB** |
+| Mémoire totale | **320 GB** |
+| Poids Q2 = 256 GB | ✅ |
+| Total ~265 GB | ✅ |
+| Surface | **0,48 m²** |
+| Puissance | **~2,8 kW** |
+| Coût GPU estimé | 4 × 30 000 = **120 000 $** |
+| **Compromis** | Perte qualité notable |
+
+#### Option C — BF16 (qualité maximale)
+
+| Paramètre | Valeur |
+|-----------|--------|
+| GPU requis | **18× H100 80GB** (3 nœuds) ou **10× H200 141GB** |
+| Mémoire totale | 1 440 GB (H100) ou 1 410 GB (H200) |
+| Poids BF16 = 1,34 TB | ✅ |
+| Surface | **1,44-2,16 m²** |
+| Puissance | **12,6 kW** (H100) |
+| Coût GPU estimé | 18 × 30 000 = **540 000 $** |
+
+### 5.2B.4 Capacité utilisateurs — DeepSeek-R1 (6× H100, Q4)
+
+Les 37B actifs + MLA permettent un throughput élevé malgré les 671B totaux.
+
+| Scénario | Requêtes concurrentes | Utilisateurs simultanés | Utilisateurs journaliers |
+|----------|----------------------|------------------------|-------------------------|
+| **Questions simples** (reasoning léger) | ~60-80 | **~60-80** | ~600-800 |
+| **Raisonnement modéré** (math, code) | ~40-50 | **~40-50** | ~400-500 |
+| **Raisonnement complexe** (long CoT) | ~20-30 | **~20-30** | ~200-300 |
+
+### 5.2B.5 Verdict DeepSeek-R1
+
+> **DeepSeek-R1** : le modèle reasoning open le plus puissant disponible (MIT). Les **37B actifs** sur 671B = inference rapide, mais **417 GB de mémoire** = nécessite **6× H100** minimum.
+>
+> **Avantage clé** : MLA réduit le KV cache de 5-10× → plus d'utilisateurs simultanés qu'un MoE classique de même taille.
+>
+> **Inconvénient** : pas de vision, contexte 128K (pas 1M), gros budget infrastructure (180 k$ minimum).
+>
+> **Pour le datacenter Camp Français** : DeepSeek-R1 est le bon choix si l'objectif est le **reasoning de pointe** (math, code, recherche). Sinon, Qwen 3.8 ou Gemma 4 sont plus compacts et polyvalents.
+
+---
+
+## 5.4 COMPARAISON CROSS-MODÈLES
+
+### 5.3.1 Infrastructure requise par modèle (datacenter, production)
+
+| Modèle | Config | GPU | Surface | Puissance | Coût GPU | Contexte | Utiles simultanés |
+|--------|--------|-----|---------|-----------|----------|----------|-------------------|
+| **Kimi K3** | 16× B200 | 16 GPU | 1,44 m² | 16 kW | 800 k$ | 1 M | 50-200 |
+| **DeepSeek-R1** | 6× H100 Q4 | 6 GPU | **0,72 m²** | **4,2 kW** | **180 k$** | 128 K | 20-80 |
+| **Gemma 4 31B** | 2× H100 BF16 | 2 GPU | 0,72 m² | 5,6 kW | 60 k$ | 256 K | 30-100 |
+| **Gemma 4 26B MoE** | 2× H100 BF16 | 2 GPU | 0,72 m² | 5,6 kW | 60 k$ | 256 K | 50-150 |
+| **Qwen 3.8 27B** | 1× H100 FP8 | **1 GPU** | **0,36 m²** | **3 kW** | **30 k$** | 256 K | 40-150 |
+
+### 5.3.2 Comparaison surface
+
+```
+Surface (m²) — plus petit = meilleur
+═══════════════════════════════════════════════════
+Qwen 3.8 27B     ████████ 0,36 m²  ← 1 GPU
+DeepSeek-R1      ████████████████ 0,72 m²  ← 6 GPU
+Gemma 4 31B      ████████████████ 0,72 m²  ← 2 GPU
+Gemma 4 26B MoE  ████████████████ 0,72 m²  ← 2 GPU
+Kimi K3          ████████████████████████████ 1,44 m²  ← 16 GPU
+```
+
+### 5.3.3 Comparaison énergie
+
+```
+Puissance (kW) — plus bas = meilleur
+═══════════════════════════════════════════════════
+Qwen 3.8 27B     ████████████████ 3,0 kW
+DeepSeek-R1      ██████████████████████ 4,2 kW
+Gemma 4 31B      ████████████████████████████ 5,6 kW
+Gemma 4 26B MoE  ████████████████████████████ 5,6 kW
+Kimi K3          ████████████████████████████████████████████████████████████████████ 16,0 kW
+```
+
+### 5.3.4 Comparaison utilisateurs simultanés
+
+```
+Utilisateurs simultanés (max) — plus haut = meilleur
+═══════════════════════════════════════════════════
+DeepSeek-R1      ████████████████████████████████████ 80
+Kimi K3          ████████████████████████████████████████████████████████████████████████████████ 200
+Gemma 4 31B      ██████████████████████████████████████████ 100
+Gemma 4 26B MoE  ████████████████████████████████████████████████████████ 150
+Qwen 3.8 27B     ████████████████████████████████████████████████████████ 150
+```
+
+### 5.3.5 Tableau récapitulatif — Score
+
+| Modèle | Surface | Énergie | Utiles | Coût GPU | **Score global** |
+|--------|---------|---------|--------|----------|-----------------|
+| **Qwen 3.8 27B** | ⭐⭐⭐ (0,36) | ⭐⭐⭐ (3 kW) | ⭐⭐ (150) | ⭐⭐⭐ (30 k$) | **🏆 10/12** |
+| **Gemma 4 26B MoE** | ⭐⭐ (0,72) | ⭐⭐ (5,6 kW) | ⭐⭐ (150) | ⭐⭐ (60 k$) | **8/12** |
+| **DeepSeek-R1** | ⭐⭐ (0,72) | ⭐⭐⭐ (4,2 kW) | ⭐ (80) | ⭐ (180 k$) | **7/12** |
+| **Gemma 4 31B** | ⭐⭐ (0,72) | ⭐⭐ (5,6 kW) | ⭐ (100) | ⭐⭐ (60 k$) | **6/12** |
+| **Kimi K3** | ⭐ (1,44) | ⭐ (16 kW) | ⭐⭐⭐ (200) | ⭐ (800 k$) | **5/12** |
+
+### 5.3.6 Ratio coût/utilisateur
+
+| Modèle | Coût GPU | Utiles simultanés (max) | **Coût/utilisateur** |
+|--------|----------|------------------------|---------------------|
+| **Qwen 3.8 27B** | 30 k$ | ~150 | **~200 $/utilisateur** 🏆 |
+| **Gemma 4 26B MoE** | 60 k$ | ~150 | **~400 $/utilisateur** |
+| **Gemma 4 31B** | 60 k$ | ~100 | **~600 $/utilisateur** |
+| **DeepSeek-R1** | 180 k$ | ~80 | **~2 250 $/utilisateur** |
+| **Kimi K3** | 800 k$ | ~200 | **~4 000 $/utilisateur** |
+
+### 5.3.7 Ratio surface/utilisateur
+
+| Modèle | Surface | Utiles simultanés (max) | **Utiles/m²** |
+|--------|---------|------------------------|--------------|
+| **Qwen 3.8 27B** | 0,36 m² | ~150 | **~417/m²** 🏆 |
+| **Gemma 4 26B MoE** | 0,72 m² | ~150 | **~208/m²** |
+| **DeepSeek-R1** | 0,72 m² | ~80 | **~111/m²** |
+| **Gemma 4 31B** | 0,72 m² | ~100 | **~139/m²** |
+| **Kimi K3** | 1,44 m² | ~200 | **~139/m²** |
+
+### 5.3.8 Ratio énergie/utilisateur
+
+| Modèle | Puissance | Utiles simultanés (max) | **Utiles/kW** |
+|--------|-----------|------------------------|--------------|
+| **Qwen 3.8 27B** | 3 kW | ~150 | **~50/kW** 🏆 |
+| **Gemma 4 26B MoE** | 5,6 kW | ~150 | **~27/kW** |
+| **DeepSeek-R1** | 4,2 kW | ~80 | **~19/kW** |
+| **Gemma 4 31B** | 5,6 kW | ~100 | **~18/kW** |
+| **Kimi K3** | 16 kW | ~200 | **~13/kW** |
+
+### 5.3.9 Recommandation par usage
+
+| Usage | Modèle recommandé | Pourquoi |
+|-------|-------------------|----------|
+| **API publique haut débit** | Gemma 4 26B A4B MoE | 3,8 B actifs = token/s max, coût réduit |
+| **Coding agent / Recherche** | DeepSeek-R1 ou Kimi K3 | R1 = reasoning MIT ; Kimi = contexte 1M |
+| **Chat interne entreprise** | Qwen 3.8 27B FP8 | Meilleur coût/utilisateur, 262K contexte, Apache 2.0 |
+| **Qualité maximale (peu d'utilisateurs)** | Gemma 4 31B Dense | Le plus capable de la famille Gemma |
+| **Budget minimal** | Qwen 3.8 27B Q4 (1× RTX 4090) | 2 000 $ tout compris, 32-64K contexte |
+| **Plus gros trafic possible** | Kimi K3 (16× B200) | Seul modèle gérant 1M contexte + 200 utilisateurs |
+| **Reasoning math/code** | DeepSeek-R1 (6× H100) | Le meilleur reasoning open, MIT, RL pure |
+
+### 5.3.10 Verdict global
+
+> **Pour le datacenter Camp Français**, quatre scénarios se dégagent :
+>
+> 1. **Budget serré (< 50 k$)** → **Qwen 3.8 27B** sur 1× H100 (FP8). 0,36 m², 3 kW, 150 utilisateurs. Meilleur ROI de tous les modèles. Apache 2.0.
+>
+> 2. **Production SaaS (50-200 k$)** → **Gemma 4 26B A4B MoE** sur 2× H100. Débit maximal grâce aux 3,8 B actifs. Idéal pour une API publique à fort trafic.
+>
+> 3. **Reasoning de pointe (200 k$)** → **DeepSeek-R1** sur 6× H100. MIT, reasoning RL pur, le plus puissant pour math/code. Mais pas de vision, 128K contexte.
+>
+> 4. **Maxi-projet (500 k$+)** → **Kimi K3** sur 16× B200. Contexte 1M, 200 utilisateurs. Réservé aux cas d'usage nécessitant un contexte extrêmement long.
 
 ---
 
@@ -459,7 +725,7 @@ Pour le **meilleur raisonnement** (Max), il faut :
 
 ---
 
-## 8. LEXIQUE DES ACRONYMES
+## 7. LEXIQUE DES ACRONYMES
 
 ### Matériel / Processeurs
 
@@ -603,7 +869,176 @@ Pour le **meilleur raisonnement** (Max), il faut :
 
 ---
 
-## 7. RÉFÉRENCES
+## 8. ESTIMATION DE CAPACITÉ DE CALCUL DÉPLOYABLE SUR LE SITE — 22 HECTARES
+
+### 8.1 Objectif
+
+Estimer la puissance de calcul (PFLOPS), la consommation électrique (MW) et les besoins en eau (m³/an) d'un datacenter IA maximaliste implanté sur les 22 ha du complexe moto, en tenant compte des contraintes physiques réelles du site.
+
+### 8.2 Hypothèses de dimensionnement
+
+| Paramètre | Hypothèse |
+|-----------|-----------|
+| Surface totale | 22 ha (220 000 m²) |
+| Surface bâtiments (data halls + SMCC + refroidissement) | ~35 % → **7,7 ha** |
+| Surface voirie, parkings, reculs, zone verte | ~65 % → 14,3 ha |
+| Puissance par rack (GPU AI, air-cooled) | 35 kW |
+| Puissance par rack (GPU AI, liquid-cooled) | 60 kW |
+| PUE moyen | 1,35 (refroidissement adiabatique mixte) |
+| Tension de raccordement | ≥ 63 kV (sous-station EDF sur le site) |
+| Connectivité | Fibre optique (axe Lille-Paris, présences运营商 sur le MEL) |
+
+### 8.3 Occupation du sol par composant
+
+```
+COMPOSITION DU SITE — 22 ha
+═══════════════════════════════════════════════════════════════
+│ Composant                          │ Surface    │ % site  │
+═══════════════════════════════════════════════════════════════
+│ Data halls (4 bâtiments)           │ 5,6 ha     │ 25,5 %  │
+│ Sous-station HV/MV                 │ 0,4 ha     │ 1,8 %   │
+│ Plant de refroidissement (ch. eau) │ 0,8 ha     │ 3,6 %   │
+│ Bâtiment contrôle/SMCC/bureaux     │ 0,4 ha     │ 1,8 %   │
+│ Torres aérocondenseurs (si air)    │ 0,5 ha     │ 2,3 %   │
+│ Voirie interne + parkings          │ 1,8 ha     │ 8,2 %   │
+│ Recul sécurité / zone verte        │ 2,5 ha     │ 11,4 %  │
+│ Zone non-bâtie (rétention eau)     │ 10,0 ha    │ 45,5 %  │
+═══════════════════════════════════════════════════════════════
+│ TOTAL                              │ 22,0 ha    │ 100 %   │
+```
+
+### 8.4 Capacité en racks
+
+**Scénario A — Air-cooled (refroidissement adiabatique) :**
+- Surface data halls : 5,6 ha = 56 000 m²
+- Densité : 1 rack / 25 m² (aisances, chemins de câbles, N+1)
+- **Capacité : 2 240 racks × 35 kW = 78,4 MW IT**
+
+**Scénario B — Liquid-cooled (DLC direct-to-chip) :**
+- Surface data halls : 5,6 ha = 56 000 m²
+- Densité : 1 rack / 18 m² (chambres plus denses)
+- **Capacité : 3 110 racks × 60 kW = 186,6 MW IT**
+
+**Scénario C — Hyperscale mixte (80 % air / 20 % liquid) :**
+- 1 792 racks air-cooled × 35 kW = 62,7 MW
+- 622 racks liquid-cooled × 60 kW = 37,3 MW
+- **Total : 2 414 racks = 100,0 MW IT**
+
+> **Conclusion : Le site peut accueillir 80 à 187 MW de charge IT, soit 2 à 5× la demande annoncée (15 MW).**
+
+### 8.5 Puissance de calcul (PFLOPS)
+
+Calcul basé sur les GPU NVIDIA de référence :
+
+| GPU | FP32 (TFLOPS) | FP16 (TFLOPS) | Coût par unité | Rendement/W |
+|-----|---------------|---------------|----------------|-------------|
+| H100 SXM | 67 | 989 (sparse) | ~30 000 $ | 1,41 TFLOPS/kW |
+| B200 | 90 | 2 500 (sparse) | ~40 000 $ | 3,57 TFLOPS/kW |
+
+**Pour 2 414 racks à 35 kW (84,5 MW IT) :**
+
+| Configuration | Nombre GPU | FP32 (PFLOPS) | FP16 (PFLOPS) |
+|---------------|------------|---------------|---------------|
+| 4× H100 / rack | 9 656 | 647 | 9 550 |
+| 4× B200 / rack | 9 656 | 869 | 24 140 |
+| 8× H100 / rack | 19 312 | 1 294 | 19 100 |
+
+> **En configuration B200 (optimiste) : ~24 000 PFLOPS FP16, soit 24 ExaFLOPS.**
+> **En configuration H100 (réaliste) : ~9 500 PFLOPS FP16, soit 9,5 ExaFLOPS.**
+>
+> À titre de comparaison, le plus grand cluster mondial (Colossus, xAI, Memphis) vise 200 000 GPU H100 = ~200 ExaFLOPS. Le site Camp Français pourrait représenter **5 à 12 % de cette capacité**.
+
+### 8.6 Consommation électrique
+
+| Composant | Scénario A (84 MW IT) | Scénario B (100 MW IT) |
+|-----------|----------------------|----------------------|
+| Charge IT | 84,5 MW | 100,0 MW |
+| Refroidissement (PUE) | 29,0 MW | 35,0 MW |
+| Éclairage, pertes SMCC | 12,5 MW | 15,0 MW |
+| **Total site** | **126 MW** | **150 MW** |
+| Consommation annuelle | 1 104 GWh/an | 1 314 GWh/an |
+
+> **126 à 150 MW = la consommation électrique d'une ville de 100 000 habitants** (consommation moyenne française : 1 500 kWh/hab/an → 150 000 hab × 1 000 kWh = 150 GWh ; ici 1 100 à 1 300 GWh = 7 à 9× plus).
+>
+> **Réseau de transport :** Le site est à proximité de la ligne à haute tension 225 kV Lille-Douai. Le raccordement nécessite une nouvelle sous-station 225/20 kV dédiée, coût estimé : **80 à 150 M€** (fourniture + travaux Enedis/RTE). Délai : 3 à 5 ans.
+
+### 8.7 Besoins en eau de refroidissement
+
+Le choix du système de refroidissement détermine totalement l'empreinte hydrique.
+
+| Technologie | WUE (L/kWh) | Conso. annuelle (m³/an) | Équiv. piscines olympiques |
+|-------------|-------------|------------------------|---------------------------|
+| Tour aérocondenseur (adiabatique) | 0,3 – 0,8 | 330 000 – 880 000 | 130 – 350 |
+| Tour évaporative (classique) | 1,5 – 2,5 | 1 650 000 – 2 750 000 | 660 – 1 100 |
+| Refroidissement liquide direct (DLC) | 0,05 – 0,15 | 55 000 – 165 000 | 22 – 66 |
+| Refroidissement en boucle fermée (dry) | 0 | 0 | 0 |
+
+**Pour 84,5 MW IT × 8 760 h/an :**
+
+- **Scénario adiabatique (330 000 m³/an) :** 330 millions de litres = **330 piscines olympiques**. Équivalent à la consommation annuelle en eau potable de **2 200 habitants**.
+- **Scénario évaporatif (1,65 million m³/an) :** 1,65 milliard de litres = **660 piscines olympiques**. Équivalent à **11 000 habitants**.
+- **Scénario DLC (55 000 m³/an) :** 55 millions de litres = **22 piscines olympiques**. Équivalent à **370 habitants**.
+
+> ⚠️ **Contrainte site Camp Français :** Le site repose sur la nappe de la Craie (nappe phréatique superficielle, < 5 m de profondeur, démontrée par les études du Grand Stade et Leroy Merlin). Le captage d'eau de refroidissement est quasi impossible : la nappe est déjà sollicitée par les usages agricoles, et le forage pourrait abaisser le niveau piézométrique, aggravant les inondations constatées. **L'eau doit être acheminée par camion-citerne ou adduction, soit un coût logistique et carbone considérable.**
+
+### 8.8 Contraintes spécifiques au site
+
+| Contrainte | Impact | Gravité |
+|------------|--------|---------|
+| **Nappe haute (0-5 m)** | Impossible de creuser pour fondations profondes ou stockage souterrain | 🔴 Critique |
+| **Sol argilo-calcaire** | Capacité portante limitée, fondations sur pieux nécessaires (+20-30 % coût construction) | 🟠 Majeur |
+| **Accessibilité routière** | Route D549 étroite, pas d'accès autoroutier direct (A1 à 3 km mais bouchons) | 🟠 Majeur |
+| **Raccordement électrique** | Sous-station 225 kV la plus proche à 2 km (Ronchin-Lesquin), travaux importants | 🟠 Majeur |
+| **Proximité résidentielle** | 800 m, Ronchin nord et Lezennes = zone urbaine | 🟡 Modéré |
+| **Bruit** | 75-85 dB datacenter (ventilateurs, tours) vs. 65 dB (ancien circuit moto) | 🟡 Modéré |
+| **Proximité golf** | Écarts de rivière déjà problématiques, eau de refroidissement = risque supplémentaire | 🔴 Critique |
+| **Zones inondables** | Inondations constatées chaque été, nappe remonte au printemps | 🔴 Critique |
+| **Risque sismique** | Zone 2 (faible), mais fondations sur pieux = vulnérabilité | 🟢 Faible |
+
+### 8.9 Scénarios de déploiement réalistes
+
+| Scénario | Puissance IT | Racks | GPU (H100) | PFLOPS FP16 | Coût estimé | Délai construction |
+|----------|-------------|-------|------------|-------------|-------------|-------------------|
+| **Modeste** | 15 MW | 430 | 1 720 | 1 700 | 500 M€ | 2-3 ans |
+| **Intermédiaire** | 40 MW | 1 140 | 4 560 | 4 510 | 1,2 Md€ | 3-4 ans |
+| **Maximaliste** | 84 MW | 2 414 | 9 656 | 9 550 | 2,5 Md€ | 4-6 ans |
+| **Avec B200** | 84 MW | 2 414 | 9 656 | 24 140 | 3,2 Md€ | 5-7 ans |
+
+> **Pour le Scénario maximaliste (84 MW, 2,5 Md€) :**
+> - Nombre de data halls : 4 bâtiments de 14 000 m² chacun
+> - Superficie totale bâtie : 77 000 m² (≈ 8 stades de football)
+> - Surface totale utile : 220 000 m² (site complet)
+> - Nombre de salles serveur : 120 (200 m² chacune)
+> - Nombre de racks : 2 414
+> - Nombre de GPU : 9 656 (4 par rack)
+> - Puissance IT : 84 MW
+> - Puissance totale : 126 MW (PUE 1,5)
+> - Eau refroidissement (adiabatique) : 330 000 m³/an
+> - Emploi permanent : 200-400 (ratio ~1 emploi/6 MW)
+
+### 8.10 Implications pour l'argumentaire d'opposition
+
+**1. L'argument du bruit :**
+Un datacenter de 84 MW émet **75-85 dB en continu**, 24h/24, 365 jours/an. L'ancien circuit moto fonctionnait quelques week-ends par an. Le bruit est un changement radical et permanent d'usage du site.
+
+**2. L'argument de l'eau :**
+330 000 à 1 650 000 m³/an d'eau de refroidissement = **drainage supplémentaire de la nappe de la Craie**. Or le site est déjà inondé chaque été. Ajouter un datacenter, c'est aggraver le problème d'inondation au lieu de le résoudre.
+
+**3. L'argument de la Jobs density :**
+84 MW de puissance = 22 ha = **200-400 emplois permanents** (ratio 1 emploi/6 MW). Soit **18 emplois/ha**. Un centre commercial de 22 ha aurait 500-800 emplois. Un parc logistique : 300-500. Le datacenter est le mode d'occupation du sol le moins créateur d'emplois de la palette.
+
+**4. L'argument du réseau :**
+126 MW de puissance totale = **consommation électrique d'une ville de 100 000 habitants**. Le réseau électrique régional n'est pas dimensionné. Le raccordement 225 kV nécessite 3 à 5 ans de travaux et 80-150 M€ d'investissement public/privé. L'impact sur les tarifs réseau (CSPE/CSPP) se répartit sur l'ensemble des usagers.
+
+**5. L'argument de la valeur foncière :**
+22 ha à Lezennes = terrain urbanisable à haute valeur (800-1 200 €/m² en zone.mixte). Un datacenter = occupation longue durée (20-30 ans) avec valeur ajoutée locale quasi nulle (pas de commerces, pas de logements, pas de tourisme). **La collectivité perd le contrôle d'un patrimoine foncier stratégique.**
+
+**6. L'argument de la dépendance technologique :**
+84 MW = 9 656 GPU NVIDIA H100. 100 % du hardware = NVIDIA (USA) + Cloud Act. La souveraineté numérique revendiquée est un **leurre** : les données, les modèles et le contrôle restent soumis au droit américain.
+
+---
+
+## 9. RÉFÉRENCES
 
 ### Sources principales
 
@@ -623,6 +1058,29 @@ Pour le **meilleur raisonnement** (Max), il faut :
 | Scaleway GPU | [scaleway.com](https://www.scaleway.com/en/gpu-instances/) |
 | OVHcloud sovereign cloud | [corporate.ovhcloud.com](https://corporate.ovhcloud.com/en/newsroom/news/ovhcloud-deep-clever-cloud-consortium/) |
 | Cloud Act et FISA | [parlons.cloud](https://www.parlons.cloud/cloud-act-fisa-et-lillusion-du-datacenter-en-france/) |
+
+### Sources complémentaires (§8 — Infrastructure physique)
+
+| Document | URL |
+|----------|-----|
+| EUDCA Sustainability Code | [eudca.org](https://eudca.org/resources/sustainability/) |
+| EUDCA Energy & Water Committee | [eudca.org](https://eudca.org/resources/ewcc/) |
+| EUDCA Data Centre Cooling Guide | [eudca.org](https://eudca.org/2025/06/12/sustainability/) |
+| ADEME — Efficacité énergétique datacenter | [agirpourlatransition.ademe.fr](https://agirpourlatransition.ademe.fr/entreprises/bilan-environnemental/gerer-pollutions-et-risques/efficacite-energetique-datacenter) |
+| NVIDIA Data Centre Liquid Cooling | [nvidia.com](https://www.nvidia.com/en-us/data-center/solutions/liquid-cooling/) |
+| Cloud&watt — Efficacité datacenter (PUE) | [cloud-watt.com](https://www.cloud-watt.com/fr/wiki/efficacite-datacenter/) |
+| Vicente & Associates — AI Data Center Power | [vcandmore.com](https://vcandmore.com/data-centers/ai-data-center-power-demands-unveiled-what-you-need-to-know/) |
+| USGS — Water Use in Data Centers | [usgs.gov](https://www.usgs.gov/media/images/water-use-data-centers) |
+| DCCEW — Measuring Data Centre PUE | [dccew.org](https://dccew.org/2025/10/06/measuring-data-centre-pue-and-challenges-of-data-centre-efficiency-metrics/) |
+| Schneider Electric — WUE | [schneider-electric.com](https://www.se.com/ww/en/insights/sustainability/sustainability-research-institute/white-papers/wue-understanding-water-usage-effectiveness-in-data-centers/) |
+| Les Échos — Data centers : l'eau, talon d'Achille | [lesechos.fr](https://www.lesechos.fr/industrie-services/services-technologiques/ia-les-data-centers-face-au-defi-de-leau-le-talon-dachille-du-boom-de-lintelligence-artificielle-2534289) |
+| L'Usine Digitale — Un datacenter peut consommer l'eau de 2 500 habitants | [usine-digitale.fr](https://www.usine-digitale.fr/ledition-patient/ia-et-innovation-verte-un-datacenter-peut-consommer-l-eau-de-2-500-habitants-en-france-arretons-le-scenario-qui-pose-tout-simplement-questions.NjU3MzUwOA.html) |
+| Journal du Net — Datacenter et refroidissement | [journaldunet.fr](https://www.journaldunet.fr/tech/14009954-2409-ia-et-datacenter-comment-la-technologie-transforme-le-schema-de-refroidissement-des-plateformes-numeriques/) |
+| Lemonde — Eau et data centers | [lemonde.fr](https://www.lemonde.fr/les-decodeurs/article/2025/09/04/ia-et-eau-le-data-center-est-devenu-les-pieds-dans-l-eau_6499527_4355770.html) |
+| RTL — L'eau, talon d'Achille de l'IA | [rtl.fr](https://www.rtl.fr/actu/economie-consommation/ia-et-eau-le-talon-d-achille-de-l-intelligence-artificielle-se-situe-a-la-sortie-des-data-centers-7943043700) |
+| ETFs.Net — L'eau et l'IA | [etfs.net](https://www.etfs.net/2026/02/12/lia-artificielle-a-t-elle-vraiment-soif-exploring-the-thirsty-side-of-ai-technology/) |
+| Engie — Datacenter : empreinte carbone et impact | [engie.com](https://www.engie.com/fr/economie-circulaire/entreprises-responsables/datacenter-empreinte-carbone-impact-environnemental) |
+| EDF — Forfaits datacenter France | [edf.fr](https://www.edf.fr/entreprise/fr/affaires/france/forfait-data-center) |
 
 ---
 
