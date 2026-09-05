@@ -152,7 +152,7 @@ La concertation préalable est encadrée par les articles [L. 103-2](https://www
 
 ### 2.3 La polémique datacenter
 
-Début 2026, tandis que la concertation était en cours, la MEL a lancé une consultation distincte pour une « cession de charges » en vue de construire un datacenter sur le site du complexe moto, accompagné d'un « parc d'activités orienté données ».
+En early 2026, tandis que la concertation était en cours, la MEL a lancé une consultation distincte pour une « cession de charges » en vue de construire un datacenter sur le site du complexe moto, accompagné d'un « parc d'activités orienté données ».
 
 Le groupe d'opposition MECS (Métropole Écologiste Citoyenne et Solidaire) a dénoncé le 28 mai 2026 :
 - Un « cynisme » de la MEL à mener une concertation tout en avançant un projet déjà décidé
@@ -205,15 +205,44 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
    - Pas de nuisance pour le maintien en état de conservation favorable
 4. Séquence ERC (Éviter-Réduire-Compenser)
 
-### 3.3 Sites Natura 2000 à proximité
+### 3.3 Espèces protégées à proximité
 
-| Site | Distance | Type | Impact projet |
-|---|---|---|---|
-| Lac du Héron (ZNIEFF I, pas Natura 2000) | ~5 km | ZNIEFF uniquement | Aucun |
-| Cinq Tailles (FR3112002) | ~20 km | ZPS (oiseaux) | Aucun |
-| Cuvette audomaroise (FR3100495) | ~80 km | ZSC (habitats) | Aucun |
+#### Chiroptères — Bois de la Rue Verte (Hellemmes/Villeneuve-d'Ascq, ~1,5 km)
 
-→ **Aucun site Natura 2000 directement impacté.** L'évaluation d'incidence Natura 2000 n'est pas requise. Toutefois, une **note de positionnement** doit documenter les raisons pour lesquelles le projet n'est pas susceptible d'avoir une incidence sur ces sites.
+Le site du Bois de la Rue Verte, à la croisée de la Rue Verte et du Pavé des Moulins, est le **site le plus important de la MEL** pour les chiroptères (hibernation et swarming). La LPO Hauts-de-France y organise des sorties d'observation.
+
+**Catiches** : Réseau souterrain de galeries d'extraction de craie (anciennes carrières), servant de gîtes d'hibernation. La MEL assure depuis 2014 le suivi de ces populations via la CMNF (Coordination Mammalogique du Nord de la France). Le suivi hivernal 2025 a comptabilisé **253 chauves-souris** sur 7 réseaux souterrains (record).
+
+**Espèces recensées** (~90 % des effectifs = triptyque dominant) :
+
+| Espèce | Statut | Proportion |
+|---|---|---|
+| Murin de Daubenton (*Myotis daubentonii*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | ~30 % |
+| Murin à moustaches (*Myotis mystacinus*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | ~30 % |
+| Murin à oreilles échancrées (*Myotis emarginatus*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | ~30 % |
+
+**Autres espèces présentes** (10 espèces au total dans le réseau MEL) :
+
+| Espèce | Statut | Notes |
+|---|---|---|
+| Pipistrelle commune (*Pipistrellus pipistrellus*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | Abondante, sites épigés |
+| Barbastelle (*Barbastella barbastellus*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | Micro-gîtes installés |
+| Grand rhinolophe (*Rhinolophus ferrumequinum*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | Présence avérée |
+| Oreillard roux (*Plecotus auritus*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | Présence avérée |
+| Grand murin (*Myotis myotis*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | Présence avérée |
+| Murin de Natterer (*Myotis nattereri*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | Faible effectif |
+| Murin de Bechstein (*Myotis bechsteini*) | Protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) | Faible effectif |
+
+**Enjeu pour le projet** : Le complexe moto se situe dans le domaine vital de ces colonies. Les catiches, les arbres à cavités et les zones de chasse (zones humides, lisières) constituent un réseau écologique continu. Le projet devra documenter l'absence d'incidence sur ce réseau (note de positionnement) et, le cas échéant, engager la séquence ERC.
+
+**Sources** : [Picardie Nature — Préservation chiroptères catiches MEL](http://www.picardie-nature.org/protection-de-la-faune-sauvage/protection-et-cohabitation-avec/le-plan-regional-d-actions-en/les-actualites-du-plan-regional-d/article/preservation-des-chiropteres-dans), [CMNF — Plan relance chiroptères](https://www.cmnf.fr/fichiers/docs/bilan-plan-relance-chiros.pdf), [Ville de Hellemmes — Protéger les chiroptères](https://www.hellemmes.fr/Vivre-a-Hellemmes/Cadre-de-vie/Nature-en-ville/Les-animaux-en-ville/Les-animaux-sauvages-en-ville/Proteger-les-chiropteres), [MEL — Plan chiroptère](https://participation.lillemetropole.fr/fi/hHODTjaSGs6/4SaAyL3D9GgGd/13a42459e8087e77736d7a9cd428780c.pdf)
+
+#### Réserve Naturelle Régionale du Lac du Héron
+
+- **Distance** : ~3 km
+- **Statut** : Réserve Naturelle Régionale (RNR)
+- **Intérêt** : Zones humides, oiseaux, amphibiens, chiroptères
+- **Impact projet** : Aucun impact direct, mais le projet doit documenter l'absence d'incidence sur la réserve (note de positionnement)
 
 ### 3.4 Concertation et urbanisme
 
@@ -301,7 +330,7 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
 
 | Taxon | Présence | Statut |
 |---|---|---|
-| **Murin de Daubenton** | Colonie à 1,5 km | Espèce protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966378) 🔍) |
+| **Murin de Daubenton** | Colonie à 1,5 km | Espèce protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍) |
 | Avifaune nicheuse | Probable (arbres, haies) | À inventorier |
 | Amphibiens | Possible (mares, zones humides) | À inventorier |
 | Invertébrés | Certain (milieu semi-naturel) | À inventorier |
@@ -319,7 +348,7 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
 | Caractéristique | Description |
 |---|---|
 | **Nom scientifique** | *Myotis daubentonii* |
-| **Statut** | Protégé ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966378) 🔍 CE, [arrêté 23/04/2007](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000447640) 🔍) |
+| **Statut** | Protégé ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍 CE, [arrêté 23/04/2007](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000022495755) 🔍) |
 | **Directive** | Annexe IV Directive Habitats 92/43/CEE |
 | **Régime alimentaire** | Insectivore, « pêcheuse » — capture insectes aquatiques à la surface de l'eau |
 | **Habitat privilégié** | Milieux aquatiques calmes, boisements proches de zones d'eau libre |
@@ -658,14 +687,16 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 
 | Texte | Référence | Lien |
 |---|---|---|
-| Code de l'environnement — Art. L.411-1 | Protection stricte espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966378) 🔍 |
+| Code de l'environnement — Art. L.411-1 | Protection stricte espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000649682) 🔍 |
 | Code de l'environnement — Art. L.411-2 | Dérogation espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍 |
-| Code de l'environnement — Art. L.415-3 | Sanctions | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966532) 🔍 |
-| Code de l'environnement — Art. R.414-23 | Évaluation incidences Natura 2000 | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043699989) 🔍 |
-| Code de l'environnement — Art. R.122-2 | Évaluation environnementale systématique | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043888231) 🔍 |
-| Code de l'environnement — Art. L.515-28 | ICPE | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043967678) 🔍 |
-| Arrêté du 23 avril 2007 | Liste mammifères protégés | [Légifrance](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000447640) 🔍 |
-| Directive Habitats 92/43/CEE | Annexe IV — Chiroptères | [EUR-Lex](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:31992L0043) 🔍 |
+| Code de l'environnement — Art. L.415-3 | Sanctions | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051373997) 🔍 |
+| Code de l'environnement — Art. R.414-23 | Évaluation incidences Natura 2000 | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006837866) 🔍 |
+| Code de l'environnement — Art. R.122-2 | Évaluation environnementale systématique | [Légifrance](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006176674/#LEGISCTA000025087448) 🔍 |
+| Code de l'environnement — Art. L.515-28 | ICPE | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033933104) 🔍 |
+| Arrêté du 23 avril 2007 | Liste mammifères protégés | [Légifrance](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000022495755) 🔍 |
+| Convention de Berne (1979) | Conservation vie sauvage et milieu naturel | [Conseil de l'Europe](https://rm.coe.int/1680078b0e) 🔍 |
+| Convention de Bonn (1979) | Conservation espèces migratrices | [CMS](https://www.cms.int/fr/page/texte-de-la-convention) 🔍 |
+| Directive Habitats 92/43/CEE | Annexe IV — Chiroptères | [EUR-Lex](https://eur-lex.europa.eu/eli/dir/1992/43/oj?locale=fr) 🔍 |
 | Code de l'urbanisme — Art. L.103-2 | Concertation préalable | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626161) 🔍 |
 | Code de l'urbanisme — Art. R.103-1 | Concertation préalable (règles) | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626170) 🔍 |
 
