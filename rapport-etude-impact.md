@@ -100,7 +100,7 @@ Un datacenter est envisagé sur l'ancien circuit moto de Lezennes (22 ha), secte
 
 | Enjeu | Niveau |
 |---|---|
-| **Chauves-souris** — Murin de Daubenton à 1,5 km | **Critique** — Protection stricte [art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966378) 🔍, dérogation difficile |
+| **Chauves-souris** — Murin de Daubenton à 1,5 km | **Critique** — Protection stricte [art. L.411-1](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000649682) 🔍, dérogation difficile |
 | **Arbres** — 200-300 arbres (part adulte significative) | **Élevé** — Abattage partiel/total inévitable |
 | **Eau** — Bassins de rétention, intersection autoroutes | **Élevé** — Étude hydrologique requise |
 | **Marché bureaux** — Taux vacance 8,8 % à Lille | **Modéré** — Risque si composante tertiaire |
@@ -140,7 +140,7 @@ Le Conseil métropolitain a voté le 27 juin 2025 (délibération 25 C 0209) la 
 
 ### 2.2 La concertation
 
-La concertation préalable est encadrée par les articles [L. 103-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626161) 🔍 et [R. 103-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626170) 🔍 du Code de l'urbanisme.
+La concertation préalable est encadrée par les articles [L. 103-2](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074075/LEGISCTA000031210120) 🔍 et [R. 103-1](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074075/LEGISCTA000031210114/#LEGISCTA000031212632) 🔍 du Code de l'urbanisme.
 
 | Phase | Dates | Activité |
 |---|---|---|
@@ -167,11 +167,11 @@ La MEL a reconnu l'enjeu de « souveraineté numérique » sans répondre publiq
 
 ### 3.1 Évaluation environnementale
 
-Le projet est soumis à évaluation environnementale systématique au titre du tableau annexé au [R.122-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043888231) 🔍 du Code de l'environnement :
+Le projet est soumis à évaluation environnementale systématique au titre du tableau annexé au [R.122-2](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006176674/#LEGISCTA000025087448) 🔍 du Code de l'environnement :
 
 | Rubrique | Justification |
 |---|---|
-| **Rubrique 1** (ICPE) | Installations relevant de l'[article L.515-28](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043967678) 🔍 CE — puissance thermique groupes électrogènes >50 MW |
+| **Rubrique 1** (ICPE) | Installations relevant de l'[article L.515-28](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033933104) 🔍 CE — puissance thermique groupes électrogènes >50 MW |
 | **Rubrique 32** | Poste de transformation >63 000 V (raccordement RTE) |
 | **Rubrique 39** | Travaux, constructions et opérations d'aménagement >10 ha |
 
@@ -182,19 +182,19 @@ Le projet est soumis à évaluation environnementale systématique au titre du t
 
 ### 3.2 Protection des espèces protégées — Chiroptères
 
-> **Note** : Le site de nidification du Murin de Daubenton à 1,5 km n'est **PAS un site Natura 2000**. L'évaluation des incidences Natura 2000 ([art. R.414-23](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043699989) 🔍 CE) n'est **pas requise** pour ce projet.
+> **Note** : Le site de nidification du Murin de Daubenton à 1,5 km n'est **PAS un site Natura 2000**. L'évaluation des incidences Natura 2000 (art. R.414-23) n'est **pas requise** pour ce projet.
 
 Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au titre du droit national et européen :
 
 | Texte | Protection | Portée |
 |---|---|---|
-| **Art. L.411-1 Code environnement** | Protection stricte de l'espèce et de son habitat | Totale, tout territoire |
-| [Arrêté du 23 avril 2007](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000447640) 🔍 | Interdiction destruction, perturbation, altération habitat | Nationale |
-| **Art. L.411-2 Code environnement** | Dérogation possible sous 3 conditions cumulatives | Cas par cas |
+| **Art. [L.411-1 Code environnement](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411))** | Protection stricte de l'espèce et de son habitat | Totale, tout territoire |
+| [Arrêté du 23 avril 2007](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000022495755) 🔍 | Interdiction destruction, perturbation, altération habitat | Nationale |
+| **Art. [L.411-2 Code environnement](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054702403)** | Dérogation possible sous 3 conditions cumulatives | Cas par cas |
 | [Directive Habitats 92/43/CEE](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:31992L0043) 🔍 — Annexe IV | Toutes espèces chiroptères européennes | Europe |
 | **Conventions de Berne et Bonn** | Protection internationale | Internationale |
 
-**Sanctions** : Jusqu'à 3 ans d'emprisonnement et 150 000 € d'amende ([art. L.415-3](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966532) 🔍 CE).
+**Sanctions** : Jusqu'à 3 ans d'emprisonnement et 150 000 € d'amende ([art. L.415-3](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051373997) 🔍 CE).
 
 **Obligations pour le projet** :
 1. Inventaire bioacoustique du site de nidification (protocole 4 saisons)
