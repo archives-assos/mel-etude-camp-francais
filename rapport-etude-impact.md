@@ -1,4 +1,4 @@
-# ÉTUDE D'IMPACT — DATACENTER SUR L'ANCIEN COMPLEXE MOTO DE LEZENNES
+# ÉTUDE D'IMPACT - DATACENTER SUR L'ANCIEN COMPLEXE MOTO DE LEZENNES
 
 **Métropole Européenne de Lille (MEL)**
 **Secteur Camp Français / Centre Équestre / Golf / Complexe Moto**
@@ -6,7 +6,7 @@
 | | |
 |---|---|
 | **Date** | Septembre 2026 |
-| **Statut** | Document de travail — draft préliminaire |
+| **Statut** | Document de travail - draft préliminaire |
 | **Périmètre** | 130 ha (concertation MEL), site cible ~22 ha (ancien circuit moto) |
 | **Communes** | Lesquin, Lezennes, Ronchin |
 | **Sources** | Voir section [Références](#14-références) et dossier [sources/](sources/) |
@@ -78,10 +78,10 @@
 3. [Cadre réglementaire](#3-cadre-réglementaire)
 4. [Description du projet](#4-description-du-projet)
 5. [État initial du site](#5-état-initial-du-site)
-6. [Inventaire chiroptères — Murin de Daubenton](#6-inventaire-chiroptères--murin-de-daubenton)
+6. [Inventaire chiroptères - Murin de Daubenton](#6-inventaire-chiroptères--murin-de-daubenton)
 7. [Impacts sur l'environnement et mesures ERC](#7-impacts-sur-lenvironnement-et-mesures-erc)
-8. [Évaluation économique — Emplois](#8-économie--emplois)
-9. [Marché immobilier bureaux — Est lillois](#9-marché-immobilier-bureaux--est-lillois)
+8. [Évaluation économique - Emplois](#8-économie--emplois)
+9. [Marché immobilier bureaux - Est lillois](#9-marché-immobilier-bureaux--est-lillois)
 10. [Études spécifiques requises](#10-études-spécifiques-requises)
 11. [Calendrier prévisionnel](#11-calendrier-prévisionnel)
 12. [Avantages et inconvénients du projet](#12-avantages-et-inconvénients-du-projet)
@@ -100,12 +100,12 @@ Un datacenter est envisagé sur l'ancien circuit moto de Lezennes (22 ha), secte
 
 | Enjeu | Niveau |
 |---|---|
-| **Chauves-souris** — Murin de Daubenton à 1,5 km | **Critique** — Protection stricte [art. L.411-1](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000649682) 🔍, dérogation difficile |
-| **Arbres** — 200-300 arbres (part adulte significative) | **Élevé** — Abattage partiel/total inévitable |
-| **Eau** — Bassins de rétention, intersection autoroutes | **Élevé** — Étude hydrologique requise |
-| **Marché bureaux** — Taux vacance 8,8 % à Lille | **Modéré** — Risque si composante tertiaire |
-| **Emplois** — 200-600 en construction, 20-70 en exploitation | **Modéré** — Effet multiplicateur limité |
-| **Concertation** — Polémique MEL/MECS | **Élevé** — Risque contentieux |
+| **Chauves-souris** - Murin de Daubenton à 1,5 km | **Critique** - Protection stricte [art. L.411-1](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000649682) 🔍, dérogation difficile |
+| **Arbres** - 200-300 arbres (part adulte significative) | **Élevé** - Abattage partiel/total inévitable |
+| **Eau** - Bassins de rétention, intersection autoroutes | **Élevé** - Étude hydrologique requise |
+| **Marché bureaux** - Taux vacance 8,8 % à Lille | **Modéré** - Risque si composante tertiaire |
+| **Emplois** - 200-600 en construction, 20-70 en exploitation | **Modéré** - Effet multiplicateur limité |
+| **Concertation** - Polémique MEL/MECS | **Élevé** - Risque contentieux |
 
 ### Recommandations clés
 
@@ -171,16 +171,16 @@ Le projet est soumis à évaluation environnementale systématique au titre du t
 
 | Rubrique | Justification |
 |---|---|
-| **Rubrique 1** (ICPE) | Installations relevant de l'[article L.515-28](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033933104) 🔍 CE — puissance thermique groupes électrogènes >50 MW |
+| **Rubrique 1** (ICPE) | Installations relevant de l'[article L.515-28](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033933104) 🔍 CE - puissance thermique groupes électrogènes >50 MW |
 | **Rubrique 32** | Poste de transformation >63 000 V (raccordement RTE) |
 | **Rubrique 39** | Travaux, constructions et opérations d'aménagement >10 ha |
 
 **Procédures requises** :
 - Autorisation environnementale ICPE rubrique 3110 (groupes électrogènes)
 - Permis de construire
-- Déclaration loi sur l'eau (rubrique 2.1.5.0 — rejet eaux pluviales)
+- Déclaration loi sur l'eau (rubrique 2.1.5.0 - rejet eaux pluviales)
 
-### 3.2 Protection des espèces protégées — Chiroptères
+### 3.2 Protection des espèces protégées - Chiroptères
 
 > **Note** : Le site de nidification du Murin de Daubenton à 1,5 km n'est **PAS un site Natura 2000**. L'évaluation des incidences Natura 2000 (art. R.414-23) n'est **pas requise** pour ce projet.
 
@@ -191,7 +191,7 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
 | **Art. [L.411-1 Code environnement](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411))** | Protection stricte de l'espèce et de son habitat | Totale, tout territoire |
 | [Arrêté du 23 avril 2007](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000022495755) 🔍 | Interdiction destruction, perturbation, altération habitat | Nationale |
 | **Art. [L.411-2 Code environnement](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054702403)** | Dérogation possible sous 3 conditions cumulatives | Cas par cas |
-| [Directive Habitats 92/43/CEE](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:31992L0043) 🔍 — Annexe IV | Toutes espèces chiroptères européennes | Europe |
+| [Directive Habitats 92/43/CEE](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:31992L0043) 🔍 - Annexe IV | Toutes espèces chiroptères européennes | Europe |
 | **Conventions de Berne et Bonn** | Protection internationale | Internationale |
 
 **Sanctions** : Jusqu'à 3 ans d'emprisonnement et 150 000 € d'amende ([art. L.415-3](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051373997) 🔍 CE).
@@ -200,14 +200,14 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
 1. Inventaire bioacoustique du site de nidification (protocole 4 saisons)
 2. Étude d'incidence espèces protégées si impact potentiel
 3. Demande de dérogation ([art. L.411-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍) si impact avéré, sous 3 conditions :
-   - Motif justifié (intérêt public majeur — [art. L.411-2-4° c](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍)
+   - Motif justifié (intérêt public majeur - [art. L.411-2-4° c](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍)
    - Absence d'alternative satisfaisante
    - Pas de nuisance pour le maintien en état de conservation favorable
 4. Séquence ERC (Éviter-Réduire-Compenser)
 
 ### 3.3 Espèces protégées à proximité
 
-#### Chiroptères — Bois de la Rue Verte (Hellemmes/Villeneuve-d'Ascq, ~1,5 km)
+#### Chiroptères - Bois de la Rue Verte (Hellemmes/Villeneuve-d'Ascq, ~1,5 km)
 
 Le site du Bois de la Rue Verte, à la croisée de la Rue Verte et du Pavé des Moulins, est le **site le plus important de la MEL** pour les chiroptères (hibernation et swarming). La LPO Hauts-de-France y organise des sorties d'observation.
 
@@ -235,7 +235,7 @@ Le site du Bois de la Rue Verte, à la croisée de la Rue Verte et du Pavé des 
 
 **Enjeu pour le projet** : Le complexe moto se situe dans le domaine vital de ces colonies. Les catiches, les arbres à cavités et les zones de chasse (zones humides, lisières) constituent un réseau écologique continu. Le projet devra documenter l'absence d'incidence sur ce réseau (note de positionnement) et, le cas échéant, engager la séquence ERC.
 
-**Sources** : [Picardie Nature — Préservation chiroptères catiches MEL](http://www.picardie-nature.org/protection-de-la-faune-sauvage/protection-et-cohabitation-avec/le-plan-regional-d-actions-en/les-actualites-du-plan-regional-d/article/preservation-des-chiropteres-dans), [CMNF — Plan relance chiroptères](https://www.cmnf.fr/fichiers/docs/bilan-plan-relance-chiros.pdf), [Ville de Hellemmes — Protéger les chiroptères](https://www.hellemmes.fr/Vivre-a-Hellemmes/Cadre-de-vie/Nature-en-ville/Les-animaux-en-ville/Les-animaux-sauvages-en-ville/Proteger-les-chiropteres), [MEL — Plan chiroptère](https://participation.lillemetropole.fr/fi/hHODTjaSGs6/4SaAyL3D9GgGd/13a42459e8087e77736d7a9cd428780c.pdf)
+**Sources** : [Picardie Nature - Préservation chiroptères catiches MEL](http://www.picardie-nature.org/protection-de-la-faune-sauvage/protection-et-cohabitation-avec/le-plan-regional-d-actions-en/les-actualites-du-plan-regional-d/article/preservation-des-chiropteres-dans), [CMNF - Plan relance chiroptères](https://www.cmnf.fr/fichiers/docs/bilan-plan-relance-chiros.pdf), [Ville de Hellemmes - Protéger les chiroptères](https://www.hellemmes.fr/Vivre-a-Hellemmes/Cadre-de-vie/Nature-en-ville/Les-animaux-en-ville/Les-animaux-sauvages-en-ville/Proteger-les-chiropteres), [MEL - Plan chiroptère](https://participation.lillemetropole.fr/fi/hHODTjaSGs6/4SaAyL3D9GgGd/13a42459e8087e77736d7a9cd428780c.pdf)
 
 #### Réserve Naturelle Régionale du Lac du Héron
 
@@ -270,8 +270,8 @@ Le site du Bois de la Rue Verte, à la croisée de la Rue Verte et du Pavé des 
 
 | Scénario | Capacité | Surface bâtie | Puissance | Investissement estimé |
 |---|---|---|---|---|
-| **A — Taille moyenne** | 2-4 halls | 6-10 ha | 15-30 MW | 150-300 M€ |
-| **B — Grand site** | 6-10 halls | 12-18 ha | 50-100 MW | 400-800 M€ |
+| **A - Taille moyenne** | 2-4 halls | 6-10 ha | 15-30 MW | 150-300 M€ |
+| **B - Grand site** | 6-10 halls | 12-18 ha | 50-100 MW | 400-800 M€ |
 
 ### 4.3 Composantes du projet
 
@@ -297,9 +297,9 @@ Le site du Bois de la Rue Verte, à la croisée de la Rue Verte et du Pavé des 
 | Géologie | Sédiments quaternaires, argiles et limons |
 | Hydrogéologie | Nappe phréatique superficielle (Marque/Deûle) |
 | Perméabilité des sols | Moyenne à faible (argiles) |
-| Risque inondation | À évaluer — intersection avec bassins de rétention autoroutiers |
+| Risque inondation | À évaluer - intersection avec bassins de rétention autoroutiers |
 | Contexte sismique | Faible (zone 2 sur l'échelle française) |
-| Pollution des sols | Possible contamination par hydrocarbures (activité moto) — étude requise |
+| Pollution des sols | Possible contamination par hydrocarbures (activité moto) - étude requise |
 
 ### 5.2 Milieu bâti et infrastructures
 
@@ -314,14 +314,14 @@ Le site du Bois de la Rue Verte, à la croisée de la Rue Verte et du Pavé des 
 
 ### 5.3 Milieu naturel
 
-#### 5.3.1 Inventaire floristique — Arbres
+#### 5.3.1 Inventaire floristique - Arbres
 
 | Donnée | Valeur |
 |---|---|
 | Nombre total d'arbres | 200-300 |
 | Part d'arbres adultes | Significative (à détailler par inventaire) |
 | Espèces présumées | Peupliers, chênes, frênes (végétation pionnière de friche) |
-| Valeur paysagère | Élevée — continuité verte avec le golf |
+| Valeur paysagère | Élevée - continuité verte avec le golf |
 | Valeur écologique | Habitat pour oiseaux, chiroptères (arbres à cavités) |
 
 **Impact** : L'implantation du datacenter nécessitera l'abattage d'une partie significative des 200-300 arbres, même en optimisant le positionnement sur les zones déjà artificialisées du circuit.
@@ -341,7 +341,7 @@ Le site du Bois de la Rue Verte, à la croisée de la Rue Verte et du Pavé des 
 
 ---
 
-## 6. INVENTAIRES CHIROPTÈRES — MURIN DE DAUBENTON
+## 6. INVENTAIRES CHIROPTÈRES - MURIN DE DAUBENTON
 
 ### 6.1 Fiche espèce
 
@@ -350,14 +350,14 @@ Le site du Bois de la Rue Verte, à la croisée de la Rue Verte et du Pavé des 
 | **Nom scientifique** | *Myotis daubentonii* |
 | **Statut** | Protégé ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) 🔍 CE, [arrêté 23/04/2007](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000022495755) 🔍) |
 | **Directive** | Annexe IV Directive Habitats 92/43/CEE |
-| **Régime alimentaire** | Insectivore, « pêcheuse » — capture insectes aquatiques à la surface de l'eau |
+| **Régime alimentaire** | Insectivore, « pêcheuse » - capture insectes aquatiques à la surface de l'eau |
 | **Habitat privilégié** | Milieux aquatiques calmes, boisements proches de zones d'eau libre |
 | **Gîtes d'hibernation** | Blockhaus, anciennes mines, sous-sol, ouvrages d'art (humidité élevée) |
 | **Gîtes de reproduction** | Cavités arboricoles (chênes, hêtres), loges de pics, fissures étroites |
 | **Domaine vital** | 3-5 km² |
 | **Distance de déplacement** | Jusqu'à 10 km pour zones d'alimentation, 19 km pour sites d'accouplement |
 
-**Source** : [Fiche Murin de Daubenton — Ville de Lille](sources/textes/murin-daubenton-lille-nature.html)
+**Source** : [Fiche Murin de Daubenton - Ville de Lille](sources/textes/murin-daubenton-lille-nature.html)
 
 ### 6.2 Protocole d'inventaire requis
 
@@ -423,7 +423,7 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 
 ---
 
-## 8. ÉCONOMIE — EMPLOIS
+## 8. ÉCONOMIE - EMPLOIS
 
 ### 8.1 Données de référence (France)
 
@@ -437,7 +437,7 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 | Valeur ajoutée par emploi direct | 121 000 €/an | France Datacenter 2025 |
 | Taux CDI | 94 % (vs 86 % moyenne nationale) | Baromètre EY/France Datacenter 2025 |
 
-**Sources** : [Baromètre EY France Datacenter 2025](sources/pdf/barometre-ey-france-datacenter-2025.pdf), [Observatoire emploi infra numériques](sources/pdf/observatoire-emploi-infra-numeriques-2030.pdf), [20 Minutes — datacenters emplois](https://www.20minutes.fr/economie/4227404-20260609-data-centers-france-dizaines-milliards-investissements-combien-emplois)
+**Sources** : [Baromètre EY France Datacenter 2025](sources/pdf/barometre-ey-france-datacenter-2025.pdf), [Observatoire emploi infra numériques](sources/pdf/observatoire-emploi-infra-numeriques-2030.pdf), [20 Minutes - datacenters emplois](https://www.20minutes.fr/economie/4227404-20260609-data-centers-france-dizaines-milliards-investissements-combien-emplois)
 
 ### 8.2 Phase de construction (18-30 mois)
 
@@ -507,7 +507,7 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 
 ---
 
-## 9. MARCHÉ IMMOBILIER BUREAUX — EST LILLOIS
+## 9. MARCHÉ IMMOBILIER BUREAUX - EST LILLOIS
 
 ### 9.1 Évolution du taux de vacance (métropole MEL)
 
@@ -518,7 +518,7 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 | T4 2025 | 8,2 % | 389 300 m² | CBRE |
 | T1 2026 | 8,2 % | 389 300 m² | CBRE |
 | T2 2026 | **8,8 %** | **431 300 m²** | JLL |
-| T2 2026 (BNP RE) | 7,7 % | — | BNP Paribas Real Estate |
+| T2 2026 (BNP RE) | 7,7 % | - | BNP Paribas Real Estate |
 
 **Tendance** : Hausse continue depuis 2023. Le taux a bondi de **+3 points en 3 ans** (5,7 % → 8,8 %). Record historique au T2 2026.
 
@@ -567,8 +567,8 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 
 | Étude | Justification | Normes / Références |
 |---|---|---|
-| **Bioacoustique chiroptères** | Murin de Daubenton à 1,5 km — présence avérée | Protocole SFEP/SPN, 4 saisons |
-| **Étude d'incidence espèces protégées** | Art. L.411-1 — si impact potentiel sur habitat ou perturbation | Art. L.411-2 CE, 3 conditions |
+| **Bioacoustique chiroptères** | Murin de Daubenton à 1,5 km - présence avérée | Protocole SFEP/SPN, 4 saisons |
+| **Étude d'incidence espèces protégées** | Art. L.411-1 - si impact potentiel sur habitat ou perturbation | Art. L.411-2 CE, 3 conditions |
 | **Étude hydrologique / risque inondation** | Bassins de rétention, intersection autoroutes | N/A |
 | **Étude de dangers** | ICPE, raccordement HT | N/A |
 | **Étude paysagère** | Visibilité golf, contexte métropolitain | N/A |
@@ -613,9 +613,9 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 
 | Domaine | Détail |
 |---|---|
-| **Environnement — Arbres** | Abattage de 200-300 arbres dont part adulte significative. Perte de puits de carbone, habitat, valeur paysagère. Compensation imparfaite (arbre adulte ≠ jeune plantation) |
-| **Environnement — Chiroptères** | Murin de Daubenton protégé à 1,5 km. Risque de perturbation des colonies (lumière, bruit, alteration corridors). Dérogation espèces protégées quasi impossible. Risque contentieux élevé |
-| **Environnement — Eau** | Modification ruissellement, imperméabilisation sols. Impact sur bassins de rétention existants et nappe phréatique. Risque pollution eaux pluviales (huiles, métaux) |
+| **Environnement - Arbres** | Abattage de 200-300 arbres dont part adulte significative. Perte de puits de carbone, habitat, valeur paysagère. Compensation imparfaite (arbre adulte ≠ jeune plantation) |
+| **Environnement - Chiroptères** | Murin de Daubenton protégé à 1,5 km. Risque de perturbation des colonies (lumière, bruit, alteration corridors). Dérogation espèces protégées quasi impossible. Risque contentieux élevé |
+| **Environnement - Eau** | Modification ruissellement, imperméabilisation sols. Impact sur bassins de rétention existants et nappe phréatique. Risque pollution eaux pluviales (huiles, métaux) |
 | **Énergie** | Consommation électrique massive (typiquement 10-50+ MW). Impact réseau RTE. Si mix non-renouvelable : forte empreinte carbone |
 | **Paysage** | Bâti industriel incompatible avec vocation paysagère du golf et du secteur. Dégradation qualité de vie riverains |
 | **Nuisances** | Bruit groupes électrogènes et refroidissements. Éclairage nocturne (pollution lumineuse). Trafic accru chantier et exploitation |
@@ -633,7 +633,7 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 
 | # | Recommandation | Priorité | Délai |
 |---|---|---|---|
-| 1 | **Compléter l'inventaire chiroptère** sur 4 saisons avant toute décision — risque réglementaire majeur | **Haute** | Immédiat |
+| 1 | **Compléter l'inventaire chiroptère** sur 4 saisons avant toute décision - risque réglementaire majeur | **Haute** | Immédiat |
 | 2 | **Documenter l'absence d'incidence Natura 2000** dans une note de positionnement spécifique | **Haute** | 3 mois |
 | 3 | **Intégrer l'étude d'impact à l'échelle des 130 ha** (pas seulement le complexe moto) | **Haute** | 6 mois |
 | 4 | **Évaluer les solutions de substitution** (autres sites, dimensionnement optimisé) | **Haute** | 6 mois |
@@ -658,48 +658,48 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 | Document | Chemin | URL |
 |---|---|---|
 | Communiqué de presse MEL concertation | [sources/textes/communique-press-mel.html](sources/textes/communique-press-mel.html) | [lillemetropole.fr](https://www.lillemetropole.fr/communique-de-presse/camp-francais-centre-equestre-golf-complexe-moto-la-metropole-engage-une) |
-| Fiche Murin de Daubenton — Ville de Lille | [sources/textes/murin-daubenton-lille-nature.html](sources/textes/murin-daubenton-lille-nature.html) | [lille.fr](https://www.lille.fr/Nature-a-Lille/Le-patrimoine-naturel/Le-patrimoine-lillois-et-ses-especes-locales/Le-murin-de-daubenton) |
+| Fiche Murin de Daubenton - Ville de Lille | [sources/textes/murin-daubenton-lille-nature.html](sources/textes/murin-daubenton-lille-nature.html) | [lille.fr](https://www.lille.fr/Nature-a-Lille/Le-patrimoine-naturel/Le-patrimoine-lillois-et-ses-especes-locales/Le-murin-de-daubenton) |
 | Registre numérique MEL | [sources/textes/registre-numerique-complexe-moto.html](sources/textes/registre-numerique-complexe-moto.html) | [registre-numerique.fr](https://www.registre-numerique.fr/secteur-complexe-moto) |
-| Photo Murin de Daubenton | [sources/images/murin-daubenton.jpg](sources/images/murin-daubenton.jpg) | — |
+| Photo Murin de Daubenton | [sources/images/murin-daubenton.jpg](sources/images/murin-daubenton.jpg) | - |
 
 ### Sources documentaires (PDF)
 
 | Document | Chemin | URL |
 |---|---|---|
 | Baromètre EY/France Datacenter 2025 | [sources/pdf/barometre-ey-france-datacenter-2025.pdf](sources/pdf/barometre-ey-france-datacenter-2025.pdf) | [cner-france.com](https://cner-france.com/content/uploads/2025/06/EY_France-Data-Center_Barometre-2025_Support conference_VF.pdf) |
-| Avis MRAe — Datacenter Pennes-Mirabeau | [sources/pdf/avis-mrae-pennes-mirabeau-datacenter.pdf](sources/pdf/avis-mrae-pennes-mirabeau-datacenter.pdf) | [bouches-du-rhone.gouv.fr](https://www.bouches-du-rhone.gouv.fr/contenu/telechargement/61688/434897/file/AvisMRAe_PennesMirabeau13_P_ICPE_Datacenter.pdf) |
-| Avis CNPN — Datacenter Equinix Bruges | [sources/pdf/avis-cnpn-bruges-equinix.pdf](sources/pdf/avis-cnpn-bruges-equinix.pdf) | [nouvelle-aquitaine.gouv.fr](https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/IMG/pdf/urbanisation_datacenter__equinix_bruges.pdf) |
+| Avis MRAe - Datacenter Pennes-Mirabeau | [sources/pdf/avis-mrae-pennes-mirabeau-datacenter.pdf](sources/pdf/avis-mrae-pennes-mirabeau-datacenter.pdf) | [bouches-du-rhone.gouv.fr](https://www.bouches-du-rhone.gouv.fr/contenu/telechargement/61688/434897/file/AvisMRAe_PennesMirabeau13_P_ICPE_Datacenter.pdf) |
+| Avis CNPN - Datacenter Equinix Bruges | [sources/pdf/avis-cnpn-bruges-equinix.pdf](sources/pdf/avis-cnpn-bruges-equinix.pdf) | [nouvelle-aquitaine.gouv.fr](https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/IMG/pdf/urbanisation_datacenter__equinix_bruges.pdf) |
 | Guide chiroptères bâtiments GEPMA | [sources/pdf/guide-chiropteres-batiments-gepma.pdf](sources/pdf/guide-chiropteres-batiments-gepma.pdf) | [gepma.org](https://gepma.org/wp-content/uploads/2024/12/guidechiropteresbatiments2023.pdf) |
-| Livret FNE — Chauves-souris et communes | [sources/pdf/livret-chauves-souris-commune-fne.pdf](sources/pdf/livret-chauves-souris-commune-fne.pdf) | [parcduverdon.fr](https://www.parcduverdon.fr/wp-content/uploads/2025/11/2023_Livret_proteger-chiros-dans-sa-commune_FNE-GCP.pdf) |
+| Livret FNE - Chauves-souris et communes | [sources/pdf/livret-chauves-souris-commune-fne.pdf](sources/pdf/livret-chauves-souris-commune-fne.pdf) | [parcduverdon.fr](https://www.parcduverdon.fr/wp-content/uploads/2025/11/2023_Livret_proteger-chiros-dans-sa-commune_FNE-GCP.pdf) |
 | Observatoire emploi infra numériques 2030 | [sources/pdf/observatoire-emploi-infra-numeriques-2030.pdf](sources/pdf/observatoire-emploi-infra-numeriques-2030.pdf) | [observatoires.afdas.com](https://observatoires.afdas.com/sites/default/files/document-ressource/EDEC_Infrastructures_numeriques_Emploi_Competences_Infographie_0.pdf) |
 
 ### Sources en ligne (marché bureaux)
 
 | Document | URL |
 |---|---|
-| JLL — Marché locatif bureaux Lille T2 2026 | [jll.com](https://www.jll.com/fr-fr/insights/market-dynamics/lille-office-leasing) |
-| CBRE — France Bureaux Lille T4 2025 | [cbre.fr](https://www.cbre.fr/insights/figures/france-bureaux-lille-figures-t4-2025) |
-| Le Journal des Entreprises — Vacance Lille | [lejournaldesentreprises.com](https://www.lejournaldesentreprises.com/article/lille-le-marche-de-limmobilier-dentreprise-sur-une-pente-inquietante-selon-cbre-2142826) |
-| La Gazette — Marché bureaux régions H1 2026 | [lagazettefrance.fr](https://www.lagazettefrance.fr/article/marche-des-bureaux-lille-sur-le-podium-malgre-un-recul-des-transactions) |
-| 20 Minutes — Datacenters et emplois | [20minutes.fr](https://www.20minutes.fr/economie/4227404-20260609-data-centers-france-dizaines-milliards-investissements-combien-emplois) |
+| JLL - Marché locatif bureaux Lille T2 2026 | [jll.com](https://www.jll.com/fr-fr/insights/market-dynamics/lille-office-leasing) |
+| CBRE - France Bureaux Lille T4 2025 | [cbre.fr](https://www.cbre.fr/insights/figures/france-bureaux-lille-figures-t4-2025) |
+| Le Journal des Entreprises - Vacance Lille | [lejournaldesentreprises.com](https://www.lejournaldesentreprises.com/article/lille-le-marche-de-limmobilier-dentreprise-sur-une-pente-inquietante-selon-cbre-2142826) |
+| La Gazette - Marché bureaux régions H1 2026 | [lagazettefrance.fr](https://www.lagazettefrance.fr/article/marche-des-bureaux-lille-sur-le-podium-malgre-un-recul-des-transactions) |
+| 20 Minutes - Datacenters et emplois | [20minutes.fr](https://www.20minutes.fr/economie/4227404-20260609-data-centers-france-dizaines-milliards-investissements-combien-emplois) |
 
 ### Sources réglementaires
 
 | Texte | Référence | Lien |
 |---|---|---|
-| Code de l'environnement — Art. L.411-1 | Protection stricte espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000649682) 🔍 |
-| Code de l'environnement — Art. L.411-2 | Dérogation espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍 |
-| Code de l'environnement — Art. L.415-3 | Sanctions | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051373997) 🔍 |
-| Code de l'environnement — Art. R.414-23 | Évaluation incidences Natura 2000 | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006837866) 🔍 |
-| Code de l'environnement — Art. R.122-2 | Évaluation environnementale systématique | [Légifrance](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006176674/#LEGISCTA000025087448) 🔍 |
-| Code de l'environnement — Art. L.515-28 | ICPE | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033933104) 🔍 |
+| Code de l'environnement - Art. L.411-1 | Protection stricte espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000649682) 🔍 |
+| Code de l'environnement - Art. L.411-2 | Dérogation espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍 |
+| Code de l'environnement - Art. L.415-3 | Sanctions | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051373997) 🔍 |
+| Code de l'environnement - Art. R.414-23 | Évaluation incidences Natura 2000 | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006837866) 🔍 |
+| Code de l'environnement - Art. R.122-2 | Évaluation environnementale systématique | [Légifrance](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006176674/#LEGISCTA000025087448) 🔍 |
+| Code de l'environnement - Art. L.515-28 | ICPE | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033933104) 🔍 |
 | Arrêté du 23 avril 2007 | Liste mammifères protégés | [Légifrance](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000022495755) 🔍 |
 | Convention de Berne (1979) | Conservation vie sauvage et milieu naturel | [Conseil de l'Europe](https://rm.coe.int/1680078b0e) 🔍 |
 | Convention de Bonn (1979) | Conservation espèces migratrices | [CMS](https://www.cms.int/fr/page/texte-de-la-convention) 🔍 |
-| Directive Habitats 92/43/CEE | Annexe IV — Chiroptères | [EUR-Lex](https://eur-lex.europa.eu/eli/dir/1992/43/oj?locale=fr) 🔍 |
-| Code de l'urbanisme — Art. L.103-2 | Concertation préalable | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626161) 🔍 |
-| Code de l'urbanisme — Art. R.103-1 | Concertation préalable (règles) | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626170) 🔍 |
+| Directive Habitats 92/43/CEE | Annexe IV - Chiroptères | [EUR-Lex](https://eur-lex.europa.eu/eli/dir/1992/43/oj?locale=fr) 🔍 |
+| Code de l'urbanisme - Art. L.103-2 | Concertation préalable | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626161) 🔍 |
+| Code de l'urbanisme - Art. R.103-1 | Concertation préalable (règles) | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626170) 🔍 |
 
 ---
 
-*Document généré le 5 septembre 2026 — Sources collectées via recherche web et consultation de bases réglementaires.*
+*Document généré le 5 septembre 2026 - Sources collectées via recherche web et consultation de bases réglementaires.*

@@ -1,4 +1,4 @@
-# INFRASTRUCTURE IA — GPU, SOUVERAINETÉ ET PUISSANCE DE CALCUL
+# INFRASTRUCTURE IA - GPU, SOUVERAINETÉ ET PUISSANCE DE CALCUL
 
 **Objet** : Analyse des contraintes matérielles, géopolitiques et de souveraineté pour un datacenter IA en France  
 **Date** : Septembre 2026  
@@ -8,23 +8,23 @@
 
 ## TABLE DES MATIÈRES
 
-1. [Pénurie GPU — État des lieux 2026](#1-pénurie-gpu--état-des-lieux-2026)
-2. [NVIDIA vs Chine — Géopolitique des puces](#2-nvidia-vs-chine--géopolitique-des-puces)
+1. [Pénurie GPU - État des lieux 2026](#1-pénurie-gpu--état-des-lieux-2026)
+2. [NVIDIA vs Chine - Géopolitique des puces](#2-nvidia-vs-chine--géopolitique-des-puces)
 3. [Acteurs cloud et souveraineté](#3-acteurs-cloud-et-souveraineté)
 4. [Puissance de calcul par unité de surface](#4-puissance-de-calcul-par-unité-de-surface)
-5. [Études de cas — Modèles ouverts 2026](#5-études-de-cas--modèles-ouverts-2026)
+5. [Études de cas - Modèles ouverts 2026](#5-études-de-cas--modèles-ouverts-2026)
    - 5.1 [Gemma 4](#51-gemma-4--cas-détude)
    - 5.2 [Qwen 3.8](#52-qwen-38--cas-détude)
    - 5.3 [DeepSeek-R1](#53-deepseek-r1--cas-détude)
    - 5.4 [Comparaison cross-modèles](#54-comparaison-cross-modèles)
 6. [Recommandations pour le datacenter Camp Français](#6-recommandations-pour-le-datacenter-camp-français)
 7. [Lexique des acronymes](#7-lexique-des-acronymes)
-8. [Estimation de capacité de calcul — 22 ha](#8-estimation-de-capacité-de-calcul--22-ha)
+8. [Estimation de capacité de calcul - 22 ha](#8-estimation-de-capacité-de-calcul--22-ha)
 9. [Références](#9-références)
 
 ---
 
-## 1. PÉNURIE GPU — ÉTAT DES LIEUX 2026
+## 1. PÉNURIE GPU - ÉTAT DES LIEUX 2026
 
 ### 1.1 Structure de la pénurie
 
@@ -59,15 +59,15 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 ### 1.4 Conséquence
 
 > *« Ce n'est pas un problème d'approvisionnement temporaire. C'est un réajustement structurel de qui contrôle le calcul. »*  
-> — NeuralWired, mai 2026
+> - NeuralWired, mai 2026
 
 **Les hyperscalers ont verrouillé les allocations.** Toute entreprise non adossée à un fonds souverain fait la queue sur le marché spot à des prix 20-30% supérieurs.
 
 ---
 
-## 2. NVIDIA VS CHINE — GÉOPOLITIQUE DES PUCES
+## 2. NVIDIA VS CHINE - GÉOPOLITIQUE DES PUCES
 
-### 2.1 NVIDIA — Monopole de facto
+### 2.1 NVIDIA - Monopole de facto
 
 | Donnée | Valeur |
 |--------|--------|
@@ -77,7 +77,7 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 | Production prévue 2027 | ~10,125 millions (+50%) |
 | Écosystème logiciel | **CUDA** (17 ans, standard de facto) |
 
-### 2.2 Huawei Ascend — Alternative chinoise
+### 2.2 Huawei Ascend - Alternative chinoise
 
 | GPU | FP16 (TFLOPS) | Mémoire | Bande passante | Prix estimé | Process |
 |-----|---------------|---------|----------------|-------------|---------|
@@ -115,7 +115,7 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 | **Open weights** | Modèles chinois (DeepSeek, Kimi) = open weights mais hardware chinois |
 | **Acteurs européens** | Pas de fonderie avancée, pas de GPU concurrent |
 
-### 2.6 Acteurs européens — État des lieux
+### 2.6 Acteurs européens - État des lieux
 
 | Acteur | Type | Position |
 |--------|------|----------|
@@ -147,10 +147,10 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 
 | Niveau | Description | Exposition CLOUD Act | Exemples |
 |--------|-------------|---------------------|----------|
-| **1 — Cloud standard US en UE** | Serveurs en Europe, entreprise US | **Élevée** | AWS standard, Azure, Google Cloud |
-| **2 — Cloud souverain US** | Filiale européenne, infrastructure dédiée | **Moyenne-élevée** | AWS ESC, Azure Deutschland |
-| **3 — Opérateur européen + techno US** | Entreprise européenne gère, technologie US sous licence | **Réduite** | S3NS (Google/Thales), Bleu (Microsoft/Orange) |
-| **4 — 100% européen** | Aucune maison mère US, pas de composant US | **Nulle** | OVHcloud, Scaleway, IONOS, 3DS Outscale |
+| **1 - Cloud standard US en UE** | Serveurs en Europe, entreprise US | **Élevée** | AWS standard, Azure, Google Cloud |
+| **2 - Cloud souverain US** | Filiale européenne, infrastructure dédiée | **Moyenne-élevée** | AWS ESC, Azure Deutschland |
+| **3 - Opérateur européen + techno US** | Entreprise européenne gère, technologie US sous licence | **Réduite** | S3NS (Google/Thales), Bleu (Microsoft/Orange) |
+| **4 - 100% européen** | Aucune maison mère US, pas de composant US | **Nulle** | OVHcloud, Scaleway, IONOS, 3DS Outscale |
 
 ### 3.3 Acteurs cloud européens (Niveau 4)
 
@@ -162,7 +162,7 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 | **IONOS** (DE/UK) | DE | H100 | C5 (DE) | Filiale 1&1 |
 | **Hetzner** | DE | A100, RTX 4090 | Pas de SecNumCloud | Budget-friendly |
 
-### 3.4 Le Cloud & AI Development Act (CADA) — UE
+### 3.4 Le Cloud & AI Development Act (CADA) - UE
 
 | Donnée | Valeur |
 |--------|--------|
@@ -176,7 +176,7 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 ### 3.5 Contrat européen clé
 
 > *En avril 2026, la Commission européenne a attribué un contrat de **180 millions d'euros** pour le cloud souverain des institutions de l'UE à **quatre fournisseurs européens** (OVHcloud, Scaleway, Clever Cloud, DEEP).*  
-> — Cloud Magazin, juillet 2026
+> - Cloud Magazin, juillet 2026
 
 ### 3.6 Conséquence pour le datacenter Camp Français
 
@@ -212,7 +212,7 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 | AMD MI300X | 192 GB | 1 307 | 750W | 0,57 | ~12 000 $ |
 | Huawei 910C | 96 GB | ~800 | 600W | 0,75 | ~15 000 $ |
 
-### 4.3 Configuration rack type — 8 GPU par lame
+### 4.3 Configuration rack type - 8 GPU par lame
 
 | Configuration | GPU/rack | Mémoire totale | FP16 total | Puissance rack | Surface |
 |--------------|----------|----------------|------------|----------------|---------|
@@ -245,7 +245,7 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 
 ---
 
-## 5. ÉTUDES DE CAS — MODÈLES OUVERTS 2026
+## 5. ÉTUDES DE CAS - MODÈLES OUVERTS 2026
 
 ### 5.0 Vue d'ensemble des modèles étudiés
 
@@ -254,7 +254,7 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 | **Architecture** | MoE | Dense | MoE | Dense (hybride) | MoE (MLA) |
 | **Params totaux** | 2,8 T | 30,7 B | 25,2 B | 27 B | **671 B** |
 | **Params actifs/token** | 104 B | 30,7 B | 3,8 B | 27 B | **37 B** |
-| **Experts** | 896 (16 actifs) | — | 128 (8 actifs + 1 shared) | — | **256 (8 actifs)** |
+| **Experts** | 896 (16 actifs) | - | 128 (8 actifs + 1 shared) | - | **256 (8 actifs)** |
 | **Contexte natif** | 1 048 576 | 256 K | 256 K | 262 K (→ 1M YaRN) | **128 K** |
 | **Poids BF16** | ~5,6 TB | ~62 GB | ~52 GB | ~56 GB | **~1,34 TB** |
 | **Poids quantifié** | 1,56 TB (MXFP4) | 17,5 GB (Q4) | 14,4 GB (Q4) | 17,1 GB (Q4_K_M) | **408 GB (Q4)** |
@@ -264,7 +264,7 @@ La pénurie 2026 n'est **pas conjoncturelle mais structurelle**. Trois goulots d
 
 ---
 
-## 5.1 GEMMA 4 — CAS D'ÉTUDE
+## 5.1 GEMMA 4 - CAS D'ÉTUDE
 
 ### 5.1.1 Spécifications Gemma 4
 
@@ -294,9 +294,9 @@ Gemma 4 est une famille de modèles open weights de Google DeepMind, disponible 
 | **31B Dense** | ~20-30 GB | 69,9 GB | **~90-100 GB** |
 | **26B A4B MoE** | ~20-30 GB | 57,7 GB | **~78-88 GB** |
 
-### 5.1.4 Configurations matérielles — Gemma 4 31B Dense
+### 5.1.4 Configurations matérielles - Gemma 4 31B Dense
 
-#### Option A — BF16 (qualité maximale)
+#### Option A - BF16 (qualité maximale)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -308,7 +308,7 @@ Gemma 4 est une famille de modèles open weights de Google DeepMind, disponible 
 | Puissance | **~5,6 kW** |
 | Coût GPU estimé | 2 × 30 000 = **60 000 $** |
 
-#### Option B — Q4_0 (économique)
+#### Option B - Q4_0 (économique)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -319,9 +319,9 @@ Gemma 4 est une famille de modèles open weights de Google DeepMind, disponible 
 | Puissance | **~450 W** |
 | Coût GPU estimé | **~2 000 $** |
 
-### 5.1.5 Configurations matérielles — Gemma 4 26B A4B MoE
+### 5.1.5 Configurations matérielles - Gemma 4 26B A4B MoE
 
-#### Option A — BF16 (qualité max, débit élevé)
+#### Option A - BF16 (qualité max, débit élevé)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -334,7 +334,7 @@ Gemma 4 est une famille de modèles open weights de Google DeepMind, disponible 
 | Coût GPU estimé | 2 × 30 000 = **60 000 $** |
 | **Avantage** | Seulement 3,8 B actifs → débit token/s très élevé |
 
-#### Option B — Q4_0 (ultra-économique)
+#### Option B - Q4_0 (ultra-économique)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -345,7 +345,7 @@ Gemma 4 est une famille de modèles open weights de Google DeepMind, disponible 
 | Puissance | **~450 W** |
 | Coût GPU estimé | **~2 000 $** |
 
-### 5.1.6 Comparaison Gemma 4 — Datacenter vs Poste de travail
+### 5.1.6 Comparaison Gemma 4 - Datacenter vs Poste de travail
 
 | Configuration | GPU | Surface | Puissance | Coût | Contexte max | Usage |
 |--------------|-----|---------|-----------|------|-------------|-------|
@@ -354,7 +354,7 @@ Gemma 4 est une famille de modèles open weights de Google DeepMind, disponible 
 | **26B MoE BF16 (datacenter)** | 2× H100 | 0,72 m² | 5,6 kW | 60 k$ | 256 K | Production, haut débit |
 | **26B MoE Q4 (poste)** | 1× RTX 4090 | bureau | 450 W | 2 k$ | ~64 K | Développement, test |
 
-### 5.1.7 Capacité utilisateurs — Gemma 4 31B Dense (2× H100)
+### 5.1.7 Capacité utilisateurs - Gemma 4 31B Dense (2× H100)
 
 | Scénario | Requêtes concurrentes | Utilisateurs simultanés | Utilisateurs journaliers |
 |----------|----------------------|------------------------|-------------------------|
@@ -366,13 +366,13 @@ Gemma 4 est une famille de modèles open weights de Google DeepMind, disponible 
 
 > **Gemma 4 31B Dense** : modèle le plus capable de la famille, nécessite **2× H100** pour le datacenter (BF16, contexte 256K). Alternativement, **1× H100** suffit en Q8 (34,9 GB).
 >
-> **Gemma 4 26B A4B MoE** : meilleur rapport débit/coût — 3,8 B actifs = token/s très élevés, idéal pour le **serving à haut débit**. Même infra que le 31B.
+> **Gemma 4 26B A4B MoE** : meilleur rapport débit/coût - 3,8 B actifs = token/s très élevés, idéal pour le **serving à haut débit**. Même infra que le 31B.
 >
 > **Pour le datacenter Camp Français** : le **26B A4B MoE** est le meilleur choix si l'objectif est le débit (API publique). Le **31B Dense** si l'objectif est la qualité maximale (recherche, coding agent).
 
 ---
 
-## 5.2 QWEN 3.8 — CAS D'ÉTUDE
+## 5.2 QWEN 3.8 - CAS D'ÉTUDE
 
 ### 5.2.1 Spécifications Qwen 3.8
 
@@ -388,7 +388,7 @@ Qwen 3.8 est une famille d'Alibaba, sortie en août 2026. Le modèle principal e
 | **Vision** | Oui (texte + image + vidéo) | Oui | Non (texte seul) |
 | **Licence** | **Apache 2.0** | qwen-community-1.0 | qwen3.8-max (custom) |
 
-#### Architecture hybride — Clé de voûte
+#### Architecture hybride - Clé de voûte
 
 Le 27B utilise un système **3:1** : 3 couches Gated DeltaNet (attention linéaire, état récurrent fixe) pour 1 couche d'attention complète (KV cache croissant). Sur 64 couches, **seules 16 couches** génèrent un KV cache qui croît avec le contexte.
 
@@ -406,9 +406,9 @@ Le 27B utilise un système **3:1** : 3 couches Gated DeltaNet (attention linéai
 
 > 💡 Grâce à l'attention hybride, le KV cache à 256K ne coûte que **~16 GB** au lieu de **~64 GB** pour un modèle dense classique. C'est **l'avantage concurrentiel majeur** de Qwen 3.8.
 
-### 5.2.3 Configurations matérielles — Qwen 3.8 27B
+### 5.2.3 Configurations matérielles - Qwen 3.8 27B
 
-#### Option A — BF16 (qualité maximale)
+#### Option A - BF16 (qualité maximale)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -421,7 +421,7 @@ Le 27B utilise un système **3:1** : 3 couches Gated DeltaNet (attention linéai
 | Puissance | **~5,6 kW** |
 | Coût GPU estimé | 2 × 30 000 = **60 000 $** |
 
-#### Option B — FP8 (meilleur compromis)
+#### Option B - FP8 (meilleur compromis)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -434,7 +434,7 @@ Le 27B utilise un système **3:1** : 3 couches Gated DeltaNet (attention linéai
 | Puissance | **~3 kW** |
 | Coût GPU estimé | **30 000 $** (H100) ou **15 000 $** (L40S) |
 
-#### Option C — Q4_K_M (économique, production)
+#### Option C - Q4_K_M (économique, production)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -445,7 +445,7 @@ Le 27B utilise un système **3:1** : 3 couches Gated DeltaNet (attention linéai
 | Puissance | **450 W** (RTX 4090) ou **300 W** (A6000) |
 | Coût GPU estimé | **~2 000 $** (RTX 4090) ou **~5 000 $** (A6000) |
 
-### 5.2.4 Comparaison Qwen 3.8 — Options datacenter
+### 5.2.4 Comparaison Qwen 3.8 - Options datacenter
 
 | Configuration | GPU | Surface | Puissance | Coût | Contexte | Usage |
 |--------------|-----|---------|-----------|------|----------|-------|
@@ -454,7 +454,7 @@ Le 27B utilise un système **3:1** : 3 couches Gated DeltaNet (attention linéai
 | **27B Q4 (A6000)** | 1× A6000 | 0,36 m² | 300 W | 5 k$ | 32-64 K | Production, budget |
 | **27B Q4 (RTX 4090)** | 1× RTX 4090 | bureau | 450 W | 2 k$ | 32-64 K | Développement |
 
-### 5.2.5 Capacité utilisateurs — Qwen 3.8 27B (2× H100, BF16)
+### 5.2.5 Capacité utilisateurs - Qwen 3.8 27B (2× H100, BF16)
 
 L'attention hybride de Qwen 3.8 permet un throughput plus élevé qu'un modèle dense classique de même taille, car le KV cache réduit la pression mémoire.
 
@@ -466,7 +466,7 @@ L'attention hybride de Qwen 3.8 permet un throughput plus élevé qu'un modèle 
 
 ### 5.2.6 Verdict Qwen 3.8
 
-> **Qwen 3.8 27B** : le meilleur modèle **single-GPU** de cette étude. En **FP8 sur 1× H100**, il tient en **0,36 m²** avec un contexte de 256K — infiniment plus compact que les alternatives MoE géantes.
+> **Qwen 3.8 27B** : le meilleur modèle **single-GPU** de cette étude. En **FP8 sur 1× H100**, il tient en **0,36 m²** avec un contexte de 256K - infiniment plus compact que les alternatives MoE géantes.
 >
 > **L'attention hybride** est l'avantage clé : KV cache 4× plus petit = plus d'utilisateurs simultanés par GB de VRAM.
 >
@@ -474,22 +474,22 @@ L'attention hybride de Qwen 3.8 permet un throughput plus élevé qu'un modèle 
 
 ---
 
-## 5.3 DEEPSEEK-R1 — CAS D'ÉTUDE
+## 5.3 DEEPSEEK-R1 - CAS D'ÉTUDE
 
 ### 5.2B.1 Spécifications DeepSeek-R1
 
-DeepSeek-R1 (janvier 2025) est le modèle reasoning open emblématique — entraîné par RL pure (GRPO) sans SFT, licence MIT.
+DeepSeek-R1 (janvier 2025) est le modèle reasoning open emblématique - entraîné par RL pure (GRPO) sans SFT, licence MIT.
 
 | Paramètre | Valeur |
 |-----------|--------|
-| **Architecture** | MoE — DeepSeekMoE (256 experts routés + 1 shared, top-8 routing) |
+| **Architecture** | MoE - DeepSeekMoE (256 experts routés + 1 shared, top-8 routing) |
 | **Params totaux** | **671 B** |
 | **Params actifs/token** | **37 B** |
 | **Couches** | 61 (3 dense + 58 MoE) |
-| **Attention** | **MLA** (Multi-head Latent Attention) — KV cache ultra-compresse |
+| **Attention** | **MLA** (Multi-head Latent Attention) - KV cache ultra-compresse |
 | **Contexte** | **128 K tokens** |
 | **Vision** | Non (texte seul) |
-| **Thinking** | Oui — chain-of-thought via RL (GRPO) |
+| **Thinking** | Oui - chain-of-thought via RL (GRPO) |
 | **Licence** | **MIT** |
 
 > 💡 **MLA (Multi-head Latent Attention)** : DeepSeek compresse le KV cache en un vecteur latent de dimension réduite, réduisant la mémoire de 5-10× par rapport à une attention classique. Même avec 671B params, le KV reste petit.
@@ -507,7 +507,7 @@ DeepSeek-R1 (janvier 2025) est le modèle reasoning open emblématique — entra
 
 ### 5.2B.3 Configurations matérielles
 
-#### Option A — Q4_K_M (recommandé production)
+#### Option A - Q4_K_M (recommandé production)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -520,7 +520,7 @@ DeepSeek-R1 (janvier 2025) est le modèle reasoning open emblématique — entra
 | Puissance | **~4,2 kW** |
 | Coût GPU estimé | 6 × 30 000 = **180 000 $** |
 
-#### Option B — Q2_K (budget)
+#### Option B - Q2_K (budget)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -533,7 +533,7 @@ DeepSeek-R1 (janvier 2025) est le modèle reasoning open emblématique — entra
 | Coût GPU estimé | 4 × 30 000 = **120 000 $** |
 | **Compromis** | Perte qualité notable |
 
-#### Option C — BF16 (qualité maximale)
+#### Option C - BF16 (qualité maximale)
 
 | Paramètre | Valeur |
 |-----------|--------|
@@ -544,7 +544,7 @@ DeepSeek-R1 (janvier 2025) est le modèle reasoning open emblématique — entra
 | Puissance | **12,6 kW** (H100) |
 | Coût GPU estimé | 18 × 30 000 = **540 000 $** |
 
-### 5.2B.4 Capacité utilisateurs — DeepSeek-R1 (6× H100, Q4)
+### 5.2B.4 Capacité utilisateurs - DeepSeek-R1 (6× H100, Q4)
 
 Les 37B actifs + MLA permettent un throughput élevé malgré les 671B totaux.
 
@@ -581,7 +581,7 @@ Les 37B actifs + MLA permettent un throughput élevé malgré les 671B totaux.
 ### 5.3.2 Comparaison surface
 
 ```
-Surface (m²) — plus petit = meilleur
+Surface (m²) - plus petit = meilleur
 ═══════════════════════════════════════════════════
 Qwen 3.8 27B     ████████ 0,36 m²  ← 1 GPU
 DeepSeek-R1      ████████████████ 0,72 m²  ← 6 GPU
@@ -593,7 +593,7 @@ Kimi K3          █████████████████████
 ### 5.3.3 Comparaison énergie
 
 ```
-Puissance (kW) — plus bas = meilleur
+Puissance (kW) - plus bas = meilleur
 ═══════════════════════════════════════════════════
 Qwen 3.8 27B     ████████████████ 3,0 kW
 DeepSeek-R1      ██████████████████████ 4,2 kW
@@ -605,7 +605,7 @@ Kimi K3          █████████████████████
 ### 5.3.4 Comparaison utilisateurs simultanés
 
 ```
-Utilisateurs simultanés (max) — plus haut = meilleur
+Utilisateurs simultanés (max) - plus haut = meilleur
 ═══════════════════════════════════════════════════
 DeepSeek-R1      ████████████████████████████████████ 80
 Kimi K3          ████████████████████████████████████████████████████████████████████████████████ 200
@@ -614,7 +614,7 @@ Gemma 4 26B MoE  █████████████████████
 Qwen 3.8 27B     ████████████████████████████████████████████████████████ 150
 ```
 
-### 5.3.5 Tableau récapitulatif — Score
+### 5.3.5 Tableau récapitulatif - Score
 
 | Modèle | Surface | Énergie | Utiles | Coût GPU | **Score global** |
 |--------|---------|---------|--------|----------|-----------------|
@@ -686,10 +686,10 @@ Qwen 3.8 27B     █████████████████████
 
 | Critère | Recommandation |
 |---------|----------------|
-| **Opérateur** | Européen (Niveau 4 souveraineté) — Scaleway, OVHcloud, ou équivalent |
+| **Opérateur** | Européen (Niveau 4 souveraineté) - Scaleway, OVHcloud, ou équivalent |
 | **GPU** | NVIDIA Blackwell B200 (seul européen avec B300 via Scaleway) |
 | **Alternative** | AMD MI300X (192 GB, disponible Scaleway/OVHcloud) |
-| **Logiciel** | CUDA (NVIDIA) ou ROCm (AMD) — pas de CANN (Huawei) |
+| **Logiciel** | CUDA (NVIDIA) ou ROCm (AMD) - pas de CANN (Huawei) |
 | **Certification** | SecNumCloud 3.2 (ANSSI) |
 
 ### 6.2 Arguments souveraineté
@@ -718,10 +718,10 @@ Qwen 3.8 27B     █████████████████████
 
 | Phase | Horizon | Action |
 |-------|---------|--------|
-| **1 — Immédiat** | 2026-2027 | Cloud Scaleway/OVHcloud (B200/H100) — pas de construction datacenter |
-| **2 — Court terme** | 2027-2028 | Contrat long terme GPU (Scaleway cluster dédié) |
-| **3 — Moyen terme** | 2028-2030 | Construction datacenter souverain si volume le justifie |
-| **4 — Long terme** | 2030+ | Évaluation GPU européens (si apparition) |
+| **1 - Immédiat** | 2026-2027 | Cloud Scaleway/OVHcloud (B200/H100) - pas de construction datacenter |
+| **2 - Court terme** | 2027-2028 | Contrat long terme GPU (Scaleway cluster dédié) |
+| **3 - Moyen terme** | 2028-2030 | Construction datacenter souverain si volume le justifie |
+| **4 - Long terme** | 2030+ | Évaluation GPU européens (si apparition) |
 
 ---
 
@@ -731,129 +731,129 @@ Qwen 3.8 27B     █████████████████████
 
 | Acronyme | Signification |
 |----------|---------------|
-| **GPU** | Graphics Processing Unit — Processeur graphique, utilisé pour le calcul parallèle en IA |
-| **ASIC** | Application-Specific Integrated Circuit — Circuit intégré spécialisé (ex. Google TPU) |
-| **FPGA** | Field-Programmable Gate Array — Circuit reconfigurable après fabrication |
-| **HBM** | High Bandwidth Memory — Mémoire haute bande passante (HBM2e, HBM3, HBM3e) |
+| **GPU** | Graphics Processing Unit - Processeur graphique, utilisé pour le calcul parallèle en IA |
+| **ASIC** | Application-Specific Integrated Circuit - Circuit intégré spécialisé (ex. Google TPU) |
+| **FPGA** | Field-Programmable Gate Array - Circuit reconfigurable après fabrication |
+| **HBM** | High Bandwidth Memory - Mémoire haute bande passante (HBM2e, HBM3, HBM3e) |
 | **HBM2e** | Génération améliorée de HBM2 (~3,2 TB/s par stack) |
 | **HBM3** | HBM de 3e génération (~5 TB/s par stack, NVIDIA A100/H100) |
 | **HBM3e** | HBM3 améliorée (~8 TB/s par stack, NVIDIA H200/B200) |
-| **SXM** | Server Module X — Format carte GPU haute performance (NVIDIA) |
-| **GB** | Gigaoctet — 10⁹ octets |
-| **TB** | Téraoctet — 10¹² octets |
-| **GB/s** | Gigaoctets par seconde — Unité de bande passante mémoire |
-| **TB/s** | Téraoctets par seconde — Unité de bande passante mémoire |
+| **SXM** | Server Module X - Format carte GPU haute performance (NVIDIA) |
+| **GB** | Gigaoctet - 10⁹ octets |
+| **TB** | Téraoctet - 10¹² octets |
+| **GB/s** | Gigaoctets par seconde - Unité de bande passante mémoire |
+| **TB/s** | Téraoctets par seconde - Unité de bande passante mémoire |
 
 ### Mesures de performance
 
 | Acronyme | Signification |
 |----------|---------------|
-| **TFLOPS** | Téra (10¹²) Floating Point Operations Per Second — Opérations virgule flottante par seconde |
-| **PFLOPS** | Péta (10¹⁵) FLOPS — 1 000 TFLOPS |
-| **EFLOPS** | Exa (10¹⁸) FLOPS — 1 000 PFLOPS |
-| **FP16** | Floating Point 16-bit — Demi-précision (2 octets par paramètre) |
-| **FP32** | Floating Point 32-bit — Précision simple (4 octets) |
-| **FP64** | Floating Point 64-bit — Précision double (8 octets) |
-| **INT8** | Integer 8-bit — Entier 8 bits (quantization) |
-| **MXFP4** | Microscaling Floating Point 4-bit — Quantization ultra-agressive (1,56 TB pour Kimi K3) |
-| **MXFP8** | Microscaling Floating Point 8-bit — Quantization pour activations |
-| **PPL** | Perplexity — Mesure de qualité d'un modèle de langage (plus bas = mieux) |
+| **TFLOPS** | Téra (10¹²) Floating Point Operations Per Second - Opérations virgule flottante par seconde |
+| **PFLOPS** | Péta (10¹⁵) FLOPS - 1 000 TFLOPS |
+| **EFLOPS** | Exa (10¹⁸) FLOPS - 1 000 PFLOPS |
+| **FP16** | Floating Point 16-bit - Demi-précision (2 octets par paramètre) |
+| **FP32** | Floating Point 32-bit - Précision simple (4 octets) |
+| **FP64** | Floating Point 64-bit - Précision double (8 octets) |
+| **INT8** | Integer 8-bit - Entier 8 bits (quantization) |
+| **MXFP4** | Microscaling Floating Point 4-bit - Quantization ultra-agressive (1,56 TB pour Kimi K3) |
+| **MXFP8** | Microscaling Floating Point 8-bit - Quantization pour activations |
+| **PPL** | Perplexity - Mesure de qualité d'un modèle de langage (plus bas = mieux) |
 
 ### Processeurs spécifiques
 
 | Acronyme | Signification |
 |----------|---------------|
-| **H100** | NVIDIA Hopper — GPU datacenter de 2022 (80 GB HBM3, 990 TFLOPS FP16) |
-| **H200** | NVIDIA Hopper amélioré — GPU 2024 (141 GB HBM3e, 990 TFLOPS FP16) |
-| **B200** | NVIDIA Blackwell — GPU 2024/2025 (192 GB HBM3e, ~2 500 TFLOPS FP16) |
-| **GB200** | NVIDIA Grace Blackwell Superchip — CPU+GPU combiné |
-| **GB300** | NVIDIA Blackwell Ultra — GPU 2025/2026 (amélioration B200) |
-| **A100** | NVIDIA Ampere — GPU datacenter (2020, 40/80 GB HBM2e) |
-| **MI300X** | AMD Instinct MI300X — GPU AMD (192 GB HBM3e, 1 307 TFLOPS FP16) |
-| **MI325X** | AMD Instinct MI325X — GPU AMD (288 GB HBM3e, 2 615 TFLOPS FP16) |
-| **L40S** | NVIDIA L40S — GPU inference/visualisation (48 GB GDDR6) |
-| **Ascend 910B** | Huawei Ascend — GPU chinois (~600 TFLOPS FP16, 64 GB HBM2e) |
-| **Ascend 910C** | Huawei Ascend — GPU chinois (~800 TFLOPS FP16, 96 GB HBM2e) |
-| **TPU** | Tensor Processing Unit — Processeur IA propriétaire Google |
-| **RISC-V** | Instruction set open source — Architecture alternative (pas encore GPU IA) |
+| **H100** | NVIDIA Hopper - GPU datacenter de 2022 (80 GB HBM3, 990 TFLOPS FP16) |
+| **H200** | NVIDIA Hopper amélioré - GPU 2024 (141 GB HBM3e, 990 TFLOPS FP16) |
+| **B200** | NVIDIA Blackwell - GPU 2024/2025 (192 GB HBM3e, ~2 500 TFLOPS FP16) |
+| **GB200** | NVIDIA Grace Blackwell Superchip - CPU+GPU combiné |
+| **GB300** | NVIDIA Blackwell Ultra - GPU 2025/2026 (amélioration B200) |
+| **A100** | NVIDIA Ampere - GPU datacenter (2020, 40/80 GB HBM2e) |
+| **MI300X** | AMD Instinct MI300X - GPU AMD (192 GB HBM3e, 1 307 TFLOPS FP16) |
+| **MI325X** | AMD Instinct MI325X - GPU AMD (288 GB HBM3e, 2 615 TFLOPS FP16) |
+| **L40S** | NVIDIA L40S - GPU inference/visualisation (48 GB GDDR6) |
+| **Ascend 910B** | Huawei Ascend - GPU chinois (~600 TFLOPS FP16, 64 GB HBM2e) |
+| **Ascend 910C** | Huawei Ascend - GPU chinois (~800 TFLOPS FP16, 96 GB HBM2e) |
+| **TPU** | Tensor Processing Unit - Processeur IA propriétaire Google |
+| **RISC-V** | Instruction set open source - Architecture alternative (pas encore GPU IA) |
 
 ### Fabrication / Semi-conducteurs
 
 | Acronyme | Signification |
 |----------|---------------|
-| **TSMC** | Taiwan Semiconductor Manufacturing Company — Fonderie n°1 mondiale (Taïwan) |
-| **SMIC** | Semiconductor Manufacturing International Corporation — Fonderie chinoise (plafonnée 7nm) |
-| **EUV** | Extreme UltraViolet — Lithographie ultraviolette extrême (nœud 7nm et moins) |
-| **DUV** | Deep UltraViolet — Lithographie standard (7nm+ sans EUV) |
-| **nm** | Nanomètre — Unité de taille de nœud de gravure (plus petit = meilleur) |
-| **CoWoS** | Chip on Wafer on Substrate — Empaquetage avancé TSMC pour GPU IA |
-| **InFO** | Integrated Fan-Out — Alternative CoWoS (moins coûteuse, moins performante) |
-| **GAA** | Gate-All-Around — Architecture transistor 3nm+ (futur 2nm) |
-| **FinFET** | Fin Field Effect Transistor — Architecture transistor 14nm-3nm |
-| **TSV** | Through-Silicon Via — Connexions verticales inter-couches |
+| **TSMC** | Taiwan Semiconductor Manufacturing Company - Fonderie n°1 mondiale (Taïwan) |
+| **SMIC** | Semiconductor Manufacturing International Corporation - Fonderie chinoise (plafonnée 7nm) |
+| **EUV** | Extreme UltraViolet - Lithographie ultraviolette extrême (nœud 7nm et moins) |
+| **DUV** | Deep UltraViolet - Lithographie standard (7nm+ sans EUV) |
+| **nm** | Nanomètre - Unité de taille de nœud de gravure (plus petit = meilleur) |
+| **CoWoS** | Chip on Wafer on Substrate - Empaquetage avancé TSMC pour GPU IA |
+| **InFO** | Integrated Fan-Out - Alternative CoWoS (moins coûteuse, moins performante) |
+| **GAA** | Gate-All-Around - Architecture transistor 3nm+ (futur 2nm) |
+| **FinFET** | Fin Field Effect Transistor - Architecture transistor 14nm-3nm |
+| **TSV** | Through-Silicon Via - Connexions verticales inter-couches |
 
 ### Logiciel / Frameworks
 
 | Acronyme | Signification |
 |----------|---------------|
-| **CUDA** | Compute Unified Device Architecture — Plateforme logicielle NVIDIA (17 ans, standard de facto) |
-| **CANN** | Compute Architecture for Neural Networks — Plateforme logicielle Huawei Ascend |
-| **ROCm** | Radeon Open Compute — Plateforme logicielle AMD (alternative open source à CUDA) |
-| **vLLM** | Virtual Large Language Model — Moteur d'inférence LLM haute performance |
+| **CUDA** | Compute Unified Device Architecture - Plateforme logicielle NVIDIA (17 ans, standard de facto) |
+| **CANN** | Compute Architecture for Neural Networks - Plateforme logicielle Huawei Ascend |
+| **ROCm** | Radeon Open Compute - Plateforme logicielle AMD (alternative open source à CUDA) |
+| **vLLM** | Virtual Large Language Model - Moteur d'inférence LLM haute performance |
 | **TensorRT** | Moteur d'optimisation NVIDIA pour inférence |
 | **TensorRT-LLM** | Extension TensorRT pour LLM |
 | **PyTorch** | Framework d'entraînement IA (Meta) |
-| **TP** | Tensor Parallelism — Parallélisme sur plusieurs GPU |
-| **PP** | Pipeline Parallelism — Parallélisme sur couches du modèle |
-| **DP** | Data Parallelism — Parallélisme sur batch de données |
+| **TP** | Tensor Parallelism - Parallélisme sur plusieurs GPU |
+| **PP** | Pipeline Parallelism - Parallélisme sur couches du modèle |
+| **DP** | Data Parallelism - Parallélisme sur batch de données |
 
 ### Cloud / Réseau
 
 | Acronyme | Signification |
 |----------|---------------|
-| **IaaS** | Infrastructure as a Service — Infrastructure en tant que service |
-| **PaaS** | Platform as a Service — Plateforme en tant que service |
-| **SaaS** | Software as a Service — Logiciel en tant que service |
+| **IaaS** | Infrastructure as a Service - Infrastructure en tant que service |
+| **PaaS** | Platform as a Service - Plateforme en tant que service |
+| **SaaS** | Software as a Service - Logiciel en tant que service |
 | **Bare Metal** | Serveur dédié physique (pas de virtualisation) |
 | **InfiniBand** | Réseau haute performance RDMA (400 Gb/s, 800 Gb/s) |
 | **NVLink** | Connexion GPU-NVIDIA propriétaire (900 GB/s) |
 | **NVSwitch** | Switch NVLink (connexion multi-GPU) |
-| **OCP** | Open Compute Project — Standard rack/datacenter open source |
-| **ORv3** | Open Rack v3 — Standard rack OCP pour datacenter |
-| **HGX** | NVIDIA HGX — Plateforme serveur 8 GPU NVIDIA |
+| **OCP** | Open Compute Project - Standard rack/datacenter open source |
+| **ORv3** | Open Rack v3 - Standard rack OCP pour datacenter |
+| **HGX** | NVIDIA HGX - Plateforme serveur 8 GPU NVIDIA |
 
 ### Réglementation / Souveraineté
 
 | Acronyme | Signification |
 |----------|---------------|
-| **CLOUD Act** | Clarifying Lawful Overseas Use of Data Act — Loi US autorisant l'accès aux données hors US |
-| **FISA** | Foreign Intelligence Surveillance Act — Loi US de surveillance étrangère |
-| **RGPD** | Règlement Général sur la Protection des Données — GDPR en français |
+| **CLOUD Act** | Clarifying Lawful Overseas Use of Data Act - Loi US autorisant l'accès aux données hors US |
+| **FISA** | Foreign Intelligence Surveillance Act - Loi US de surveillance étrangère |
+| **RGPD** | Règlement Général sur la Protection des Données - GDPR en français |
 | **SecNumCloud** | Certification ANSSI pour cloud souverain français (niveau 3.2) |
 | **GAIA-X** | Initiative européenne d'infrastructure cloud souveraine |
-| **CADA** | Cloud & AI Development Act — Règlement UE sur l'IA souveraine |
-| **HDS** | Hébergeur de Données de Santé — Certification hébergement santé (France) |
+| **CADA** | Cloud & AI Development Act - Règlement UE sur l'IA souveraine |
+| **HDS** | Hébergeur de Données de Santé - Certification hébergement santé (France) |
 | **ISO 27001** | Norme internationale de sécurité de l'information |
 | **ANSSI** | Agence Nationale de la Sécurité des Systèmes d'Information |
-| **ESCC** | European Sovereign Cloud Consortium — Consortium cloud souverain UE |
+| **ESCC** | European Sovereign Cloud Consortium - Consortium cloud souverain UE |
 
 ### Modèles d'IA
 
 | Acronyme | Signification |
 |----------|---------------|
-| **LLM** | Large Language Model — Modèle de langage de grande taille |
-| **MoE** | Mixture of Experts — Architecture multi-experts (Kimi K3 = 896 experts, 16 actifs) |
-| **RLHF** | Reinforcement Learning from Human Feedback — Apprentissage par renforcement humain |
-| **MaaS** | Model as a Service — Modèle en tant que service (API) |
-| **MTP** | Multi-Token Prediction — Prédiction de plusieurs tokens simultanément (Kimi K3) |
-| **tok/s** | Tokens par seconde — Débit d'inférence |
+| **LLM** | Large Language Model - Modèle de langage de grande taille |
+| **MoE** | Mixture of Experts - Architecture multi-experts (Kimi K3 = 896 experts, 16 actifs) |
+| **RLHF** | Reinforcement Learning from Human Feedback - Apprentissage par renforcement humain |
+| **MaaS** | Model as a Service - Modèle en tant que service (API) |
+| **MTP** | Multi-Token Prediction - Prédiction de plusieurs tokens simultanément (Kimi K3) |
+| **tok/s** | Tokens par seconde - Débit d'inférence |
 
 ### Entreprises / Organisations
 
 | Acronyme | Signification |
 |----------|---------------|
 | **NVIDIA** | Société US de GPU et IA (fondateur Jensen Huang) |
-| **AMD** | Advanced Micro Devices — Concurrent US de NVIDIA (GPU Instinct) |
+| **AMD** | Advanced Micro Devices - Concurrent US de NVIDIA (GPU Instinct) |
 | **Intel** | Concurrent US (GPU Gaudi, fonderie propre) |
 | **Huawei** | Technologie chinoise (GPU Ascend, plateforme CANN) |
 | **TSMC** | Fonderie taïwanaise (AMD, NVIDIA, Apple, Qualcomm) |
@@ -861,15 +861,15 @@ Qwen 3.8 27B     █████████████████████
 | **Samsung** | Fonderie coréenne de mémoire (HBM) |
 | **Micron** | Fonderie US de mémoire (HBM) |
 | **ASML** | Fournisseur néerlandais de machines lithographie EUV (monopole) |
-| **Scaleway** | Cloud français (filiale Iliad) — Seul européen avec B300 |
-| **OVHcloud** | Cloud français — 46 datacenters, 1,6M clients |
+| **Scaleway** | Cloud français (filiale Iliad) - Seul européen avec B300 |
+| **OVHcloud** | Cloud français - 46 datacenters, 1,6M clients |
 | **IONOS** | Cloud allemand (filiale 1&1) |
 | **Hetzner** | Cloud allemand (budget-friendly) |
-| **3DS Outscale** | Cloud français (filiale Dassault) — SecNumCloud 3.2 |
+| **3DS Outscale** | Cloud français (filiale Dassault) - SecNumCloud 3.2 |
 
 ---
 
-## 8. ESTIMATION DE CAPACITÉ DE CALCUL DÉPLOYABLE SUR LE SITE — 22 HECTARES
+## 8. ESTIMATION DE CAPACITÉ DE CALCUL DÉPLOYABLE SUR LE SITE - 22 HECTARES
 
 ### 8.1 Objectif
 
@@ -891,7 +891,7 @@ Estimer la puissance de calcul (PFLOPS), la consommation électrique (MW) et les
 ### 8.3 Occupation du sol par composant
 
 ```
-COMPOSITION DU SITE — 22 ha
+COMPOSITION DU SITE - 22 ha
 ═══════════════════════════════════════════════════════════════
 │ Composant                          │ Surface    │ % site  │
 ═══════════════════════════════════════════════════════════════
@@ -909,17 +909,17 @@ COMPOSITION DU SITE — 22 ha
 
 ### 8.4 Capacité en racks
 
-**Scénario A — Air-cooled (refroidissement adiabatique) :**
+**Scénario A - Air-cooled (refroidissement adiabatique) :**
 - Surface data halls : 5,6 ha = 56 000 m²
 - Densité : 1 rack / 25 m² (aisances, chemins de câbles, N+1)
 - **Capacité : 2 240 racks × 35 kW = 78,4 MW IT**
 
-**Scénario B — Liquid-cooled (DLC direct-to-chip) :**
+**Scénario B - Liquid-cooled (DLC direct-to-chip) :**
 - Surface data halls : 5,6 ha = 56 000 m²
 - Densité : 1 rack / 18 m² (chambres plus denses)
 - **Capacité : 3 110 racks × 60 kW = 186,6 MW IT**
 
-**Scénario C — Hyperscale mixte (80 % air / 20 % liquid) :**
+**Scénario C - Hyperscale mixte (80 % air / 20 % liquid) :**
 - 1 792 racks air-cooled × 35 kW = 62,7 MW
 - 622 racks liquid-cooled × 60 kW = 37,3 MW
 - **Total : 2 414 racks = 100,0 MW IT**
@@ -992,7 +992,7 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 | **Proximité résidentielle** | 800 m, Ronchin nord, Lezennes et bientot l'ancien magasin Leroymerlin = zone urbaine | 🟡 Modéré |
 | **Bruit** | 75-85 dB datacenter (ventilateurs, tours) vs. 65 dB (ancien circuit moto) | 🟡 Modéré |
 | **Proximité golf** | Site en zone TRI (inondable), 4 CatNat Ronchin, nappe alimente Deûle | 🟠 Majeur |
-| **Zones inondables** | Remontée nappe max en mars (11,45 m NGF), étiage en septembre (13,83 m) — risque critique hiver/printemps | 🔴 Critique |
+| **Zones inondables** | Remontée nappe max en mars (11,45 m NGF), étiage en septembre (13,83 m) - risque critique hiver/printemps | 🔴 Critique |
 | **Risque sismique** | Zone 2 (faible), mais fondations sur pieux = vulnérabilité | 🟢 Faible |
 
 ### 8.9 Scénarios de déploiement réalistes
@@ -1059,42 +1059,42 @@ Un datacenter de 84 MW émet **75-85 dB en continu**, 24h/24, 365 jours/an. L'an
 | OVHcloud sovereign cloud | [corporate.ovhcloud.com](https://corporate.ovhcloud.com/en/newsroom/news/ovhcloud-deep-clever-cloud-consortium/) |
 | Cloud Act et FISA | [parlons.cloud](https://www.parlons.cloud/cloud-act-fisa-et-lillusion-du-datacenter-en-france/) |
 
-### Sources complémentaires (§8 — Infrastructure physique)
+### Sources complémentaires (§8 - Infrastructure physique)
 
 | Document | URL |
 |----------|-----|
 | EUDCA Sustainability Code | [eudca.org](https://eudca.org/resources/sustainability/) |
 | EUDCA Energy & Water Committee | [eudca.org](https://eudca.org/resources/ewcc/) |
 | EUDCA Data Centre Cooling Guide | [eudca.org](https://eudca.org/2025/06/12/sustainability/) |
-| ADEME — Efficacité énergétique datacenter | [agirpourlatransition.ademe.fr](https://agirpourlatransition.ademe.fr/entreprises/bilan-environnemental/gerer-pollutions-et-risques/efficacite-energetique-datacenter) |
+| ADEME - Efficacité énergétique datacenter | [agirpourlatransition.ademe.fr](https://agirpourlatransition.ademe.fr/entreprises/bilan-environnemental/gerer-pollutions-et-risques/efficacite-energetique-datacenter) |
 | NVIDIA Data Centre Liquid Cooling | [nvidia.com](https://www.nvidia.com/en-us/data-center/solutions/liquid-cooling/) |
-| Cloud&watt — Efficacité datacenter (PUE) | [cloud-watt.com](https://www.cloud-watt.com/fr/wiki/efficacite-datacenter/) |
-| Vicente & Associates — AI Data Center Power | [vcandmore.com](https://vcandmore.com/data-centers/ai-data-center-power-demands-unveiled-what-you-need-to-know/) |
-| USGS — Water Use in Data Centers | [usgs.gov](https://www.usgs.gov/media/images/water-use-data-centers) |
-| DCCEW — Measuring Data Centre PUE | [dccew.org](https://dccew.org/2025/10/06/measuring-data-centre-pue-and-challenges-of-data-centre-efficiency-metrics/) |
-| Schneider Electric — WUE | [schneider-electric.com](https://www.se.com/ww/en/insights/sustainability/sustainability-research-institute/white-papers/wue-understanding-water-usage-effectiveness-in-data-centers/) |
-| Les Échos — Data centers : l'eau, talon d'Achille | [lesechos.fr](https://www.lesechos.fr/industrie-services/services-technologiques/ia-les-data-centers-face-au-defi-de-leau-le-talon-dachille-du-boom-de-lintelligence-artificielle-2534289) |
-| L'Usine Digitale — Un datacenter peut consommer l'eau de 2 500 habitants | [usine-digitale.fr](https://www.usine-digitale.fr/ledition-patient/ia-et-innovation-verte-un-datacenter-peut-consommer-l-eau-de-2-500-habitants-en-france-arretons-le-scenario-qui-pose-tout-simplement-questions.NjU3MzUwOA.html) |
-| Journal du Net — Datacenter et refroidissement | [journaldunet.fr](https://www.journaldunet.fr/tech/14009954-2409-ia-et-datacenter-comment-la-technologie-transforme-le-schema-de-refroidissement-des-plateformes-numeriques/) |
-| Lemonde — Eau et data centers | [lemonde.fr](https://www.lemonde.fr/les-decodeurs/article/2025/09/04/ia-et-eau-le-data-center-est-devenu-les-pieds-dans-l-eau_6499527_4355770.html) |
-| RTL — L'eau, talon d'Achille de l'IA | [rtl.fr](https://www.rtl.fr/actu/economie-consommation/ia-et-eau-le-talon-d-achille-de-l-intelligence-artificielle-se-situe-a-la-sortie-des-data-centers-7943043700) |
-| ETFs.Net — L'eau et l'IA | [etfs.net](https://www.etfs.net/2026/02/12/lia-artificielle-a-t-elle-vraiment-soif-exploring-the-thirsty-side-of-ai-technology/) |
-| Engie — Datacenter : empreinte carbone et impact | [engie.com](https://www.engie.com/fr/economie-circulaire/entreprises-responsables/datacenter-empreinte-carbone-impact-environnemental) |
-| EDF — Forfaits datacenter France | [edf.fr](https://www.edf.fr/entreprise/fr/affaires/france/forfait-data-center) |
+| Cloud&watt - Efficacité datacenter (PUE) | [cloud-watt.com](https://www.cloud-watt.com/fr/wiki/efficacite-datacenter/) |
+| Vicente & Associates - AI Data Center Power | [vcandmore.com](https://vcandmore.com/data-centers/ai-data-center-power-demands-unveiled-what-you-need-to-know/) |
+| USGS - Water Use in Data Centers | [usgs.gov](https://www.usgs.gov/media/images/water-use-data-centers) |
+| DCCEW - Measuring Data Centre PUE | [dccew.org](https://dccew.org/2025/10/06/measuring-data-centre-pue-and-challenges-of-data-centre-efficiency-metrics/) |
+| Schneider Electric - WUE | [schneider-electric.com](https://www.se.com/ww/en/insights/sustainability/sustainability-research-institute/white-papers/wue-understanding-water-usage-effectiveness-in-data-centers/) |
+| Les Échos - Data centers : l'eau, talon d'Achille | [lesechos.fr](https://www.lesechos.fr/industrie-services/services-technologiques/ia-les-data-centers-face-au-defi-de-leau-le-talon-dachille-du-boom-de-lintelligence-artificielle-2534289) |
+| L'Usine Digitale - Un datacenter peut consommer l'eau de 2 500 habitants | [usine-digitale.fr](https://www.usine-digitale.fr/ledition-patient/ia-et-innovation-verte-un-datacenter-peut-consommer-l-eau-de-2-500-habitants-en-france-arretons-le-scenario-qui-pose-tout-simplement-questions.NjU3MzUwOA.html) |
+| Journal du Net - Datacenter et refroidissement | [journaldunet.fr](https://www.journaldunet.fr/tech/14009954-2409-ia-et-datacenter-comment-la-technologie-transforme-le-schema-de-refroidissement-des-plateformes-numeriques/) |
+| Lemonde - Eau et data centers | [lemonde.fr](https://www.lemonde.fr/les-decodeurs/article/2025/09/04/ia-et-eau-le-data-center-est-devenu-les-pieds-dans-l-eau_6499527_4355770.html) |
+| RTL - L'eau, talon d'Achille de l'IA | [rtl.fr](https://www.rtl.fr/actu/economie-consommation/ia-et-eau-le-talon-d-achille-de-l-intelligence-artificielle-se-situe-a-la-sortie-des-data-centers-7943043700) |
+| ETFs.Net - L'eau et l'IA | [etfs.net](https://www.etfs.net/2026/02/12/lia-artificielle-a-t-elle-vraiment-soif-exploring-the-thirsty-side-of-ai-technology/) |
+| Engie - Datacenter : empreinte carbone et impact | [engie.com](https://www.engie.com/fr/economie-circulaire/entreprises-responsables/datacenter-empreinte-carbone-impact-environnemental) |
+| EDF - Forfaits datacenter France | [edf.fr](https://www.edf.fr/entreprise/fr/affaires/france/forfait-data-center) |
 
 ### Sources nappe de la Craie et piézométrie Lille
 
 | Document | URL |
 |----------|-----|
-| Piézométrie Lille (BSS000BFVM) — Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BFVM) |
-| Piézométrie Lille (BSS000BDDQ) — Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BDDQ) |
-| Piézométrie Lille (BSS000BEXS) — Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BEXS) |
-| BRGM — Nappes d'eau souterraine mars 2026 | [brgm.fr](https://www.brgm.fr/fr/actualite/communique-presse/nappes-eau-souterraine-au-1er-mars-2026) |
-| BRGM — Note nappe avril 2026 | [brgm.fr](https://www.brgm.fr/sites/default/files/documents/2026-04/communique-nappes-eau-souterraine-2026-04-01-note.pdf) |
-| BRGM — Fonctionnement hydro-système craie sud Lille (RP-71378) | [infoterre.brgm.fr](http://infoterre.brgm.fr/rapports/RP-71378-FR.pdf) |
-| BRGM — Modélisation nappe Craie Nord-Pas-de-Calais (RP-60217) | [infoterre.brgm.fr](http://infoterre.brgm.fr/rapports/RP-60217-FR.pdf) |
-| Univ. Lille — Remontées nappe Craie bassin minier | [pepite-depot.univ-lille.fr](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1989/50376-1989-303-1.pdf) |
-| Préf. Pas-de-Calais — Remontée nappe phréatique | [pas-de-calais.gouv.fr](https://www.pas-de-calais.gouv.fr/index.php/Actions-de-l-Etat/Prevention-des-risques-majeurs/Connaissance-des-risques-dans-le-P-d-C/Les-risques-naturels/Inondation/La-remontee-de-la-nappe-phreatique) |
+| Piézométrie Lille (BSS000BFVM) - Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BFVM) |
+| Piézométrie Lille (BSS000BDDQ) - Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BDDQ) |
+| Piézométrie Lille (BSS000BEXS) - Hub'Eau/BRGM | [meteo-npdc.fr](https://meteo-npdc.fr/piezometrie/BSS000BEXS) |
+| BRGM - Nappes d'eau souterraine mars 2026 | [brgm.fr](https://www.brgm.fr/fr/actualite/communique-presse/nappes-eau-souterraine-au-1er-mars-2026) |
+| BRGM - Note nappe avril 2026 | [brgm.fr](https://www.brgm.fr/sites/default/files/documents/2026-04/communique-nappes-eau-souterraine-2026-04-01-note.pdf) |
+| BRGM - Fonctionnement hydro-système craie sud Lille (RP-71378) | [infoterre.brgm.fr](http://infoterre.brgm.fr/rapports/RP-71378-FR.pdf) |
+| BRGM - Modélisation nappe Craie Nord-Pas-de-Calais (RP-60217) | [infoterre.brgm.fr](http://infoterre.brgm.fr/rapports/RP-60217-FR.pdf) |
+| Univ. Lille - Remontées nappe Craie bassin minier | [pepite-depot.univ-lille.fr](https://pepite-depot.univ-lille.fr/LIBRE/Th_Num/1989/50376-1989-303-1.pdf) |
+| Préf. Pas-de-Calais - Remontée nappe phréatique | [pas-de-calais.gouv.fr](https://www.pas-de-calais.gouv.fr/index.php/Actions-de-l-Etat/Prevention-des-risques-majeurs/Connaissance-des-risques-dans-le-P-d-C/Les-risques-naturels/Inondation/La-remontee-de-la-nappe-phreatique) |
 
 ### Sources golf, TRI et risques inondation site
 
@@ -1102,16 +1102,16 @@ Un datacenter de 84 MW émet **75-85 dB en continu**, 24h/24, 365 jours/an. L'an
 |----------|-----|
 | Risques Ronchin (TRI, CatNat) | [villagesfrancais.fr](https://villagesfrancais.fr/commune/ronchin-59790/risques/) |
 | Risques Lezennes (TRI, CatNat) | [villagesfrancais.fr](https://villagesfrancais.fr/commune/lezennes-59260/risques/) |
-| Zones inondables Lille — PPRi | [floody.fr](https://floody.fr/zones-inondables-lille/) |
-| Note historique crues Deûle — DREAL | [hauts-de-france.developpement-durable.gouv.fr](https://www.hauts-de-france.developpement-durable.gouv.fr/IMG/pdf/note_historique_crues_inondations_lille.pdf) |
-| TRI Lille Lens — Phase 1 | [hauts-de-france.developpement-durable.gouv.fr](https://www.hauts-de-france.developpement-durable.gouv.fr/IMG/pdf/rapport_phase_1_tri_lille_lens.pdf) |
-| Concertation Camp français — MEL | [lillemetropole.fr](https://www.lillemetropole.fr/communique-de-presse/camp-francais-centre-equestre-golf-complexe-moto-la-metropole-engage-une) |
-| Concertation Camp français — Ville Ronchin | [ville-ronchin.fr](https://ville-ronchin.fr/concertation) |
-| Golf Lille Métropole — intérêt métropolitain (délib. MEL) | [lillemetropole.fr](https://www.lillemetropole.fr/sites/default/files/2024-12/Recueil_delib_T2_0.pdf) |
-| Golf Ronchin sécheresse 2022 — BFMTV | [bfmtv.com](https://www.bfmtv.com/grand-lille/nord-comment-le-golf-de-ronchin-s-adapte-a-la-secheresse_AV-202208090213.html) |
-| Golf Lille Métropole — ICI (sécheresse) | [ici.fr](https://www.ici.fr/infos/environnement/photos-le-golf-de-lille-metropole-face-a-la-secheresse-1659809767) |
-| La Voix du Nord — Concertation 2025 | [lavoixdunord.fr](https://www.lavoixdunord.fr/1614703/article/2025-08-12/un-cyber-centre-au-complexe-moto-une-extension-du-golf-ronchin-la-concertation) |
+| Zones inondables Lille - PPRi | [floody.fr](https://floody.fr/zones-inondables-lille/) |
+| Note historique crues Deûle - DREAL | [hauts-de-france.developpement-durable.gouv.fr](https://www.hauts-de-france.developpement-durable.gouv.fr/IMG/pdf/note_historique_crues_inondations_lille.pdf) |
+| TRI Lille Lens - Phase 1 | [hauts-de-france.developpement-durable.gouv.fr](https://www.hauts-de-france.developpement-durable.gouv.fr/IMG/pdf/rapport_phase_1_tri_lille_lens.pdf) |
+| Concertation Camp français - MEL | [lillemetropole.fr](https://www.lillemetropole.fr/communique-de-presse/camp-francais-centre-equestre-golf-complexe-moto-la-metropole-engage-une) |
+| Concertation Camp français - Ville Ronchin | [ville-ronchin.fr](https://ville-ronchin.fr/concertation) |
+| Golf Lille Métropole - intérêt métropolitain (délib. MEL) | [lillemetropole.fr](https://www.lillemetropole.fr/sites/default/files/2024-12/Recueil_delib_T2_0.pdf) |
+| Golf Ronchin sécheresse 2022 - BFMTV | [bfmtv.com](https://www.bfmtv.com/grand-lille/nord-comment-le-golf-de-ronchin-s-adapte-a-la-secheresse_AV-202208090213.html) |
+| Golf Lille Métropole - ICI (sécheresse) | [ici.fr](https://www.ici.fr/infos/environnement/photos-le-golf-de-lille-metropole-face-a-la-secheresse-1659809767) |
+| La Voix du Nord - Concertation 2025 | [lavoixdunord.fr](https://www.lavoixdunord.fr/1614703/article/2025-08-12/un-cyber-centre-au-complexe-moto-une-extension-du-golf-ronchin-la-concertation) |
 
 ---
 
-*Document complémentaire au dossier d'opposition datacenter Camp Français — Septembre 2026*
+*Document complémentaire au dossier d'opposition datacenter Camp Français - Septembre 2026*
