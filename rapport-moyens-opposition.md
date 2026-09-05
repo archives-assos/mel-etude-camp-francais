@@ -34,7 +34,7 @@ La MEL envisage l'implantation d'un datacenter de 15 à 100 MW sur l'ancien comp
 | # | Blocage | Niveau | Levier |
 |---|---------|--------|--------|
 | 1 | **Hydrologie catastrophique** — Site resté saturé pendant 5 canicules | Critique | Étude indépendante |
-| 2 | **Chiroptères protégés** — Murin de Daubenton à 1,5 km, pas d'inventaire 4 saisons | Critique | Réglementation stricte |
+| 2 | **Chiroptères protégés** — Murin de Daubenton à 1,5 km, pas d'inventaire 4 saisons mais dossier MEL Chemin Napoléon | Critique | Réglementation stricte |
 | 3 | **Concertation viciée** — Projet avancé en parallèle de la concertation | Élevé | Recours contentieux |
 | 4 | **Emplois faibles** — 20-70 permanents sur 22 ha | Modéré | Étude comparative |
 | 5 | **Marché bureaux en crise** — 8,8% vacance à Lille | Modéré | Analyse économique |
@@ -52,7 +52,7 @@ La MEL envisage l'implantation d'un datacenter de 15 à 100 MW sur l'ancien comp
 
 #### Observation de terrain
 
-Pendant l'été 2026, marqué par **5 canicules consécutives**, le site de l'ancien complexe moto est resté **humide et engorgé**, tandis que le golf métropolitain adjacent — pourtant arrosé jusqu'à mi-juillet — était **plus sec**.
+Pendant l'été 2026, marqué par **5 canicules consécutives**, le site de l'ancien complexe moto est resté **humide**, tandis que le golf métropolitain adjacent — pourtant arrosé jusqu'à mi-juillet — était **plus sec**.
 
 #### Données du rapport d'étude d'impact
 
@@ -63,7 +63,7 @@ Pendant l'été 2026, marqué par **5 canicules consécutives**, le site de l'an
 | Perméabilité des sols | **Moyenne à faible** (argiles) | §5.1 |
 | Risque inondation | « À évaluer — intersection avec bassins de rétention autoroutiers » | §5.1 |
 
-#### Analyse
+#### Hypothèse
 
 Le contraste entre le site (resté mouillé) et le golf (plus sec malgré l'arrosage) démontre :
 
@@ -80,6 +80,8 @@ Le contraste entre le site (resté mouillé) et le golf (plus sec malgré l'arro
 | **Rejets eaux pluviales** | Pollution eaux usées (huiles, métaux, refroidissement) | Élevé |
 | **Fondations** | Nappe haute = risque de remontées capillaires | Élevé |
 | **Refroidissement** | Circuit d'eau = prélèvement sur nappe déjà saturée | Critique |
+
+    Rechercher les études du Grand Stade (Decahlon Arena - Pierre Mauroy) et du nouveau site Leroymerlin qui ont creusé au niveau bas de la nappe.
 
 #### Constats complémentaires
 
