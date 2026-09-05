@@ -979,7 +979,7 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 - **Scénario évaporatif (1,65 million m³/an) :** 1,65 milliard de litres = **660 piscines olympiques**. Équivalent à **11 000 habitants**.
 - **Scénario DLC (55 000 m³/an) :** 55 millions de litres = **22 piscines olympiques**. Équivalent à **370 habitants**.
 
-> ⚠️ **Contrainte site Camp Français :** Le site repose sur la nappe de la Craie (nappe phréatique superficielle, < 5 m de profondeur, démontrée par les études du Grand Stade et Leroy Merlin). Le captage d'eau de refroidissement est quasi impossible : la nappe est déjà sollicitée par les usages agricoles, et le forage pourrait abaisser le niveau piézométrique, aggravant les inondations constatées. **L'eau doit être acheminée par camion-citerne ou adduction, soit un coût logistique et carbone considérable.**
+> ⚠️ **Contrainte site Camp Français :** Le site repose sur la nappe de la Craie (nappe phréatique superficielle, < 5 m de profondeur, démontrée par les études du Grand Stade et Leroy Merlin). Le captage d'eau de refroidissement est quasi impossible : la nappe est déjà sollicitée par les usages agricoles, et le forage pourrait abaisser le niveau piézométrique, aggravant le risque d'inondation par remontée de nappe en hiver-printemps (pic en mars). **L'eau doit être acheminée par camion-citerne ou adduction, soit un coût logistique et carbone considérable.**
 
 ### 8.8 Contraintes spécifiques au site
 
@@ -992,7 +992,7 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 | **Proximité résidentielle** | 800 m, Ronchin nord et Lezennes = zone urbaine | 🟡 Modéré |
 | **Bruit** | 75-85 dB datacenter (ventilateurs, tours) vs. 65 dB (ancien circuit moto) | 🟡 Modéré |
 | **Proximité golf** | Écarts de rivière déjà problématiques, eau de refroidissement = risque supplémentaire | 🔴 Critique |
-| **Zones inondables** | Inondations constatées chaque été, nappe remonte au printemps | 🔴 Critique |
+| **Zones inondables** | Remontée nappe max en mars (11,45 m NGF), étiage en septembre (13,83 m) — risque critique hiver/printemps | 🔴 Critique |
 | **Risque sismique** | Zone 2 (faible), mais fondations sur pieux = vulnérabilité | 🟢 Faible |
 
 ### 8.9 Scénarios de déploiement réalistes
@@ -1022,7 +1022,7 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 Un datacenter de 84 MW émet **75-85 dB en continu**, 24h/24, 365 jours/an. L'ancien circuit moto fonctionnait quelques week-ends par an. Le bruit est un changement radical et permanent d'usage du site.
 
 **2. L'argument de l'eau :**
-330 000 à 1 650 000 m³/an d'eau de refroidissement = **drainage supplémentaire de la nappe de la Craie**. Or le site est déjà inondé chaque été. Ajouter un datacenter, c'est aggraver le problème d'inondation au lieu de le résoudre.
+330 000 à 1 650 000 m³/an d'eau de refroidissement = **drainage supplémentaire de la nappe de la Craie**. Or le site est inondable en hiver-printemps quand la nappe atteint 11,45 m NGF (mars). Ajouter un datacenter, c'est aggraver le risque d'inondation par remontée de nappes.
 
 **3. L'argument de la Jobs density :**
 84 MW de puissance = 22 ha = **200-400 emplois permanents** (ratio 1 emploi/6 MW). Soit **18 emplois/ha**. Un centre commercial de 22 ha aurait 500-800 emplois. Un parc logistique : 300-500. Le datacenter est le mode d'occupation du sol le moins créateur d'emplois de la palette.
