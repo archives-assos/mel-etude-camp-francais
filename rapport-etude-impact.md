@@ -152,7 +152,7 @@ La concertation préalable est encadrée par les articles [L. 103-2](https://www
 
 ### 2.3 La polémique datacenter
 
-En early 2026, tandis que la concertation était en cours, la MEL a lancé une consultation distincte pour une « cession de charges » en vue de construire un datacenter sur le site du complexe moto, accompagné d'un « parc d'activités orienté données ».
+Début 2026, tandis que la concertation était en cours, la MEL a lancé une consultation distincte pour une « cession de charges » en vue de construire un datacenter sur le site du complexe moto, accompagné d'un « parc d'activités orienté données ».
 
 Le groupe d'opposition MECS (Métropole Écologiste Citoyenne et Solidaire) a dénoncé le 28 mai 2026 :
 - Un « cynisme » de la MEL à mener une concertation tout en avançant un projet déjà décidé
