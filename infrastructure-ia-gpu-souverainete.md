@@ -989,7 +989,7 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 | **Sol argilo-calcaire** | Capacité portante limitée, fondations sur pieux nécessaires (+20-30 % coût construction) | 🟠 Majeur |
 | **Accessibilité routière** | Route D549 étroite, pas d'accès autoroutier direct (A1 à 3 km mais bouchons) | 🟠 Majeur |
 | **Raccordement électrique** | Sous-station 225 kV la plus proche à 2 km (Ronchin-Lesquin), travaux importants | 🟠 Majeur |
-| **Proximité résidentielle** | 800 m, Ronchin nord et Lezennes = zone urbaine | 🟡 Modéré |
+| **Proximité résidentielle** | 800 m, Ronchin nord, Lezennes et bientot l'ancien magasin Leroymerlin = zone urbaine | 🟡 Modéré |
 | **Bruit** | 75-85 dB datacenter (ventilateurs, tours) vs. 65 dB (ancien circuit moto) | 🟡 Modéré |
 | **Proximité golf** | Site en zone TRI (inondable), 4 CatNat Ronchin, nappe alimente Deûle | 🟠 Majeur |
 | **Zones inondables** | Remontée nappe max en mars (11,45 m NGF), étiage en septembre (13,83 m) — risque critique hiver/printemps | 🔴 Critique |
