@@ -13,8 +13,66 @@
 
 ---
 
+## LEXIQUE DES ACRONYMES
+
+| Acronyme | Signification |
+|---|---|
+| **A27** | Autoroute A27 (Lille – Tournai) |
+| **BHNS** | Bus à Haut Niveau de Service |
+| **BNP RE** | BNP Paribas Real Estate |
+| **BTP** | Bâtiments et Travaux Publics |
+| **BT** | Basse Tension |
+| **CBRE** | CBRE Group (cabinet immobilier) |
+| **CDI** | Contrat à Durée Indéterminée |
+| **CE** | Code de l'Environnement |
+| **CDD** | Contrat à Durée Déterminée |
+| **CET** | Contribution Économique Territoriale |
+| **CNPN** | Conseil National de la Protection de la Nature |
+| **CVC** | Chauffage, Ventilation, Climatisation |
+| **DC** | Data Center |
+| **DREAL** | Direction Régionale de l'Environnement, de l'Aménagement et du Logement |
+| **ERC** | Éviter – Réduire – Compenser |
+| **ETP** | Équivalent Temps Plein |
+| **EY** | Ernst & Young (cabinet de conseil) |
+| **FNE** | France Nature Environnement |
+| **GEc** | Groupe Électrogène |
+| **GEPMA** | Groupe d'Étude et de Protection des Mammifères d'Alsace |
+| **GES** | Gaz à Effet de Serre |
+| **HT** | Haute Tension |
+| **HT/BT** | Haute Tension / Basse Tension |
+| **HVO** | Hydrotreated Vegetable Oil (carburant végétal hyrodésulfuré) |
+| **IA** | Intelligence Artificielle |
+| **ICPE** | Installations Classées pour la Protection de l'Environnement |
+| **INSEE** | Institut National de la Statistique et des Études Économiques |
+| **JLL** | Jones Lang LaSalle (cabinet immobilier) |
+| **Lille Métropole** | Métropole Européenne de Lille (MEL) |
+| **MEL** | Métropole Européenne de Lille |
+| **MECS** | Métropole Écologiste Citoyenne et Solidaire (groupe d'opposition) |
+| **MRAe** | Mission Régionale d'Autorité Environnementale |
+| **NGF** | Nivellement Général de la France |
+| **NOx** | Oxydes d'Azote |
+| **PC** | Permis de Construire |
+| **PLU** | Plan Local d'Urbanisme |
+| **PM** | Particules Maintenables (pollution) |
+| **PUE** | Power Usage Effectiveness (efficacité énergétique datacenter) |
+| **R&D** | Recherche et Développement |
+| **RN227** | Route Nationale 227 |
+| **RTE** | Réseau de Transport d'Électricité |
+| **SFEP/SPN** | Société Française pour l'Étude et la Protection des Mammifères / Service du Patrimoine Naturel |
+| **SCoT** | Schéma de Cohérence Territoriale |
+| **SEVESO** | Directive européenne sur les risques d'accidents majeurs |
+| **SIC** | Site d'Importance Communautaire (Natura 2000) |
+| **ZA** | Zone d'Activités |
+| **ZIEFF** | Zone d'Importance Floristique, Faunistique et Fongique |
+| **ZNIEFF** | Zone Naturelle d'Importance Écologique, Faunistique et Floristique |
+| **ZPS** | Zone de Protection Spéciale (Natura 2000 – directive Oiseaux) |
+| **ZSC** | Zone Spéciale de Conservation (Natura 2000 – directive Habitats) |
+
+---
+
 ## TABLE DES MATIÈRES
 
+0. [Lexique des acronymes](#lexique-des-acronymes)
 1. [Résumé exécutif](#1-résumé-exécutif)
 2. [Contexte du projet](#2-contexte-du-projet)
 3. [Cadre réglementaire](#3-cadre-réglementaire)
@@ -42,7 +100,7 @@ Un datacenter est envisagé sur l'ancien circuit moto de Lezennes (22 ha), secte
 
 | Enjeu | Niveau |
 |---|---|
-| **Chauves-souris** — Murin de Daubenton à 1,5 km | **Critique** — Protection stricte art. L.411-1, dérogation difficile |
+| **Chauves-souris** — Murin de Daubenton à 1,5 km | **Critique** — Protection stricte [art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966378) 🔍, dérogation difficile |
 | **Arbres** — 200-300 arbres (part adulte significative) | **Élevé** — Abattage partiel/total inévitable |
 | **Eau** — Bassins de rétention, intersection autoroutes | **Élevé** — Étude hydrologique requise |
 | **Marché bureaux** — Taux vacance 8,8 % à Lille | **Modéré** — Risque si composante tertiaire |
@@ -82,7 +140,7 @@ Le Conseil métropolitain a voté le 27 juin 2025 (délibération 25 C 0209) la 
 
 ### 2.2 La concertation
 
-La concertation préalable est encadrée par les articles L. 103-2 et R. 103-1 du Code de l'urbanisme.
+La concertation préalable est encadrée par les articles [L. 103-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626161) 🔍 et [R. 103-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626170) 🔍 du Code de l'urbanisme.
 
 | Phase | Dates | Activité |
 |---|---|---|
@@ -109,11 +167,11 @@ La MEL a reconnu l'enjeu de « souveraineté numérique » sans répondre publiq
 
 ### 3.1 Évaluation environnementale
 
-Le projet est soumis à évaluation environnementale systématique au titre du tableau annexé au R.122-2 du Code de l'environnement :
+Le projet est soumis à évaluation environnementale systématique au titre du tableau annexé au [R.122-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043888231) 🔍 du Code de l'environnement :
 
 | Rubrique | Justification |
 |---|---|
-| **Rubrique 1** (ICPE) | Installations relevant de l'article L.515-28 CE — puissance thermique groupes électrogènes >50 MW |
+| **Rubrique 1** (ICPE) | Installations relevant de l'[article L.515-28](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043967678) 🔍 CE — puissance thermique groupes électrogènes >50 MW |
 | **Rubrique 32** | Poste de transformation >63 000 V (raccordement RTE) |
 | **Rubrique 39** | Travaux, constructions et opérations d'aménagement >10 ha |
 
@@ -124,25 +182,25 @@ Le projet est soumis à évaluation environnementale systématique au titre du t
 
 ### 3.2 Protection des espèces protégées — Chiroptères
 
-> **Note** : Le site de nidification du Murin de Daubenton à 1,5 km n'est **PAS un site Natura 2000**. L'évaluation des incidences Natura 2000 (art. R.414-23 CE) n'est **pas requise** pour ce projet.
+> **Note** : Le site de nidification du Murin de Daubenton à 1,5 km n'est **PAS un site Natura 2000**. L'évaluation des incidences Natura 2000 ([art. R.414-23](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043699989) 🔍 CE) n'est **pas requise** pour ce projet.
 
 Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au titre du droit national et européen :
 
 | Texte | Protection | Portée |
 |---|---|---|
 | **Art. L.411-1 Code environnement** | Protection stricte de l'espèce et de son habitat | Totale, tout territoire |
-| **Arrêté du 23 avril 2007** | Interdiction destruction, perturbation, altération habitat | Nationale |
+| [Arrêté du 23 avril 2007](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000447640) 🔍 | Interdiction destruction, perturbation, altération habitat | Nationale |
 | **Art. L.411-2 Code environnement** | Dérogation possible sous 3 conditions cumulatives | Cas par cas |
-| **Annexe IV Directive Habitats 92/43/CEE** | Toutes espèces chiroptères européennes | Europe |
+| [Directive Habitats 92/43/CEE](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:31992L0043) 🔍 — Annexe IV | Toutes espèces chiroptères européennes | Europe |
 | **Conventions de Berne et Bonn** | Protection internationale | Internationale |
 
-**Sanctions** : Jusqu'à 3 ans d'emprisonnement et 150 000 € d'amende (art. L.415-3 CE).
+**Sanctions** : Jusqu'à 3 ans d'emprisonnement et 150 000 € d'amende ([art. L.415-3](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966532) 🔍 CE).
 
 **Obligations pour le projet** :
 1. Inventaire bioacoustique du site de nidification (protocole 4 saisons)
 2. Étude d'incidence espèces protégées si impact potentiel
-3. Demande de dérogation (art. L.411-2) si impact avéré, sous 3 conditions :
-   - Motif justifié (intérêt public majeur — art. L.411-2-4° c)
+3. Demande de dérogation ([art. L.411-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍) si impact avéré, sous 3 conditions :
+   - Motif justifié (intérêt public majeur — [art. L.411-2-4° c](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍)
    - Absence d'alternative satisfaisante
    - Pas de nuisance pour le maintien en état de conservation favorable
 4. Séquence ERC (Éviter-Réduire-Compenser)
@@ -159,7 +217,7 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
 
 ### 3.4 Concertation et urbanisme
 
-- Concertation préalable obligatoire (art. L.103-2 Code urbanisme)
+- Concertation préalable obligatoire ([art. L.103-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626161) 🔍 Code urbanisme)
 - Possible modification du PLU (Plan Local d'Urbanisme)
 - Le golf bénéficie d'une reconnaissance d'intérêt métropolitain (déc. décembre 2024)
 
@@ -243,7 +301,7 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
 
 | Taxon | Présence | Statut |
 |---|---|---|
-| **Murin de Daubenton** | Colonie à 1,5 km | Espèce protégée (art. L.411-1) |
+| **Murin de Daubenton** | Colonie à 1,5 km | Espèce protégée ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966378) 🔍) |
 | Avifaune nicheuse | Probable (arbres, haies) | À inventorier |
 | Amphibiens | Possible (mares, zones humides) | À inventorier |
 | Invertébrés | Certain (milieu semi-naturel) | À inventorier |
@@ -261,7 +319,7 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
 | Caractéristique | Description |
 |---|---|
 | **Nom scientifique** | *Myotis daubentonii* |
-| **Statut** | Protégé (art. L.411-1 CE, arrêté 23/04/2007) |
+| **Statut** | Protégé ([art. L.411-1](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966378) 🔍 CE, [arrêté 23/04/2007](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000447640) 🔍) |
 | **Directive** | Annexe IV Directive Habitats 92/43/CEE |
 | **Régime alimentaire** | Insectivore, « pêcheuse » — capture insectes aquatiques à la surface de l'eau |
 | **Habitat privilégié** | Milieux aquatiques calmes, boisements proches de zones d'eau libre |
@@ -299,8 +357,8 @@ Cependant, le Murin de Daubenton bénéficie d'une **protection stricte** au tit
 Si le projet est susceptible de perturber les colonies (lumière, bruit, vibration) ou de modifier les corridors de déplacement :
 
 1. **Étude d'incidence espèces protégées** obligatoire
-2. **Demande de dérogation** (art. L.411-2) avec 3 conditions cumulatives :
-   - Motif d'intérêt public majeur (art. L.411-2-4° c)
+2. **Demande de dérogation** ([art. L.411-2](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍) avec 3 conditions cumulatives :
+   - Motif d'intérêt public majeur ([art. L.411-2-4° c](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍)
    - Absence d'alternative satisfaisante
    - Maintien de l'état de conservation favorable
 3. **Séquence ERC** complète : Éviter → Réduire → Compenser
@@ -598,15 +656,18 @@ Le scénario A (taille moyenne, 15-30 MW) est recommandé pour minimiser les imp
 
 ### Sources réglementaires
 
-| Texte | Référence |
-|---|---|
-| Code de l'environnement — Art. L.411-1 | Protection stricte espèces protégées |
-| Code de l'environnement — Art. L.411-2 | Dérogation espèces protégées |
-| Code de l'environnement — Art. R.414-23 | Évaluation incidences Natura 2000 |
-| Code de l'environnement — Art. R.122-2 | Évaluation environnementale systématique |
-| Arrêté du 23 avril 2007 | Liste mammifères protégés |
-| Directive Habitats 92/43/CEE | Annexe IV — Chiroptères |
-| Code de l'urbanisme — Art. L.103-2 | Concertation préalable |
+| Texte | Référence | Lien |
+|---|---|---|
+| Code de l'environnement — Art. L.411-1 | Protection stricte espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966378) 🔍 |
+| Code de l'environnement — Art. L.411-2 | Dérogation espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) 🔍 |
+| Code de l'environnement — Art. L.415-3 | Sanctions | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966532) 🔍 |
+| Code de l'environnement — Art. R.414-23 | Évaluation incidences Natura 2000 | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043699989) 🔍 |
+| Code de l'environnement — Art. R.122-2 | Évaluation environnementale systématique | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043888231) 🔍 |
+| Code de l'environnement — Art. L.515-28 | ICPE | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043967678) 🔍 |
+| Arrêté du 23 avril 2007 | Liste mammifères protégés | [Légifrance](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000447640) 🔍 |
+| Directive Habitats 92/43/CEE | Annexe IV — Chiroptères | [EUR-Lex](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:31992L0043) 🔍 |
+| Code de l'urbanisme — Art. L.103-2 | Concertation préalable | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626161) 🔍 |
+| Code de l'urbanisme — Art. R.103-1 | Concertation préalable (règles) | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626170) 🔍 |
 
 ---
 
