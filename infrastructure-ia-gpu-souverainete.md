@@ -1071,24 +1071,18 @@ Le site subit déjà le bruit de l'**autoroute A1** (6 000 veh/j, 16,5 % PL, **9
 
 | Document | URL |
 |----------|-----|
-| EUDCA Sustainability Code | [eudca.org](https://eudca.org/resources/sustainability/) |
-| EUDCA Energy & Water Committee | [eudca.org](https://eudca.org/resources/ewcc/) |
-| EUDCA Data Centre Cooling Guide | [eudca.org](https://eudca.org/2025/06/12/sustainability/) |
-| ADEME - Efficacité énergétique datacenter | [agirpourlatransition.ademe.fr](https://agirpourlatransition.ademe.fr/entreprises/bilan-environnemental/gerer-pollutions-et-risques/efficacite-energetique-datacenter) |
-| NVIDIA Data Centre Liquid Cooling | [nvidia.com](https://www.nvidia.com/en-us/data-center/solutions/liquid-cooling/) |
-| Cloud&watt - Efficacité datacenter (PUE) | [cloud-watt.com](https://www.cloud-watt.com/fr/wiki/efficacite-datacenter/) |
-| Vicente & Associates - AI Data Center Power | [vcandmore.com](https://vcandmore.com/data-centers/ai-data-center-power-demands-unveiled-what-you-need-to-know/) |
-| USGS - Water Use in Data Centers | [usgs.gov](https://www.usgs.gov/media/images/water-use-data-centers) |
-| DCCEW - Measuring Data Centre PUE | [dccew.org](https://dccew.org/2025/10/06/measuring-data-centre-pue-and-challenges-of-data-centre-efficiency-metrics/) |
-| Schneider Electric - WUE | [schneider-electric.com](https://www.se.com/ww/en/insights/sustainability/sustainability-research-institute/white-papers/wue-understanding-water-usage-effectiveness-in-data-centers/) |
+| EUDCA European Data | [eudca.org](https://www.eudca.org/) |
+| écologie.gouv | [ecologie.gouv.fr](https://www.ecologie.gouv.fr/politiques-publiques/efficacite-energetique-centres-donnees-datacenters) |
+| NVIDIA Data Centre Liquid Cooling | [nvidia.com](https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/) |
+| Efficacité datacenter (PUE) | [travail-industrie.com](https://travail-industrie.com/blog/article-titre/pue-power-usage-effectiveness-kpi-performance-data-center) |
+| Schneider Electric - WUE (Water Usage Effectiveness) | [se.com](https://blog.se.com/datacenter/architecture/2018/05/10/why-water-use-consideration-cooling-data-center/) |
+| USGS - Colocating AI Data Centers with Energy | [usgs.gov](https://pubs.usgs.gov/sir/2026/5035/) |
 | Les Échos - Data centers : l'eau, talon d'Achille | [lesechos.fr](https://www.lesechos.fr/industrie-services/services-technologiques/ia-les-data-centers-face-au-defi-de-leau-le-talon-dachille-du-boom-de-lintelligence-artificielle-2534289) |
-| L'Usine Digitale - Un datacenter peut consommer l'eau de 2 500 habitants | [usine-digitale.fr](https://www.usine-digitale.fr/ledition-patient/ia-et-innovation-verte-un-datacenter-peut-consommer-l-eau-de-2-500-habitants-en-france-arretons-le-scenario-qui-pose-tout-simplement-questions.NjU3MzUwOA.html) |
-| Journal du Net - Datacenter et refroidissement | [journaldunet.fr](https://www.journaldunet.fr/tech/14009954-2409-ia-et-datacenter-comment-la-technologie-transforme-le-schema-de-refroidissement-des-plateformes-numeriques/) |
-| Lemonde - Eau et data centers | [lemonde.fr](https://www.lemonde.fr/les-decodeurs/article/2025/09/04/ia-et-eau-le-data-center-est-devenu-les-pieds-dans-l-eau_6499527_4355770.html) |
-| RTL - L'eau, talon d'Achille de l'IA | [rtl.fr](https://www.rtl.fr/actu/economie-consommation/ia-et-eau-le-talon-d-achille-de-l-intelligence-artificielle-se-situe-a-la-sortie-des-data-centers-7943043700) |
-| ETFs.Net - L'eau et l'IA | [etfs.net](https://www.etfs.net/2026/02/12/lia-artificielle-a-t-elle-vraiment-soif-exploring-the-thirsty-side-of-ai-technology/) |
-| Engie - Datacenter : empreinte carbone et impact | [engie.com](https://www.engie.com/fr/economie-circulaire/entreprises-responsables/datacenter-empreinte-carbone-impact-environnemental) |
-| EDF - Forfaits datacenter France | [edf.fr](https://www.edf.fr/entreprise/fr/affaires/france/forfait-data-center) |
+| L'Alsace - Datacenters énergivores, besoins en eau | [lalsace.fr](https://www.lalsace.fr/environnement/2025/09/30/datacenters-energivores-besoins-en-eau-l-ia-un-poids-lourd-pour-l-environnement) |
+| Le Monde - Eau et data centers | [lemonde.fr](https://www.lemonde.fr/les-decodeurs/article/2025/09/04/ia-et-eau-le-data-center-est-devenu-les-pieds-dans-l-eau_6499527_4355770.html) |
+| Journal du Net - IA et refroidissement haute densité | [journaldunet.com](https://www.journaldunet.com/cloud/1544845-ia-et-refroidissement-haute-densite-vers-une-approche-unifiee-et-systemique/) |
+| RTL - Catastrophe écologique de l'IA | [rtl.fr](https://www.rtl.fr/actu/sciences-tech/pourquoi-l-intelligence-artificielle-a-usage-recreatif-provoque-t-elle-une-catastrophe-ecologique-7900493086) |
+| Le Parisien - L'IA épuise la planète | [leparisien.fr](https://www.leparisien.fr/environnement/6-milliards-de-m3-deau-dici-2027-comment-lia-epuise-la-planete-30-11-2025-YCZ35WNZTJDKRBCLALMSOL5HBU.php) |
 
 ### Sources nappe de la Craie et piézométrie Lille
 

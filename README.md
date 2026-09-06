@@ -50,10 +50,10 @@
 | Texte | Lien |
 |-------|------|
 | Art. L.411-1 - Protection stricte espèces | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033035411) |
-| Art. L.411-2 - Dérogation espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000043966379) |
-| Art. L.103-2 - Concertation préalable | [Légifrance](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000041626161) |
+| Art. L.411-2 - Dérogation espèces protégées | [Légifrance](https://www.legifrance.gouv.fr/codes/id/LEGIARTI000054715973/2026-09-06?isSuggest=true) |
+| Art. L.103-2 - Concertation préalable | [Légifrance](https://www.legifrance.gouv.fr/codes/id/LEGIARTI000052866507/2026-09-06?isSuggest=true) |
 | Art. R.122-2 - Évaluation environnementale | [Légifrance](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006176674/) |
-| Directive Habitats 92/43/CEE | [EUR-Lex](https://eur-lex.europa.eu/eli/dir/1992/43/oj) |
+| Directive Habitats 92/43/CEE | [EUR-Lex](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000339498) |
 
 ### Études hydrologiques (nappe de la Craie)
 
