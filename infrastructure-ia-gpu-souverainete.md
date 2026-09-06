@@ -1144,6 +1144,7 @@ Le bruit routier est associé à l'**hypertension**, aux **accidents vasculaires
 | Golf Lille Métropole - ICI (sécheresse) | [ici.fr](https://www.ici.fr/infos/environnement/photos-le-golf-de-lille-metropole-face-a-la-secheresse-1659809767) |
 | La Voix du Nord - Concertation 2025 | [lavoixdunord.fr](https://www.lavoixdunord.fr/1614703/article/2025-08-12/un-cyber-centre-au-complexe-moto-une-extension-du-golf-ronchin-la-concertation) |
 | La Recherche n°586 — Bruit environnemental et santé | [PDF local](sources/pdf/LaRecherche-Jui-Sep-2026-Le Son-Bruit environnemental.pdf) |
+| MEL - Lutte contre les nuisances sonores | [lillemetropole.fr](https://www.lillemetropole.fr/lutte-contre-les-nuisances-sonores) |
 
 ---
 
