@@ -1029,6 +1029,24 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 **1. L'argument du bruit :**
 Le site subit déjà le bruit de l'**autoroute A1** (6 000 veh/j, 16,5 % PL, **90 km/h** — radar discriminant Lesquin + régulation dynamique) située à ~1,5 km — Lden ~55-60 dB(A) à 800 m du site. S'ajouterait le bruit du datacenter : **42-59 dB(A) à 800 m** selon le scénario. Le cumul A1 + datacenter à 800 m (distance des habitations Ronchin-Lezennes) atteint **60-64 dB(A)**, soit au-dessus du seuil réglementaire de 60 dB(A) jour. L'ancien circuit moto fonctionnait quelques week-ends par an ; le datacenter serait **24h/24, 365 jours/an**.
 
+**Bruit et santé — effets avérés :**
+Selon l'Agence européenne pour l'environnement, **plus d'un Européen sur cinq** (20,8 millions de personnes en France, 92 millions en Europe) est exposé à des niveaux sonores supérieurs à 55 dB(A), seuil dangereux pour la santé. Ces expositions sont associées chaque année à :
+
+| Effet sanitaire | Ampleur (Europe) | Ampleur (France) |
+|----------------|-------------------|-------------------|
+| **Décès prématurés** | 73 000/an | — |
+| **Nouveaux cas maladies cardiovasculaires** | 49 000/an | — |
+| **Cas de diabète de type 2** | 23 000/an | — |
+| **Gêne chronique** | 17 millions de personnes | 9,1 millions |
+| **Troubles du sommeil** | 4,6 millions de personnes | — |
+| **Années de vie en bonne santé perdues** | 1 million/an | — |
+
+Le bruit est le **deuxième facteur environnemental le plus délétère** pour la santé, derrière la pollution de l'air. Le coût social du bruit en France est estimé à **147,1 milliards d'euros** en 2021, dont les deux tiers liés aux transports.
+
+Le bruit routier est associé à l'**hypertension**, aux **accidents vasculaires cérébraux**, aux **infarctus du myocarde**, et chez les enfants exposés au bruit aérien, à des **retards d'apprentissage**.
+
+> *Source : La Recherche n°586, juillet-septembre 2026, « Bruit environnemental, un enjeu de santé publique majeur » — Anne-Sophie Evrard, université Gustave-Eiffel*
+
 **2. L'argument de l'eau :**
 59 000 à 330 000 m³/an d'eau de refroidissement (WUE ~0,45 L/kWh, recyclage à 90 %) = **drainage supplémentaire de la nappe de la Craie**. Or le site est inondable en hiver-printemps quand la nappe atteint 11,45 m NGF (mars). Ajouter un datacenter, c'est aggraver le risque d'inondation par remontée de nappes. Même le scénario modeste (59 000 m³/an) représente la consommation annuelle d'une commune de ~1 500 habitants.
 
@@ -1125,6 +1143,7 @@ Le site subit déjà le bruit de l'**autoroute A1** (6 000 veh/j, 16,5 % PL, **9
 | Golf Ronchin sécheresse 2022 - BFMTV | [bfmtv.com](https://www.bfmtv.com/grand-lille/nord-comment-le-golf-de-ronchin-s-adapte-a-la-secheresse_AV-202208090213.html) |
 | Golf Lille Métropole - ICI (sécheresse) | [ici.fr](https://www.ici.fr/infos/environnement/photos-le-golf-de-lille-metropole-face-a-la-secheresse-1659809767) |
 | La Voix du Nord - Concertation 2025 | [lavoixdunord.fr](https://www.lavoixdunord.fr/1614703/article/2025-08-12/un-cyber-centre-au-complexe-moto-une-extension-du-golf-ronchin-la-concertation) |
+| La Recherche n°586 — Bruit environnemental et santé | [PDF local](sources/pdf/LaRecherche-Jui-Sep-2026-Le Son-Bruit environnemental.pdf) |
 
 ---
 
