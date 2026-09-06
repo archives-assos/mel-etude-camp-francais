@@ -990,19 +990,27 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 | **Accessibilité routière** | Route D549 étroite, pas d'accès autoroutier direct (A1 à 3 km mais bouchons) | 🟠 Majeur |
 | **Raccordement électrique** | Sous-station 225 kV la plus proche à 2 km (Ronchin-Lesquin), travaux importants | 🟠 Majeur |
 | **Proximité résidentielle** | 800 m, Ronchin nord, Lezennes et bientot l'ancien magasin Leroymerlin = zone urbaine | 🟡 Modéré |
-| **Bruit** | 75-85 dB datacenter (ventilateurs, tours) vs. 65 dB (ancien circuit moto) | 🟡 Modéré |
+| **Bruit — autoroute A1/A27** | A1 à ~1,5 km : 6 000 veh/j (16,5 % PL), **90 km/h** (VL) / 80 km/h (PL) — radar discriminant Lesquin + régulation dynamique. Lden ~70-75 dB(A) à 50 m, ~65-70 dB(A) à 100 m. Secteur affecté 300 m. Source existante forte | 🟠 Majeur |
+| **Bruit — datacenter** | 75-85 dB(A) en continu (ventilateurs, tours aérocondenseurs) vs. 65 dB(A) (ancien circuit moto, ponctuel). Datacenter = bruit 24h/24 vs. week-ends occasionnels | 🔴 Critique |
 | **Proximité golf** | Site en zone TRI (inondable), 4 CatNat Ronchin, nappe alimente Deûle | 🟠 Majeur |
 | **Zones inondables** | Remontée nappe max en mars (11,45 m NGF), étiage en septembre (13,83 m) - risque critique hiver/printemps | 🔴 Critique |
 | **Risque sismique** | Zone 2 (faible), mais fondations sur pieux = vulnérabilité | 🟢 Faible |
 
 ### 8.9 Scénarios de déploiement réalistes
 
-| Scénario | Puissance IT | Racks | GPU (H100) | PFLOPS FP16 | Coût estimé | Délai construction |
-|----------|-------------|-------|------------|-------------|-------------|-------------------|
-| **Modeste** | 15 MW | 430 | 1 720 | 1 700 | 500 M€ | 2-3 ans |
-| **Intermédiaire** | 40 MW | 1 140 | 4 560 | 4 510 | 1,2 Md€ | 3-4 ans |
-| **Maximaliste** | 84 MW | 2 414 | 9 656 | 9 550 | 2,5 Md€ | 4-6 ans |
-| **Avec B200** | 84 MW | 2 414 | 9 656 | 24 140 | 3,2 Md€ | 5-7 ans |
+| Scénario | Puissance IT | Racks | GPU (H100) | PFLOPS FP16 | Coût estimé | Délai | Bruit à 100 m (dB(A)) | Bruit à 800 m (dB(A)) | Eau (m³/an) |
+|----------|-------------|-------|------------|-------------|-------------|-------|----------------------|----------------------|-------------|
+| **Modeste** | 15 MW | 430 | 1 720 | 1 700 | 500 M€ | 2-3 ans | 55-60 | 42-47 | 59 000 |
+| **Intermédiaire** | 40 MW | 1 140 | 4 560 | 4 510 | 1,2 Md€ | 3-4 ans | 60-65 | 47-52 | 158 000 |
+| **Maximaliste** | 84 MW | 2 414 | 9 656 | 9 550 | 2,5 Md€ | 4-6 ans | 65-72 | 52-59 | 330 000 |
+| **Avec B200** | 84 MW | 2 414 | 9 656 | 24 140 | 3,2 Md€ | 5-7 ans | 65-72 | 52-59 | 330 000 |
+
+> **Propagation 100 m → 800 m** : atténuation ~12-15 dB (source surfacique étendue, 4 bâtiments de 14 000 m²). Le bruit autoroute A1 à 800 m du site est ~55-60 dB(A).
+>
+> **Bruit cumulé (datacenter + A1) à 800 m** — seuil réglementaire : 60 dB(A) jour / 50 dB(A) nuit :
+> - **Modeste** : 47 dB(A) datacenter + 58 dB(A) A1 → **~60 dB(A)** → seuil jour atteint
+> - **Intermédiaire** : 52 dB(A) datacenter + 58 dB(A) A1 → **~62 dB(A)** → dépassement seuil jour
+> - **Maximaliste** : 59 dB(A) datacenter + 58 dB(A) A1 → **~64 dB(A)** → dépassement critique
 
 > **Pour le Scénario maximaliste (84 MW, 2,5 Md€) :**
 > - Nombre de data halls : 4 bâtiments de 14 000 m² chacun
@@ -1019,10 +1027,10 @@ Le choix du système de refroidissement détermine totalement l'empreinte hydriq
 ### 8.10 Implications pour l'argumentaire d'opposition
 
 **1. L'argument du bruit :**
-Un datacenter de 84 MW émet **75-85 dB en continu**, 24h/24, 365 jours/an. L'ancien circuit moto fonctionnait quelques week-ends par an. Le bruit est un changement radical et permanent d'usage du site.
+Le site subit déjà le bruit de l'**autoroute A1** (6 000 veh/j, 16,5 % PL, **90 km/h** — radar discriminant Lesquin + régulation dynamique) située à ~1,5 km — Lden ~55-60 dB(A) à 800 m du site. S'ajouterait le bruit du datacenter : **42-59 dB(A) à 800 m** selon le scénario. Le cumul A1 + datacenter à 800 m (distance des habitations Ronchin-Lezennes) atteint **60-64 dB(A)**, soit au-dessus du seuil réglementaire de 60 dB(A) jour. L'ancien circuit moto fonctionnait quelques week-ends par an ; le datacenter serait **24h/24, 365 jours/an**.
 
 **2. L'argument de l'eau :**
-330 000 à 1 650 000 m³/an d'eau de refroidissement = **drainage supplémentaire de la nappe de la Craie**. Or le site est inondable en hiver-printemps quand la nappe atteint 11,45 m NGF (mars). Ajouter un datacenter, c'est aggraver le risque d'inondation par remontée de nappes.
+59 000 à 330 000 m³/an d'eau de refroidissement (WUE ~0,45 L/kWh, recyclage à 90 %) = **drainage supplémentaire de la nappe de la Craie**. Or le site est inondable en hiver-printemps quand la nappe atteint 11,45 m NGF (mars). Ajouter un datacenter, c'est aggraver le risque d'inondation par remontée de nappes. Même le scénario modeste (59 000 m³/an) représente la consommation annuelle d'une commune de ~1 500 habitants.
 
 **3. L'argument de la Jobs density :**
 84 MW de puissance = 22 ha = **200-400 emplois permanents** (ratio 1 emploi/6 MW). Soit **18 emplois/ha**. Un centre commercial de 22 ha aurait 500-800 emplois. Un parc logistique : 300-500. Le datacenter est le mode d'occupation du sol le moins créateur d'emplois de la palette.
@@ -1107,6 +1115,18 @@ Un datacenter de 84 MW émet **75-85 dB en continu**, 24h/24, 365 jours/an. L'an
 | TRI Lille Lens - Phase 1 | [hauts-de-france.developpement-durable.gouv.fr](https://www.hauts-de-france.developpement-durable.gouv.fr/IMG/pdf/rapport_phase_1_tri_lille_lens.pdf) |
 | Concertation Camp français - MEL | [lillemetropole.fr](https://www.lillemetropole.fr/communique-de-presse/camp-francais-centre-equestre-golf-complexe-moto-la-metropole-engage-une) |
 | Concertation Camp français - Ville Ronchin | [ville-ronchin.fr](https://ville-ronchin.fr/concertation) |
+
+### Sources bruit autoroute
+
+| Document | URL |
+|----------|-----|
+| CBS MEL - Cartographie bruit stratégique (2014) | [readkong.com](https://fr.readkong.com/page/mise-a-jour-de-la-cartographie-de-bruit-strategique-cbs-9319599) |
+| Arrêté préfectoral — classement A1/A27 (secteurs affectés) | [nord.gouv.fr](https://www.nord.gouv.fr/contenu/telechargement/11648/70352/file/Arrete_Pref_Nord_30-07-2010.pdf) |
+| bruit.fr — Bruit routier, PNB, seuils | [bruit.fr](https://www.bruit.fr/droits-demarches/bruit-des-transports/bruit-routier) |
+| LRF Lille — Études acoustiques complémentaires (état initial) | [cpdp.debatpublic.fr](https://cpdp.debatpublic.fr/cpdp-regl/sites/debat.regl/files/documents/rapport-lrf_lille-etat_initial-_etudes_acoustiques_complementaires-_23.12.14.pdf) |
+| DIR Nord — Baisse de vitesse A27 Lesquin/Camphin | [dirnord.fr](http://www.dirnord.fr/baisse-de-vitesse-a27-lesquin-camphin-en-pevele-a1766.html) |
+| Radar discriminant Lesquin A1 (90/80 km/h) | [applivoiture.fr](https://www.applivoiture.fr/radars-automatiques/lesquin-59810/radar-discriminant-lesquin-a1-sens-lille-vers-paris) |
+| France 3 — Régulation vitesse A1 Lille-Dourges | [france3-regions.franceinfo.fr](https://france3-regions.franceinfo.fr/hauts-de-france/nord-0/a1-mise-en-place-de-la-regulation-de-vitesse-sur-une-portion-de-l-autoroute-entre-lille-et-paris-2626936.html) |
 | Golf Lille Métropole - intérêt métropolitain (délib. MEL) | [lillemetropole.fr](https://www.lillemetropole.fr/sites/default/files/2024-12/Recueil_delib_T2_0.pdf) |
 | Golf Ronchin sécheresse 2022 - BFMTV | [bfmtv.com](https://www.bfmtv.com/grand-lille/nord-comment-le-golf-de-ronchin-s-adapte-a-la-secheresse_AV-202208090213.html) |
 | Golf Lille Métropole - ICI (sécheresse) | [ici.fr](https://www.ici.fr/infos/environnement/photos-le-golf-de-lille-metropole-face-a-la-secheresse-1659809767) |
