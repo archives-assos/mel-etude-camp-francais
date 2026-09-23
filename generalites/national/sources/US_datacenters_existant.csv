@@ -1,0 +1,84 @@
+Opérateur,Installation,Ville,État,Puissance_MW,Statut,Source
+Meta,Prineville Campus,Prineville,OR,1289,Operational,Enverus
+Meta,Colossus 1,"Shelby, TN",TN,1401,Operational,Enverus
+Meta,Altoona Campus,Altoona,IA,1289,Operational,Enverus
+Meta,Fort Worth Campus,Fort Worth,TX,729,Operational,Enverus
+Meta,Mesa Data Center,Mesa,AZ,701,Operational,Enverus
+Meta,DeKalb,DeKalb,IL,673,Operational,Enverus
+Meta,Elgin,Elgin,IL,300,Operational,ElectricChoice
+Microsoft Azure,Quincy Campus,Quincy,WA,622,Operational,Enverus
+Vantage,Ashburn Campus,Ashburn,VA,590,Operational,Enverus
+Switch,Las Vegas Core Campus,Las Vegas,NV,495,Operational,Enverus
+Switch,Las Vegas 5,Las Vegas,NV,495,Operational,Enverus
+Tesla,Gigafactory,Sparks,NV,500,Operational,Enverus
+xAI,Colossus Memphis,Memphis,TN,1200,Operational,ElectricChoice
+xAI,Southaven,Southaven,MS,2000,Operational,ElectricChoice
+Amazon AWS,AWS Virginia,Ashburn,VA,1000,Operational,ElectricChoice
+Amazon AWS,AWS Oregon Umatilla,Umatilla,OR,250,Operational,ElectricChoice
+Amazon AWS,AWS Ohio,Ohio,OH,1010,Operational,ElectricChoice
+Google,Council Bluffs,Council Bluffs,IA,250,Operational,ElectricChoice
+Google,Kansas City,Kansas City,MO,200,Operational,ElectricChoice
+Google,Wichita Campus,Wichita,KS,200,Operational,ElectricChoice
+Amazon AWS,AWS Pennsylvania Salem,Salem,PA,1000,Operational,ElectricChoice
+Equinix,Equinix Ashburn Series,Ashburn,VA,100,Operational,ElectricChoice
+Digital Realty,Digital Realty Ashburn,Ashburn,VA,150,Operational,CBRE
+QTS Data Centers,QTS Ashburn,Ashburn,VA,200,Operational,CBRE
+CyrusOne,CyrusOne Northern Virginia,Ashburn,VA,180,Operational,CBRE
+CoreSite,CoreSite Ashburn,Ashburn,VA,120,Operational,CBRE
+Iron Mountain,Iron Mountain Manassas,Manassas,VA,400,Operational,Iron Mountain
+EdgeCore,EdgeCore Louisa County,Louisa,VA,1100,Operational,USDataMap
+Amazon AWS,AWS North Creek,Louisa,VA,2700,Operational,ElectricChoice
+Meta,Fort Worth Campus,Fort Worth,TX,729,Operational,Enverus
+Riot Platforms,Rockdale,Rockdale,TX,700,Operational,ElectricChoice
+Fermi America,Amarillo Campus,Amarillo,TX,11000,Under Construction,USDataMap
+Amazon AWS,AWS Texas,Texas,TX,800,Operational,ElectricChoice
+Meta,Prineville,Prineville,OR,1289,Operational,Enverus
+Microsoft,Azure Quincy,Quincy,WA,622,Operational,Enverus
+Google,The Dalles,The Dalles,OR,150,Operational,CBRE
+Amazon AWS,AWS Umatilla,Umatilla,OR,250,Operational,ElectricChoice
+Apple,Apple North San Jose,San Jose,CA,100,Operational,CBRE
+Google,Google Santa Clara,Santa Clara,CA,1315,Operational,VisualCapitalist
+Equinix,Equinix Silicon Valley,Santa Clara,CA,80,Operational,CBRE
+Digital Realty,Digital Realty CA,Silicon Valley,CA,90,Operational,CBRE
+OpenAI,PORTS-Pike Technology Campus,Piketon,OH,8000,Under Construction,USDataMap
+Amazon AWS,AWS Ohio New Carlisle,New Carlisle,OH,800,Operational,ElectricChoice
+Google,Columbus,Columbus,OH,150,Operational,CBRE
+Meta,Hyperion,Richland Parish,LA,5000,Under Construction,USDataMap
+Meta,Mesa Data Center,Mesa,AZ,701,Operational,Enverus
+Tract,Reno Campus,Reno,NV,1500,Under Construction,USDataMap
+Tract,Buckeye AZ,Buckeye,AZ,800,Under Construction,USDataMap
+EdgeCore,Mesa PH03,Mesa,AZ,450,Operational,ElectricChoice
+xAI,Colossus 2,Memphis,TN,1563,Under Construction,ElectricChoice
+xAI,Colossus,Memphis,TN,300,Operational,ElectricChoice
+Amazon AWS,AWS Pennsylvania Salem,Salem,PA,1000,Operational,ElectricChoice
+Homer City,Homer City Energy Campus,Homer City,PA,4500,Under Construction,ElectricChoice
+OpenAI,Stargate Effingham,Effingham County,GA,3200,Under Construction,USDataMap
+Meta,Altoona,Altoona,IA,1401,Operational,Enverus
+Google,Council Bluffs,Council Bluffs,IA,250,Operational,ElectricChoice
+Amazon AWS,AWS Indiana New Carlisle,New Carlisle,IN,800,Operational,ElectricChoice
+Amazon AWS,AWS Hobart,Hobart,IN,2400,Under Construction,ElectricChoice
+Microsoft Azure,Azure Jacksonville,Jacksonville,FL,200,Operational,ElectricChoice
+Microsoft,Azure Quincy,Quincy,WA,622,Operational,Enverus
+Prime,Yacolt Campus,Yacolt,WA,1000,Operational,USDataMap
+Microsoft,Mount Pleasant,Mount Pleasant,WI,1000,Under Construction,Reuters
+Oracle,Stargate Wisconsin,Wisconsin,WI,400,Under Construction,USDataMap
+OpenAI,Stargate Saline,Saline Township,MI,1000,Under Construction,USDataMap
+Google,Kansas City,Kansas City,MO,200,Operational,ElectricChoice
+Meta,Sarpy County,Papillion,NE,250,Operational,ElectricChoice
+Meta,Eagle Mountain,Eagle Mountain,UT,200,Operational,ElectricChoice
+Creekstone,Delta Gigasite,Delta,UT,9700,Under Construction,ElectricChoice
+Meta,Cheyenne,Cheyenne,WY,250,Operational,ElectricChoice
+Google,Project Tembo,Cheyenne,WY,2700,Under Construction,ElectricChoice
+Equinix,Equinix NY Series,New York,NY,100,Operational,USDataMap
+Iron Mountain,Manassas Campus,Manassas,VA,400,Operational,Iron Mountain
+Vantage,Denver Campus,Denver,CO,80,Operational,USDataMap
+CoreWeave,Edison NJ,Edison,NJ,100,Operational,USDataMap
+CoreWeave,Boston,Boston,MA,60,Operational,USDataMap
+Equinix,Equinix Multiple US Sites,Multiple,Multiple,500,Operational,Cloudscene
+Digital Realty,Digital Realty Multiple,Multiple,Multiple,800,Operational,CBRE
+NTT,NTT USA,Multiple,Multiple,200,Operational,CBRE
+CyrusOne,CyrusOne Multiple,Multiple,Multiple,300,Operational,CBRE
+QTS,QTS Multiple,Multiple,Multiple,250,Operational,CBRE
+CoreSite,CoreSite Multiple,Multiple,Multiple,180,Operational,CBRE
+TierPoint,TierPoint Multiple,Multiple,Multiple,100,Operational,CBRE
+Iron Mountain,Iron Mountain Multiple,Multiple,Multiple,300,Operational,CBRE

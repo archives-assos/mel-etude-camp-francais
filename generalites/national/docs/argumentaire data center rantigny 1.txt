@@ -1,0 +1,169 @@
+﻿
+Même Arthur Mensch, patron de mistral ai, avoué être inquiet par l’accaparement du réseau électrique français par des multinationales étrangères, patron pourtant d’une grande boîte de l’ia française. (ne pas dire qu’il est bien, c’est un pro ia convaincu qui est un adversaire de la lutte) et parle de «ne pas devenir une colonie de l’IA».
+
+Redéfinir le numérique pour le rendre acceptable pour les limites planétaires, l’inverse des politiques actuels. Aujourd’hui, on implémente l’ia partout, tout le temps. On pousse les consommateurs à l’utiliser pour légitimier les milliers de milliards investis dans l’ia dans le monde, à produire et consommer toujours plus de données pour un même usage tout en créant de nouveaux usages.
+
+Loin des « intérêts publiques » présentées par les porteurs de projets, on en met partout, tout le temps, sous tous les formats (vidéo, texte, audio,…) et pour tous les usages : générer une vidéo pour un clip promotionnel est il un usage d’intérêt publique alors que le secteur de la communication et de la finance sont les secteurs les plus rapides avec l’informatique a avoir implémenté les usages de l’ia générative qui fait exploser les consommations mondiales des data center.
+
+Aussi, l’électricité exportée par la france n’est pas perdue. Elle sert à l’industrie, le chauffage, les transports de nos voisins. Les fléchés sur nos data center les rend encore plus dépendant des énergies fossiles pour le système électrique. Alors on augmentera les émissions européennes pour nos usages d’ia, est-ce compter dans les enquêtes environnementales ?
+
+Dans cet article, Gauthier Roussilhe raconte la réquisition énergétique en France par les data centers. La France étant le premier exportateur d’électricité en Europe, elle est devenue un lieu idéal d’implantation, facilité par les politiques de l’État. Des capitaux massifs viennent monopoliser une partie importante de la production électrique pour revendre des services principalement à l’international. L’implantation de ces centres ne produit pourtant que peu de valeur sur le territoire : peu d’emplois et des impôts dépendants d’où sont déclarés les bénéfices. 
+
+“Ce modèle organise agressivement une extraction des capacités énergétiques en même temps qu’une extraction de la valeur hors des pays d’accueil vers des acteurs transnationaux.” 
+
+Les hébergeurs commencent à augmenter leurs prix pour absorber la hausse des coûts de mémoire liée au développement de l'IA.
+
+Sur l’impact acoustique des data center
+
+Un spécialiste en acoustique a analysé les infrasons produits par les centres de données. Il a réalisé plusieurs expériences pour comprendre leurs effets sur les populations proches. Bien qu'inaudibles à l'oreille humaine, ces fréquences pourraient provoquer nausées ou vertiges. Sans oublier les impacts sur la vie animale locale qui reste encore peu étudiée. Heureusement les oiseaux pourront se satisfaire de cette mangeoire boostée à l’IA
+
+
+Sur la difficulté du recyclage et le coût environnemental de la pureté des matériaux du numérique
+
+Pour fabriquer les composants les plus complexes jamais créés par l’être humain tels que les processeurs, l’industrie numérique a besoin de matériaux dont la pureté atteint des niveaux extrêmement élevés. Car plus on réduit la taille de composants électroniques (pour gagner en performance) plus la moindre impureté peut poser problème. Ce qui n’est pas sans conséquences environnementales. Cette exigence élevée, engage des processus de purification coûteux en argent, en énergie et en composés chimiques. Gauthier Roussilhe et d’autres chercheurs ont justement creusé la question. Ils se sont intéressés à plusieurs éléments utilisés dans l’industrie numérique tels que le silicium et l’or. 
+
+Qui dit échelle atomique dit alors pureté atomique. Le silicium, utilisé pour sa capacité à passer d’isolant à conducteur électrique, doit atteindre une pureté de 99,999999999% (oui ça fait beaucoup de 9…).
+Bien que le silicium soit énormément abondant sur Terre (sous la forme de quartz), sa purification extrême nécessite de nombreux processus lourds, coûteux et polluants.
+Malgré tous les efforts, le 100% pur n’existe pas et une seule impureté (petits points rouges sur le schéma ci-dessous) peut rendre la puce inutilisable (en vert). À quoi s’ajoute une myriade de potentiels problèmes liés à ces processus ultra complexes. Inévitablement, une partie des puces imprimées à la chaîne sur des plaques de silicium sont jetées. Et plus la puce est grande (pour augmenter les capacités de calcul), plus il y a un risque qu’une seule petite impureté puisse rendre inexploitable une grande partie de ce silicium (à gauche sur le schéma). Inversement, plus les puces sont petites et moins il y a de pertes (à droite). 
+
+Autrement dit, les puces dont la capacité de calcul est la plus grande (donc qui ont une taille plus grande), ont un impact environnemental plus élevé à cause du taux de perte plus élevé. Ce sont ces puces qui sont particulièrement utilisées par exemple pour l’intelligence artificielle générative. 
+
+Cette course à la miniaturisation est fondamentale pour l’économie des fabricants de puces mais s’accompagne de conséquences sur l’environnement. Rompre cette voie nécessiterait d’appréhender complètement différemment la conception de logiciels et de matériels, et donc nos usages. Elle obligerait de se détourner de certains horizons – calculs hyperintensifs de l’IA, réalité augmentée, véhicules autonomes – pour en façonner d’autres : matériel plus modulaire et réparable, logiciels bien plus légers et efficaces etc. 
+
+
+Sur l’impact environnementale de Microsoft et des data center en général
+
+Vous êtes-vous déjà étonné que Windows (ou d’autres logiciels) soit toujours aussi lent malgré des ordinateurs toujours plus performants ? Cette personne a voulu faire un test. Elle a installé chaque génération de Windows (XP, Vista, 7, 8.1, 10 et 11) sur un même ordinateur pour comparer la rapidité d’exécution, la consommation de batterie et d’autres choses. Résultat ? Le pire élève est le dernier en date : Windows 11. Il est le système le plus lent à ouvrir un simple fichier, à lancer une application ou lire une vidéo. Mais aussi celui qui consomme le plus de batterie, de stockage et de mémoire vive.
+
+Google a publié son rapport environnemental annuel : l'année 2025 a été l'année où l'entreprise a le plus augmenté sa consommation électrique, et pas qu’un peu ! Quasiment +40% ! (à attribuer principalement au boom de l’IA) 
+
+Amazon lance la construction d'une énorme centrale à gaz pour ces data centers. Cette seule centrale émettrait l'équivalent de 10% des gaz à effet de serre émis en France... 🌫️ Selon le New York Times, la centrale pourrait même devenir la première source d'émission des États Unis. 
+
+46 centres de données construiraient leur propre centrale électrique pour une puissance totale de 56GW (soit environ l'équivalent de 60 centrales nucléaires). Sauf que la plupart de ces centrales seraient alimentées au gaz, une énergie très carbonée. Ce centre de Microsoft par exemple, spécialisé dans l'IA, pourrait augmenter les émissions carbone des datacenters de la compagnie de 40%. 
+
+Une enquête récente a montré comment Microsoft et d’autres lobbys d’entreprises de la tech ont obtenu de l’Union européenne que sa réglementation garde le secret sur les données environnementales des centres de données. Et ce, malgré les nombreuses critiques sur le manque de transparence des études de danger, à l'instar du projet de data center de Microsoft en Alsace (dont la consommation électrique équivaudrait à 80% de celle des foyers du Haut-Rhin).
+
+Après Google c'est au tour de Microsoft de publier son rapport environnemental annuel. L'entreprise communique une augmentation de 25% de ses émissions de Co2 en 2025. 
+
+Malgré l’effort des constructeurs pour essayer de convaincre de l’intérêt de la très haute résolution 8K pour les télévisions, c’est la fin de cette technologie consommatrice de ressources. LG a décidé d’arrêter la production des TV 8K. Ce qui fait suite à la même décision de la part de Sony. En même temps, et comme nous le disions dans un autre numéro, notre œil ne perçoit déjà même pas la différence entre la 2K et la 4K dans la plupart des situations. Donc pour la 8K n’en parlons pas. 
+
+À Bordeaux la construction annoncée d’un méga complexe de data centers pose question : selon les sources, il pourrait consommer l’équivalent de 25% à 40% de la consommation électrique annuelle des habitants. 
+
+
+
+Aux États-Unis, un giga datacenter IA dans l’Utah va consommer plus de deux fois la quantité d’énergie consommée par l’État. Un autre en Louisiana consommera plus que la ville de Los Angeles. Le tout alimenté en énergie fossile bien entendu 🛢️
+
+
+Sur la consommation excessive d’électricité et la décarbonation du système électrique
+
+Dans cet article, Gauthier Roussilhe raconte la réquisition énergétique en France par les data centers. La France étant le premier exportateur d’électricité en Europe, elle est devenue un lieu idéal d’implantation, facilité par les politiques de l’État. Des capitaux massifs viennent monopoliser une partie importante de la production électrique pour revendre des services principalement à l’international. L’implantation de ces centres ne produit pourtant que peu de valeur sur le territoire : peu d’emplois et des impôts dépendants d’où sont déclarés les bénéfices. 
+
+“Ce modèle organise agressivement une extraction des capacités énergétiques en même temps qu’une extraction de la valeur hors des pays d’accueil vers des acteurs transnationaux.” 
+
+L’Irlande ne veut plus accueillir de nouveaux centres de données dont la consommation électrique excessive est telle que l'île est contrainte de relancer ses centrales à gaz pour subvenir à ses besoins énergétiques. 
+Le Danemark rationne son réseau électrique et relègue au dernier plan les grands centres de données afin de préserver ses capacités. 
+
+« Cette décision illustre les tensions croissantes qui pèsent sur les réseaux électriques européens, alimentées par l’électrification de l’économie, le développement des énergies renouvelables, la montée en puissance des véhicules électriques, mais aussi l’implantation de centres de données, dont les besoins explosent avec le développement de l’intelligence artificielle. »
+
+Pendant ce temps, le lobby européen des datacenters propose « d’ouvrir la discussion » sur un possible assouplissement des objectifs climatiques européens pour favoriser le développement de l’IA.
+
+Sur les usages contre l’intérêts publiques du numérique et de l’ia
+
+Vous l'avez sûrement vu passer : des millions de livres sont achetés puis détruits en secret pour entraîner des modèles IA. Pour les scanner plus facilement, les entreprises comme Anthropic découpent la reliure puis broient les livres. 
+
+De nombreuses entreprises pétro-gazières utilisent des outils d'IA pour chercher de nouveaux gisements. Selon cette étude, parue dans Nature, l'IA pourrait permettre de récupérer entre 470 et 1000 milliards de barils supplémentaires de pétrole. Les émissions du secteur de l'énergie dopés par l'IA risquent alors d'être 3 à 13 fois supérieurs à celles des centres de données. 
+
+
+Malgré l’effort des constructeurs pour essayer de convaincre de l’intérêt de la très haute résolution 8K pour les télévisions, c’est la fin de cette technologie consommatrice de ressources. LG a décidé d’arrêter la production des TV 8K. Ce qui fait suite à la même décision de la part de Sony. En même temps, et comme nous le disions dans un autre numéro, notre œil ne perçoit déjà même pas la différence entre la 2K et la 4K dans la plupart des situations. Donc pour la 8K n’en parlons pas.
+
+La lutte sera payante !
+Face à la mobilisation citoyenne aux États-Unis, l'État de New York bloque la construction de nouveaux centres de données pendant 1 an. → c’est possible d’arrêter les data center, pas de fatalisme !!!
+
+Implantation des data center, partout ou c’est possible, pas uniquement en france
+Aux États-Unis, des communautés autochtones s'organisent pour lutter contre la prolifération des data centers sur leurs terres. C'est le cas du mouvement Honor of the Earth, qui, après le combat contre les infrastructures fossiles et minières, s'attaque contre ce qu'ils considèrent être une nouvelle forme de colonialisme. Via leur campagne Data Center Resistance, ils ont mis au point une carte de 106 projets de data centers dans les régions autochtones. Après s'être largement implanté dans le nord, cette expansion touche de plus en plus les pays du Sud, mettant à mal certains systèmes électriques déjà fragiles, comme au Mexique des territoires agricoles comme en Inde, ou exercant une pression hydrique supplémentaire sur des territoires déjà arides.
+
+Sur la chaleur des data center
+
+
+🌡️ Les fortes chaleurs mettent à mal les centres de données dont les systèmes de refroidissement ne sont souvent pas dimensionnés pour supporter de telles températures. Selon une équipe de Google, 30% d'entre eux ne sont pas assez équipés pour faire face aux pics de chaleur. En moyenne, les centres de données devraient même augmenter leur capacité de refroidissement de 11% à 48%. Selon le cabinet XDI, la France est d'ailleurs le 5e pays où les data centers sont les plus exposés aux risques climatiques (chaleurs extrêmes et inondations). Parmi les nouveaux projets de data centers en France, 26% sont considérés à haut risque dès 2026 ! 
+
+Vous le savez, un data center, ça chauffe. Et l'air expulsé dehors, réchauffe les alentours. Deux études récentes quantifient cette augmentation. La première (Marinoni et al, 2026, encore en pré-publication), estime que la température de surface près d'un data center IA augmente de 2°C 🌡️. Une chaleur qui peut se ressentir jusqu'à plusieurs kms pour les plus gros. Les auteurs et autrices estiment que 340 millions de personnes pourraient être concernées. Une autre étude (Sailor et al, 2026) a étudié les data centers d'une région et a mesuré une augmentation moyenne de température de 0,7 à 0,9°C avec des effets ressentis jusqu'à 500 m. Cette augmentation de chaleur peut paraître faible mais n'est pas négligeable en période de canicule ou de sécheresse. C'est le cas par exemple du projet de centre de données à Pennes Mirabeau (près de Marseille) très décrié par les associations locales. Le centre est en effet collé à une forêt de pin déjà hautement inflammable 🔥 
+
+Sur le manque de débat démocratique de l’expansion de l’ia portée par des états de moins en moins soucieux de respecter les objectifs climatiques :
+
+Une enquête récente a montré comment Microsoft et d’autres lobbys d’entreprises de la tech ont obtenu de l’Union européenne que sa réglementation garde le secret sur les données environnementales des centres de données. Et ce, malgré les nombreuses critiques sur le manque de transparence des études de danger, à l'instar du projet de data center de Microsoft en Alsace (dont la consommation électrique équivaudrait à 80% de celle des foyers du Haut-Rhin).
+
+Sur les déchets électroniques 
+
+Un reportage sur les déchets électroniques sur France TV
+
+
+Sur le colonialisme
+Ce qui ressort c'est à quel point les conséquences écologiques et sociales parfois violentes, poursuivent et renforcent des dynamiques coloniales à l'égard des pays du Sud. 
+
+L'extraction des minerais se fait en grande partie dans des pays d'Afrique, d'Amérique du Sud ou d'Asie causant une pollution massive de l’air, des sols et de l’eau et portant gravement atteinte aux populations et aux écosystèmes. Les IA sont majoritairement entrainés par des travailleurs·euses du clic situés au Kenya, à Madagascar, en Inde ou aux Philippines (coucou l'IA de la coupe du Monde). Les circuits des câbles sous-marins s'inscrivent en partie dans une géographie héritée de l'époque coloniale, celle des premiers réseaux télégraphiques et des grandes routes commerciales qui reliaient les empires européens à leurs colonies. 
+
+Dans un article publié sur la CCCbLab, le sociologue et chercheur Carlos Delclos nous invite à appréhender Internet non pas comme un « moyen de communication » mais plutôt comme un « régime de contrôle et de gouvernance ». Autrement dit, un système qui, tel qu'il est développé aujourd'hui par une minorité d'États et de multinationales, conditionne l'organisation du pouvoir, de l'économie et de la culture à l'échelle planétaire. 
+
+Dans une étude intitulée « Big Tech, Big Agro, Big Money », la journaliste Mariani Tamari et la chercheuse Joana Varon ont enquêté sur le colonialisme numérique dans l'agriculture brésilienne. Elles y montrent comment l'alliance entre les géants de la tech et l'agroindustrie force l'usage d'innovations numériques au profit d'un modèle d'exploitation intensive (drones pour répandre les pesticides, algorithmes prédictifs etc.) et aux effets néfastes sur l'écologie des territoires.
+
+Sur les risques de verouillage technologique du numérique, à rebours des enjeux d’habitabilité de la planète (pollution, réchauffement climatique,…)
+
+L’ademe pointe aussi ce risque dans ses travaux sur le GreenIT Les solutions numériques peuvent contribuer à réduire certains impacts environnementaux, mais ces bénéfices ne sont ni automatiquement garantis ni généralisables : ils dépendent des contextes d’usage, des choix de conception et des pratiques d’accompagnement. Une approche au cas par cas reste donc indispensable.
+
+« Dans l’agriculture, l'étude signale aussi un risque de verrouillage
+technologique lié à cette solution, qui pourrait limiter l'adoption d'autres pratiques plus fondamentales, comme
+l'agriculture biologique. »
+
+Risque de conflits d’usage :
+
+RTE dit qu’à court terme, il n’y a pas de conflits d’usages.
+
+Pourtant, dans leurs schémas décennaux : https://assets.rte-france.com/prod/public/2025-06/2025-06-06-sddr-rapport-complet.pdf 
+
+46 et 47 : ordre de grandeur des demandes déjà en cours début 2025 chez RTE pour toute l'indutrie (20 GW). Le graphe qui montre que les centres de données étaient pas prévus dans la Planification pluriannuelle de l'énergie. Il y a donc potentiellement des risques de saturation contractuelle ou physique. RTE sort par le haut en disant « on financera plus d’électricité » mais ça a des limites : faisabilité des plans de déploiement de l’électricité, abandon de la gestion des potentiels risques de concurrence entre les usages électrique en cas d’échec de ces bornes hautes de la production électrique.
+
+• 58 : ordres de grandeur sur la taille des sites industriels actuels en France (~ 20 MW, 10 GW au total pour toute l'industrie).
+
+• 66 et suivantes : les faux arguments de rte et la commande politique comme dissonance entre les sphères techniques et politiques
+
+Dans son rapport rte 2050, rte ne prévoyait que 10 twh pour les data center en 2050. Or, la tendance actuelle nous aménerait potentiellement à 60 twh en 2050. D’ici 2035, c’est 45 twh qui pourraient être consommés si les projets actuels se réalisaient. RTE estime que 1 / 3 à 2 / 3 des projets ne se feront pas. C’est parié sur le fait que le moteur de la voiture s’arrête avant de se prendre le mur.
+
+L’ademe et le haut conseil pour le climat parlent d’un maximum de 35 à 40 twh de consommation électrique au-delà desquels il y a une concurrence entre les usages du numérique et les autres usages (foyers, industries, chauffage,…).
+
+En se basant sur des fourchettes hautes de croissance de l’électricité qui ne se confirment pas (en retard pour le solaire → objectifs de 2020 atteint en 2024), on fait un pari sur l’avenir. Si on arrive pas à atteindre la production d’énergie au niveau soutenu espérait, on devra choisir entre les data center installer dans les années 2030 et l’industrie qu’on souhaitera implanter en 2035 et 2040 → électrification des transports, de l’industrie,…
+
+Voire les travaux du shift project notamment :
+-pour le numérique : https://theshiftproject.org/publications/intelligence-artificielle-centres-de-donnees-rapport-final/
+-pour leurs plans de décarbonation dont une des 20 principaux chantiers et de limiter au maximum l’expansion des data center :
+https://theshiftproject.org/publications/reussir-la-transition-dans-lincertitude/ (page 100)
+
+Au niveau mondial, le monde tourne encore à 80 % des énergies fossiles et on rouvre dans de nombreux pays des centrales à gaz et charbon pour satisfaire la croissance économique et notamment l’ouverture des data center.
+
+Sur l’électricité française, on pourrait l’utiliser pour de très nombreux usages de l’industrie à des fins de décarbonation si on voulait vraiment réduire les émissions. A la place de cela, on décide de construire des data center sans aucune possibilité de flécher leurs usages (industries, recherche, santé,…), en les laissant aux mains de multinationale étrangères peu regardantes des objectifs environnementaux (microsoft a abandonné ses plans de neutralité carbone pour se lancer dans la course à l’ia) et qui devront les rentabiliser à tout prix.
+
+Pour les rentabiliser à tout prix, les usages de l’ia sont ajoutés absolument partout, massivement, souvent sans en informer l’utilisateur : réseaux sociaux, moteur de recherche,…
+
+Le site de gauthier Rousshile sur le numérique aborde le numérique soutenable ( https://gauthierroussilhe.com/?utm_source=LimitesNumeriques&utm_medium=email&utm_campaign=limites-numeriques-22 ) et la préhemption du numérique sur le système électrique ( https://gauthierroussilhe.com/articles/centres-de-donnees-et-ia-entre-requisition-energetique-et-eclipse-environnementale )
+
+L’ademe dans la même études rappelées :
+Les solutions numériques peuvent contribuer à réduire certains impacts environnementaux, mais ces bénéfices ne sont ni automatiquement garantis ni généralisables : ils dépendent des contextes d’usage, des choix de conception et des pratiques d’accompagnement. Une approche au cas par cas reste donc indispensable.
+
+source : https://www.ademe.fr/wp-content/uploads/2025/11/cp-ademe-it4green-nov-2025.pdf
+
+On est donc très loin de l’explosion incontrôlée du numérique où applications d’amis ia, d’usages intensifs du numérique pour le secteur de la communication et de la finance ou d’autres usages absolument pas d’intérêts publiques comme le revendiquent les porteurs de projets. Ils se gardent bien d’ailleurs à chaque fois de rappeler les ordres de grandeurs : la recherche, la santé ne réprésentent qu’une minuscule parti de nos consommations. C’est l’arbre qui cache la forêt est sert à justifier son expansion dans les discours publiques (comme les usages de l’imagerie médicale qui est souvent repris alors qu’il apparaît pourtant dans les scénarios les moins consommateurs de l’ademe « génération frugale » qui propose de ramener les consommations des data center à 5 twh tout usage confondu contre 23 twh en 2025 avant le phénomène ia (10 en france et 13 importés).
+
+Source : PROSPECTIVE D'ÉVOLUTION DES CONSOMMATIONS DES CENTRES DE DONNÉES EN FRANCE DE 2024 À 2060
+
+Sur l’explosion des consommations :
+
+
+L’obsolescence programmée dans le numérique le rend très polluant, microsoft qui condamne des millions de pc à changer de système d’exploitation n’en a rien à faire, dire qu’ils s’installent en france pour des considérations écologiques et un puissant mensonges.
+
+Selon une dernière étude de l'Arcep, la consommation électrique des data centers en France a progressé de +38% entre 2021 et 2024. Du côté de la consommation énergétique des réseaux, on observe une stabilisation en 2024. Car même si la partie correspondant au réseau mobile augmente, le passage du cuivre à la fibre optique sur les réseaux fixes compense cette augmentation. Quelques autres infographies par ici. 
+
+Les data center en France n’empêche pas la construction de data center à l’étranger. Sans politique de limitation de la croissance, les data center s’implanteront dans un maximum d’endroit, plus ou moins respectueusement selon l’environnement et seule une politique de limitation volontariste que devrait mener la france permettrait de limiter ces impacts.
+
+L’intégralité des rapports sur les bouclages (faisabilité des plans de décarbonation) appelle à la prise en compte nécessaire de la sobriété combiner aux gains d’efficacité et à une planification des secteurs économiques afin de flécher vers les pratiques les moins polluantes. Les data center n’entrent pas du tout dans ce cadre, surtout en hauts-de-france ou 15 à 16 projets de data center hyperscaler ont été annoncés pour une puissance installée de 6 GW environs (la production de 6 centrales nucléaires rien que pour cette région).
+
+Selon cette étude, la publicité personnalisée accroit la consommation électrique d'une page web de 34% côté internaute. Utiliser un bloqueur de pub sur votre navigateur permettrait de réduire cette consommation de 10% en moyenne. Bien sûr l’achat potentiellement évité en bloquant les incitations publicitaires aura d’autant plus d’effets écologiques 🙂. 

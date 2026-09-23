@@ -1,0 +1,48 @@
+Opérateur,Installation,Ville,Pays,Puissance_MW,Type,Statut,GFLOPS_BF16
+Equinix,Equinix London,London,UK,100,Colocation,Operational,150.0
+Digital Realty,Digital Realty London,London,UK,120,Colocation,Operational,180.0
+QTS,QTS London,London,UK,130,Colocation,Operational,234.0
+CoreSite,CoreSite London,London,UK,80,Colocation,Operational,120.0
+Telehouse,Telehouse London,London,UK,90,Colocation,Operational,135.0
+Global Switch,Global Switch London,London,UK,100,Colocation,Operational,150.0
+Equinix,Equinix Frankfurt,Frankfurt,Germany,150,Colocation,Operational,225.0
+Digital Realty,Digital Realty Frankfurt,Frankfurt,Germany,120,Colocation,Operational,180.0
+Interxion,Interxion Frankfurt,Frankfurt,Germany,110,Colocation,Operational,165.0
+Equinix,Equinix Amsterdam,Amsterdam,Netherlands,100,Colocation,Operational,150.0
+Interxion,Interxion Amsterdam,Amsterdam,Netherlands,90,Colocation,Operational,135.0
+Equinix,Equinix Paris,Paris,France,80,Colocation,Operational,120.0
+Digital Realty,Digital Realty Paris,Paris,France,90,Colocation,Operational,135.0
+Data4,Data4 Paris,Paris,France,100,Colocation,Operational,150.0
+Equinix,Equinix Dublin,Dublin,Ireland,80,Colocation,Operational,120.0
+Digital Realty,Digital Realty Dublin,Dublin,Ireland,70,Colocation,Operational,105.0
+AWS,AWS Ireland,Dublin,Ireland,400,Hyperscale,Operational,600.0
+Microsoft Azure,Azure Ireland,Dublin,Ireland,300,Hyperscale,Operational,450.0
+Google,Google Belgium,Saint-Ghislain,Belgium,200,Hyperscale,Operational,500.0
+Meta,Meta Denmark,Viby,Denmark,250,Hyperscale,Operational,625.0
+Meta,Meta Sweden,Luleå,Sweden,200,Hyperscale,Operational,500.0
+Apple,Apple Denmark,Viby,Denmark,150,Hyperscale,Operational,375.0
+Google,Google Netherlands,Eemshaven,Netherlands,200,Hyperscale,Operational,500.0
+Microsoft Azure,Azure Netherlands,Amsterdam,Netherlands,150,Hyperscale,Operational,225.0
+AWS,AWS Germany,Frankfurt,Germany,300,Hyperscale,Operational,450.0
+AWS,AWS Spain,Madrid,Spain,200,Hyperscale,Operational,300.0
+Microsoft Azure,Azure Germany,Frankfurt,Germany,250,Hyperscale,Operational,375.0
+Google,Google Belgium 2,Saint-Ghislain,Belgium,150,Hyperscale,Operational,375.0
+Meta,Meta Norway,Oslo,Norway,150,Hyperscale,Operational,375.0
+Green Mountain,Green Mountain Norway,Bjørnafjorden,Norway,100,Colocation,Operational,150.0
+Iron Mountain,Iron Mountain Norway,Oslo,Norway,80,Colocation,Operational,96.0
+Equinix,Equinix Vienna,Vienna,Austria,50,Colocation,Operational,75.0
+Equinix,Equinix Milan,Milan,Italy,60,Colocation,Operational,90.0
+Interxion,Interxion Milan,Milan,Italy,70,Colocation,Operational,105.0
+Equinix,Equinix Madrid,Madrid,Spain,60,Colocation,Operational,90.0
+Telefónica,Telefónica Madrid,Madrid,Spain,80,Colocation,Operational,120.0
+Equinix,Equinix Warsaw,Warsaw,Poland,40,Colocation,Operational,60.0
+Equinix,Equinix Zurich,Zurich,Switzerland,70,Colocation,Operational,105.0
+Equinix,Equinix Brussels,Brussels,Belgium,50,Colocation,Operational,75.0
+Equinix,Equinix Multi-Europe,Multiple,Multiple,500,Colocation,Operational,750.0
+Digital Realty,Digital Realty Multi-Europe,Multiple,Multiple,400,Colocation,Operational,600.0
+NTT,NTT Europe,Multiple,Multiple,200,Colocation,Operational,300.0
+Interxion,Interxion Multi,Multiple,Multiple,300,Colocation,Operational,450.0
+Telehouse,Telehouse Multi,Multiple,Multiple,150,Colocation,Operational,225.0
+Global Switch,Global Switch Multi,Multiple,Multiple,100,Colocation,Operational,150.0
+CoreWeave,CoreWeave Europe,Multiple,Multiple,100,Neocloud,Under Construction,250.0
+Nebius,Nebius Europe,Multiple,Multiple,80,Neocloud,Under Construction,120.0

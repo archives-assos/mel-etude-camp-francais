@@ -1,0 +1,51 @@
+Opérateur,Installation,Ville,Province,Puissance_MW,Type,Statut,GFLOPS_BF16
+China Telecom,Hangzhou Big Data Center Campus,Hangzhou,Zhejiang,160,Hyperscale,Operational,240.0
+Chindata Group,Huailai HLI03,Huailai,Hebei,96,Hyperscale,Operational,192.0
+Chindata Group,Huailai HLI02,Huailai,Hebei,84,Hyperscale,Operational,168.0
+Chindata Group,Datong DTS02,Datong,Shanxi,80,Hyperscale,Operational,160.0
+Chindata Group,Beijing BJH02,Beijing,Beijing,60,Hyperscale,Operational,120.0
+Chindata Group,Huailai HLI01,Huailai,Hebei,57,Hyperscale,Operational,114.0
+GDS Holdings,Beijing BJ5,Beijing,Beijing,54,Hyperscale,Operational,81.0
+GDS Holdings,Shanghai SH4,Shanghai,Shanghai,54,Hyperscale,Operational,81.0
+Chindata Group,Hangzhou HGH,Hangzhou,Zhejiang,54,Hyperscale,Operational,108.0
+NTT,Hong Kong Financial,Hong Kong,HK,53,Colocation,Operational,79.5
+Chindata Group,Datong Hyperscale,Datong,Shanxi,50,Hyperscale,Operational,100.0
+Chindata Group,Datong DTS01,Datong,Shanxi,50,Hyperscale,Operational,100.0
+Chindata Group,Shenzhen SZX01,Shenzhen,Guangdong,48,Hyperscale,Operational,96.0
+Chindata Group,Beijing BJH01,Beijing,Beijing,48,Hyperscale,Operational,96.0
+GDS Holdings,Shanghai SH3,Shanghai,Shanghai,48,Hyperscale,Operational,72.0
+GDS Holdings,Beijing BJ4,Beijing,Beijing,48,Hyperscale,Operational,72.0
+Alibaba Cloud,Zhangbei Data Center,Zhangbei,Hebei,150,Hyperscale,Operational,225.0
+Alibaba Cloud,Hangzhou Campus,Hangzhou,Zhejiang,100,Hyperscale,Operational,150.0
+Tencent Cloud,Guangzhou Campus,Guangzhou,Guangdong,80,Hyperscale,Operational,120.0
+Tencent Cloud,Shanghai Campus,Shanghai,Shanghai,70,Hyperscale,Operational,105.0
+Alibaba Cloud,Ulanqab Campus,Ulanqab,Inner Mongolia,90,Hyperscale,Operational,135.0
+Baidu,Beijing AI Campus,Beijing,Beijing,50,AI/ML,Operational,75.0
+China Mobile,Harbin Data Center,Harbin,Heilongjiang,200,Hyperscale,Operational,300.0
+China Telecom,Hohhot Internet Mongolia Park,Hohhot,Inner Mongolia,150,Hyperscale,Operational,225.0
+China Telecom,Chengdu Western Cloud,Chengdu,Sichuan,120,Hyperscale,Operational,180.0
+China Unicom,Wuhu Data Center,Wuhu,Anhui,100,Hyperscale,Under Construction,150.0
+Range International,Langfang,Langfang,Hebei,150,Hyperscale,Operational,225.0
+China Telecom,Yinchuan Green DC,Yinchuan,Ningxia,80,Hyperscale,Operational,120.0
+China Mobile,Chongqing,Chongqing,Chongqing,100,Hyperscale,Operational,150.0
+GDS Holdings,Guangzhou,Guangzhou,Guangdong,80,Colocation,Operational,120.0
+VNET,Beijing,Beijing,Beijing,60,Colocation,Operational,90.0
+VNET,Shanghai,Shanghai,Shanghai,50,Colocation,Operational,75.0
+Alibaba Cloud,Xining Data Center,Xining,Qinghai,60,Hyperscale,Operational,90.0
+China Telecom,Zhongwei Green DC,Zhongwei,Ningxia,100,Hyperscale,Operational,150.0
+China Mobile,Guiyang,Guiyang,Guizhou,80,Hyperscale,Operational,120.0
+Huawei Cloud,Guiyang,Guiyang,Guizhou,70,Hyperscale,Operational,105.0
+Tencent Cloud,Chongqing,Chongqing,Chongqing,60,Hyperscale,Operational,90.0
+GDS Holdings,GDS Multi-China,Multiple,Multiple,300,Colocation,Operational,450.0
+Chindata Group,Chindata Multi,Multiple,Multiple,250,Hyperscale,Operational,500.0
+China Telecom,CTC Multi,Multiple,Multiple,400,Hyperscale,Operational,600.0
+Alibaba Cloud,Alibaba Multi,Multiple,Multiple,200,Hyperscale,Operational,300.0
+Tencent Cloud,Tencent Multi,Multiple,Multiple,150,Hyperscale,Operational,225.0
+VNET,VNET Multi,Multiple,Multiple,100,Colocation,Operational,150.0
+Huawei Cloud,Huawei Multi,Multiple,Multiple,80,Hyperscale,Operational,120.0
+China Mobile,CM Multi,Multiple,Multiple,200,Hyperscale,Operational,300.0
+China Telecom,Shanghai DC Cluster,Shanghai,Shanghai,150,Hyperscale,Operational,225.0
+China Telecom,Beijing DC Cluster,Beijing,Beijing,120,Hyperscale,Operational,180.0
+Alibaba Cloud,Beijing-Tianjin-Hebei,Tianjin,Hebei,80,Hyperscale,Operational,120.0
+China Telecom,Shandong DC,Jinan,Shandong,60,Hyperscale,Operational,90.0
+China Mobile,Liaoning DC,Shenyang,Liaoning,50,Hyperscale,Operational,75.0

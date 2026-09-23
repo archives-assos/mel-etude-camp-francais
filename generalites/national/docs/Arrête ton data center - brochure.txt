@@ -1,0 +1,181 @@
+﻿La politique de l’offre et les data center : stoppez la folie numérique collectivement
+
+Dans les années 1990, le numérique promettait de fluidifier l’économie, de faire des économies d’échelle, de permettre un développement effréné qui permettrait de résoudre les problèmes environnementaux, sociaux et internationaux sans grosse contrepartie.
+
+Aujourd’hui, le numérique est un secteur aussi polluant que de gros secteurs comme le routier, l’aérien, la production d’acier ou de béton dans le monde. Il est centralisé par des superpuissances qui en font des outils de surveillance de masse et de dépendance géo-politique.
+
+Loin de régler les problèmes auxquels ils comptaient répondre, il a intensifier l’économie, l’extraction des ressources et les impacts sur les écosystèmes et les populations. 
+
+Derrière son aspect d’outil neutre, il a permis de mettre en place des systèmes de traitement de l’information hautement automatisé est alimente aujourd’hui l’emballement économique de la croissance économique. Le plus souvent, sous des airs d’interface facile à prendre en main, faisant oublier la collecte de données omniprésente dans le monde du numérique.
+
+Depuis les années 2000, les pays nous ont appris à quel point la maîtrise de ces données étaient importantes permettant de contrôler les données, leurs publications, leurs consultations,…
+
+Lorsque des initiatives autonomes comme autistici / inventita sont classés « terroristes » par une des superpuissances mondiales et se voient couper leurs comptes en banque, leurs noms de domaine par simple inscription sur une liste, sans aucune décision de justice, juste par volonté fasciste de faire taire les oppositions, nous ne pouvons que constater que le numérique est le champ de bataille des autoritarismes et du capitalisme, par essence débridée.
+
+Le numérique, derrière son image « immatériel » est profondément matériel. Réseau, consommation électrique, terminaux divers (téléphone, ordinateur, objets connectés,…), antennes, satellites et d’immenses entrepôts remplis de serveurs appelés les data center ou centre de données en français.
+
+En tant que collectifs régionaux en luttes contre des projets de data center, nous constatons la médiocrité du débat publique, les très nombreuses fakes news qui servent à l’expansion de ces data center et l’absence d’écoute des citoyens dans notre politique numérique.
+
+Parmi les techniques de détournement du débat publique et de fake news, quelques axes ressortent de manière permanente :
+
+-une absence de chiffrage ou de proportionnalité : que ça soit sur les nombres d’emplois, sur les consommations énergétiques, sur les retombés financières, sur les impacts environnementaux, nous observons une sélection méthodique des chiffres mis (et surtout pas mis) en avant par les data center. En enfermant le débat autour de quelques axes (impacts locaux au lieu de globaux, retombés financières à l’échelle des villages au lieu de la région, faible création d’emplois en comparaison aux ressources consommés, isolement de l’industrie du numérique de l’ensemble des autres secteurs de l’industrie,…).
+-une ambiguïté entretenue sur les usages du numérique : dans le débat publique, une minorité des usages est brandi comme un étendard par les acteurs de l’expansion du numérique et des data center. Nous pouvons y compter l’imagerie médicale, la météorologie, les applications d’amélioration des procédés dans l’industrie,… Ces usages qui représentent une infime partie des consommations dites « d’intérêt publique » occupent la majorité de l’espace médiatique, au détriment d’usage privée et de consommation de masse.
+-une amnésie volontaire profonde de l’historicité du numérique (greenwashing, nouveaux usages, effet rebond, croissance effrénée,…). 
+
+Nous constatons aussi un verrouillage du discours :
+
+-sur le discours mainstream des big tech :
+-sur la caricature politique faite des opposants, peu importe leurs sensibilités ou leurs compétences :
+
+Les acteurs de l’expansion
+
+Dans tous les projets de data center, nous retrouvons souvent les mêmes acteurs :
+
+Une multinationale :
+-fonds de pension
+-GAFAM
+
+Une ou des entreprises « locales » (souvent proches des milieux des affaires ou de l’administration) :
+-société immobilière
+-société de construction et de gestion de projets
+
+Les services de l’état dits « décisionnaires » :
+-Les préfets
+-Bercy
+-Les conseillers de Macron et les ministres
+
+Les services de l’état dits « techniques » :
+-RTE
+-La DREAL
+-L’OFB
+-La DDT
+-La MRAE
+-...
+
+Les élus locaux :
+-Communes
+-Communautés de communes
+-Département
+-Région
+
+
+-une multinationale à la recherche de foncier, d’un bon réseau électrique et de l’acceptabilité locale
+-des élus éloignés du sujet, souvent incompétent ou mensonger
+-les acteurs de l’état : RTE et Bercy comme tête-de-proue
+-Macron et ses proches
+
+Le parcours d’un data center pour les porteurs de projets
+
+Les entreprises (souvent des multinationales) contactent l’état à la recherche d’un terrain, d’une entreprise pour faire la construction et les étapes administratives capablent de leur livrer un data center dans lequel il n’aurait plus qu’à mettre leurs serveurs.
+
+L’état fait le lien entre une entreprise « locale », une commune et la multinationale. Les élus sont en lien avec l’état, les préfets, bercy, la dreal et rte.
+
+Les élus signent parfois des clauses de confidentialité (comme les entreprises) et amènent le projet le plus secrètement publiques jusqu’à l’enquête publique. Parfois, ils signent une délibération alertant parfois les habitants qui n’ont souvent pas l’habitude d’éplucher l’entièreté des actes administratifs des communes et communautés de communes.
+
+Le porteur de projet va en parrallèle de l’enquête publique travailler avec les services de l’état (dreal, ddt, ofb, mrae,…) afin de faire convenir son projet avec la réglementation (environnement, sécurité, service de secours, alimentation électrique et d’eau, voiries,...). Selon sa taille, il devra faire l’objet d’une enquête environnementale.
+
+Une enquête publique commence, le commissaire enquêteur « neutre » dira que les avis seront regardés mais qu’ils ne changeront rien à un projet déjà presque parfait et qu’on ne peut plus arrêter.
+
+Une seconde enquête publique pour la modification du plu peut avoir lieu.
+
+Après les enquêtes publiques, les remarques sont jetés à la poubelle et le maire ou le préfet délivre le permis de construire.
+
+Le chantier démarre.
+
+DU MOINS DANS LE MONDE MERVEILLEUX DES PORTEURS DE PROJETS !!!!
+
+Malgré ce simulacre de démocratie ou les maires, les préfets, l’état, rte ne répondront jamais aux arguments contre l’extension de ces data center, il est tout-à-fait possible d’arrêter cette expansion même à marche forcée des data center.
+
+La mobilisation de terrain
+
+La mobilisation de terrain est le premier axe qui peut faire arrêter un projet de data center.
+
+En France, de très nombreux riverains se sont constitués en collectifs en luttes contre l’implantation des data center.
+
+La plupart du temps, ce sont quelques personnes qui entendent parler du projet par hasard ou par veille et qui apprennent le projet. Pour les data center, il y a souvent l’annonce d’un projet de data center dans la presse ou une délibération du conseil municipal ou communal.
+
+Ces personnes en parlent autour d’eux, regroupent leurs familles, amis, proches, voisins, collègues, distribuent des tracts aux événements ou dans les boites aux lettres et captent l’attention des médias.
+
+De là, s’organisent souvent un collectifs, plus ou moins nombreux contre le data center. Ils se visibilisent en organisant des événements, en menant des actions coups de poings, en se réappropriant le foncier accaparés par les data center, en organisant des conférences de presse, en envoyant des salves de mails ou en tenant des stands ou faisant des prises de paroles à des événements. 
+
+En France, il existent une trentaine de projets de data center contestés. Ils regroupent souvent un collectifs de riverains, les associations environnementales du coin (FNE, LPO, assos locales, villes en transition,…), des paysans, des chercheurs, etc...
+
+Ces collectifs discutent entre eux, échangent et se rencontrent afin de partager leurs expériences, compétences et stratégies. L’union fait la force.
+
+La bataille juridique
+
+Partie la plus difficile à prendre en main pour le quidam mais tout-a-fait essentiel, la bataille juridique permet d’identifier les failles dans le droit (fait normalement pour faciliter la construction des projets) afin de les arrêter.
+
+Cela résume à se battre avec les armes des aménageurs contre eux. Dans certains cas, cette étape permet de retarder fortement le projet (qui peut alors être abandonné) ou de l’annuler simplement. Chaque victoire juridique ouvre une jurisprudence (un précédent) qui servira aux autres luttes.
+
+Il est fortement conseiller de se rapprocher des associations environnementales du coin (France Nature Environnement, LPO, greenpeace,…) afin d’être rapidement aiguillé sur ce point car il faudra réagir en quelques semaines afin de trouver un avocat et s’emparer du dossier (dans le mois qui suit les différentes étapes attaquables).
+
+Il faudra alors l’aide de petites mains (qualifiées ou qui ont envie d’apprendre à aider un avocat) pour éplucher le dossier, ressortir les principaux éléments que l’avocat pourra analyser et transformer en arguments juridiques. Cette étape est essentielle est obligatoire, nécessite du temps et est souvent déroutante lorsqu’on le fait pour la première fois.
+
+Cela nécessite souvent des fonds, c’est pourquoi il est important d’être bien conseillé pour le choix de l’avocat via d’autres collectifs en luttes ou via les associations environnementales locales.
+
+Les dons de particuliers, de cagnottes ou des recettes d’événements organisés par les collectifs en luttes sont souvent les principales sources de financement des recours juridiques qui peuvent atteindre des montants dont l’unité de base est le millier d’euros.
+
+Liste des documents attaquables :
+-Enquête publique environnementale
+-Modification du PLU
+-Permis de construire
+-modification du SRADET
+-Autres actes administratifs
+
+Le lien avec les associations diverses, les syndicats et les agriculteurs
+
+Ils existent plusieurs cercles qui peuvent être des alliés des luttes. Souvent, un groupe de personnes se chargent de les contacter, de les rencontrer, de tisser des liens afin de trouver de nouvelles énergies permettant de passer à l’étape supérieure.
+
+Souvent, on peut retrouver des alliés chez :
+-les syndicats de travailleurs (cgt, fsu, solidaire,…)
+-les associations environnementales, culturels, de loisirs,…
+-les collectifs d’habitants
+
+Ils existent plusieurs moyens de diffusion qui sont très utiles et couvrent chacun une partie différentes :
+-les événements locaux, régionaux et nationaux où il est possible de rencontrer, partager et sensibiliser les personnes sur le sujet (tractage, demande de stand, interventions, tables rondes,…).
+-les réseaux sociaux qui servent à diffuser massivement un message et à tenir au courant les personnes suivant le collectifs 
+-l’affichage publique (boîtage, collage, banderole, camping sur le lieu du projet,…).
+
+Le rapport de force médiatique, entre expertise et revendications
+
+Le cercle médiatique est, avec la communication des réseaux sociaux, le deuxième moyen de diffusion de masse des messages des collectifs. Il sert à faire passer des messages, des appels, des arguments, des dates de mobilisation,…
+
+C’est souvent le terrain qu’utilise les porteurs de projets, les mairies et les personnalités publiques pour soutenir un projet. Il n’est pas rare qu’un plan de communication soit établie pour inonder les médias de messages expliquant la nécessité du projet, l’infaisabilité de la marche arrière et le dénigrement des opposants.
+
+Heureusement, c’est aussi un excellent moyen de médiatiser les collectifs de citoyens qui ne partagent pas la vision des porteurs du projet et qui proposent d’autres visions que l’inévitabilité de la construction du projet.
+
+A chaque occasion importante, il est possible de faire venir les presses et leurs envoyer un communiqué. Les occasions se séparent en deux grandes catégories : le fond et la forme.
+
+Le fond relève du message qui doit être passer et de l’argumentaire alors que la forme repose sur le type de support proposer : interview, manifestation, communiqué de presse, événements,…
+
+Sur la forme, l’imagination des collectifs est souvent une force. En fonction de l’énergie disponible et des idées, la lutte vie est s’anime par mille-et-un moyen.
+
+L’argumentaire sur les data center
+
+Les pièges de l’industrie des data center et des porteurs de projets
+-La consommation d’eau : en France, elle est relativement faible par rapport à d’autres pays moins regardant.
+-L’ambiguité sur les usages du numérique
+-La focalisation sur l’aspect local sur les impacts sociaux, environnementaux et économiques (impacts environnementaux aux abords des data center uniquement (pas la phase de fabrication ni de fin de vie), peu d’emplois à l’ha mais « gros » chiffres, peu de retombés globales mais quelques millions à l’échelle de la ville : effet « woauh » qui convainc beaucoup d’élus).
+-L’excédent énergétique à court terme : 93 twh d’exportation rappellera rte qui fait des mémoires en réponse qui vont dans le sens des porteurs de projets.
+-L’idéologie dominante des big tech sur ce que doit être le numérique
+-L’isolement de l’industrie du numérique et l’absence de parallèle avec le reste des industries.
+-Eviter de parler de la justification de ce qui se fera dans le data center avec des arguments généraux « tout le monde utilise l’ia » ou la focalisation sur des arguments spécifiques minimes en consommation (imageries médicales, météorologie et climatologie,…).
+
+
+
+Les arguments contre l’expansion des data center :
+-Absence de débat démocratique
+-Impact environnementaux (locaux et globaux, fabrication, utilisation fin de vie).
+-Consommation énergétique colossale (80% du monde tourne aux énergies fossiles)
+-Consommation foncière et de raccordement
+-Augmentation des émissions de GES de 13 % par an (tunnel carbone).
+-Impacts sociaux : extraction minière, travailleurs.euses du clic, dépossession des savoirs-faire, profond changement dans la nature des emplois, destruction d’emplois qualifiés,…
+-Renforcement de l’autoritarisme mondiale et risque démocratique
+-Risque militaire (biologique, assistance à la décision, armes automatisées, cybersécurité,…).
+-renforcement du néo-colonialisme
+-le numérique comme acteur d’accélération du capitalisme et de l’extractivisme, loin des promesses d’émancipation des travailleurs, de résolution des crises environnementales, climatiques et de ressources : IaforGreen, Iaforbrown,…
+-destruction massive de connaissance : livres, droit d’auteur,…
+
+Une brochure des sdlt résument les imapcts des data center et donnent de nombreux liens.
+Le site « limites numériques » recensent énormément d’informations, notamment via leurs newlsetters hebdomadaires (une pépite d’informations → toutes retrouvables sur le site).
