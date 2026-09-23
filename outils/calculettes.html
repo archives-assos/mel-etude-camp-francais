@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculettes — Atténuation du bruit &amp; outils camp français</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<style>
+  input[type=range]{accent-color:#2563eb}
+  .mono{font-variant-numeric:tabular-nums}
+  canvas{max-width:100%}
+  /* Champs number : flèches toujours visibles et saisissables au clavier */
+  input[type=number]{-moz-appearance:auto;appearance:auto}
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button{opacity:1 !important;height:2.2em;cursor:pointer}
+  .field-num{border:2px solid #93c5fd;border-radius:.65rem;padding:.35rem .5rem;width:7.5rem;text-align:right}
+  .field-num:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px #bfdbfe}
+</style>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen">
+<div id="app" class="max-w-5xl mx-auto p-4 md:p-8">
+
+  <header class="mb-6">
+    <h1 class="text-2xl md:text-3xl font-bold">🧮 Calculettes — Étude camp français</h1>
+    <p class="text-slate-600 mt-1">Page autonome · Tailwind + Vue.js · Sources : <code>sources/calculs/*.md</code></p>
+    <nav class="flex flex-wrap gap-2 mt-4">
+      <button v-for="t in tabs" :key="t.id" @click="tab=t.id"
+        :class="['px-4 py-2 rounded-full text-sm font-semibold border', tab===t.id ? 'bg-blue-600 text-white border-blue-600' : 'bg-white border-slate-300 hover:border-blue-400']">
+        {{ t.label }}
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============ CALCULETTE 1 : ATTENUATION ============ -->
+  <section v-show="tab==='bruit'" class="space-y-6">
+
+    <div class="bg-white rounded-2xl shadow p-5 md:p-6">
+      <h2 class="text-xl font-bold">1 · Atténuation du bruit en champ libre</h2>
+      <div class="mt-2 text-sm bg-slate-50 border rounded-xl p-3 leading-relaxed">
+        <p><strong>Formule :</strong> L<sub>p</sub> = L<sub>w</sub> + 10·log<sub>10</sub>( Q / 4πr² )</p>
+        <p><strong>Atténuation :</strong> ΔL = L<sub>w</sub> − L<sub>p</sub> = 11 − 10·log<sub>10</sub>(Q) + 20·log<sub>10</sub>(r)</p>
+        <p class="text-slate-500 mt-1">L<sub>p</sub> : pression au point d'écoute (dB) · L<sub>w</sub> : puissance source (dB) · Q : directivité · r : distance (m). Source : conseils.xpair.com/propagation-du-bruit.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-5">
+        <div class="space-y-4">
+          <div>
+            <label class="font-semibold text-sm flex flex-wrap items-center gap-2">Niveau de puissance L<sub>w</sub> :
+              <input type="number" v-model.number="lw" min="0" max="150" step="0.5" class="field-num mono">
+              <span class="text-blue-700">dB</span>
+            </label>
+            <input type="range" v-model.number="lw" min="40" max="130" step="0.5" class="w-full">
+            <div class="flex justify-between text-xs text-slate-500"><span>40</span><span>130</span></div>
+            <div class="flex flex-wrap gap-1.5 mt-2">
+              <button v-for="p in presets" :key="p.v" @click="lw=p.v" class="text-xs px-2 py-1 rounded bg-slate-100 border hover:bg-blue-50">{{ p.label }} ({{ p.v }})</button>
+            </div>
+          </div>
+          <div>
+            <label class="font-semibold text-sm flex flex-wrap items-center gap-2">Distance r :
+              <input type="number" v-model.number="r" min="0.5" max="5000" step="1" class="field-num mono">
+              <span class="text-blue-700">m</span>
+            </label>
+            <input type="range" v-model.number="r" :min="1" :max="2000" step="1" class="w-full">
+          </div>
+          <div>
+            <label class="font-semibold text-sm flex flex-wrap items-center gap-2">Coefficient de directivité Q :
+              <input type="number" v-model.number="Q" min="0.5" max="16" step="0.5" class="field-num mono">
+            </label>
+            <div class="grid grid-cols-2 gap-2 mt-2">
+              <button v-for="q in qopts" :key="q.v" @click="Q=q.v"
+                :class="['text-left border rounded-xl p-2.5 text-sm', Q===q.v ? 'border-blue-600 bg-blue-50 ring-1 ring-blue-600' : 'bg-white hover:border-blue-300']">
+                <span class="font-bold mono">Q = {{ q.v }}</span><br>
+                <span class="text-slate-600 text-xs">{{ q.label }}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <div class="bg-blue-600 text-white rounded-2xl p-5 text-center">
+            <div class="text-sm opacity-80">Niveau reçu L<sub>p</sub> à {{ r }} m (Q={{ Q }})</div>
+            <div class="text-5xl font-extrabold mono">{{ lp.toFixed(1) }} <span class="text-xl">dB</span></div>
+            <div class="mt-1 text-blue-100 text-sm">Atténuation ΔL = <strong class="mono">{{ deltaL.toFixed(1) }} dB</strong></div>
+          </div>
+          <div class="text-sm bg-slate-50 border rounded-xl p-3 mono">
+            L<sub>p</sub> = {{ lw }} + 10·log<sub>10</sub>({{ Q }}/(4π·{{ r }}²))<br>
+            = {{ lw }} + ({{ termQ.toFixed(2) }}) = <strong>{{ lp.toFixed(2) }} dB</strong>
+          </div>
+          <div class="text-sm border rounded-xl p-3" :class="feel.cls">
+            {{ feel.icon }} {{ feel.txt }} — repère : 55 dB(A) jour / 45 dB(A) nuit (émergence résidentielle), seuil OMS gêne ~53 dB Lden.
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-sm">
+            <div class="border rounded-xl p-3">
+              <label class="font-semibold text-xs">Objectif L<sub>p</sub> visé (dB)</label>
+              <input type="number" v-model.number="cible" min="20" max="120" step="0.5" class="field-num mono w-full mt-1 !text-left">
+              <p class="mt-1">Distance requise : <strong class="mono">{{ distanceCibleTxt }}</strong></p>
+            </div>
+            <div class="border rounded-xl p-3">
+              <label class="font-semibold text-xs">Bruit de fond résiduel (dB)</label>
+              <input type="number" v-model.number="fond" min="20" max="100" step="0.5" class="field-num mono w-full mt-1 !text-left">
+              <p class="mt-1">Total cumulé : <strong class="mono">{{ lpTotal.toFixed(1) }} dB</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow p-5 md:p-6">
+      <h3 class="font-bold">Tableau Lp en fonction de la distance (Lw={{ lw }} dB, Q={{ Q }})</h3>
+      <div class="overflow-x-auto mt-3">
+        <table class="w-full text-sm mono text-center">
+          <thead><tr class="bg-slate-100">
+            <th v-for="d in distances" :key="d" class="px-2 py-1.5 font-semibold">{{ d }} m</th>
+          </tr></thead>
+          <tbody><tr>
+            <td v-for="d in distances" :key="d" class="px-2 py-1.5 border-t" :class="lpAt(d) > 55 ? 'text-red-600 font-bold' : 'text-green-700'">{{ lpAt(d).toFixed(1) }}</td>
+          </tr></tbody>
+        </table>
+      </div>
+      <p class="text-xs text-slate-500 mt-2">Rouge &gt; 55 dB · vert ≤ 55 dB. Doubler la distance ≈ −6 dB.</p>
+      <canvas id="chart" width="800" height="260" class="w-full mt-3 border rounded-xl bg-slate-50"></canvas>
+    </div>
+  </section>
+
+  <!-- ============ CALCULETTE 2 : CUMUL ============ -->
+  <section v-show="tab==='cumul'" class="space-y-6">
+    <div class="bg-white rounded-2xl shadow p-5 md:p-6">
+      <h2 class="text-xl font-bold">2 · Cumul / addition de sources (dB)</h2>
+      <p class="text-sm text-slate-600 mt-1">L<sub>total</sub> = 10·log<sub>10</sub>( Σ 10<sup>L<sub>i</sub>/10</sup> ). Deux sources identiques = +3 dB.</p>
+      <div class="flex flex-wrap gap-2 mt-4 items-end">
+        <div v-for="(s,i) in sources" :key="i" class="flex items-center gap-1">
+          <input type="number" v-model.number="sources[i]" min="0" max="150" step="0.5" class="field-num mono !w-28">
+          <button @click="sources.splice(i,1)" class="text-red-500 font-bold px-1">×</button>
+        </div>
+        <button @click="sources.push(80)" class="px-3 py-2 rounded-lg bg-slate-100 border text-sm">+ source</button>
+      </div>
+      <div class="mt-4 bg-blue-600 text-white rounded-2xl p-5 text-center">
+        <div class="text-sm opacity-80">Niveau cumulé ({{ sources.length }} sources)</div>
+        <div class="text-5xl font-extrabold mono">{{ lsum.toFixed(1) }} <span class="text-xl">dB</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A VENIR ============ -->
+  <section v-show="tab==='todo'">
+    <div class="bg-white rounded-2xl shadow p-8 text-center">
+      <h2 class="text-xl font-bold">3+ · Prochaines calculettes</h2>
+      <p class="text-slate-600 mt-2">Emplacements prêts — ajoute un fichier dans <code>sources/calculs/*.md</code> puis un onglet ici.</p>
+      <div class="grid md:grid-cols-3 gap-3 mt-5 text-sm">
+        <div class="border border-dashed rounded-xl p-4">💧 Débit / infiltration nappe craie</div>
+        <div class="border border-dashed rounded-xl p-4">⚡ PUE / puissance datacenter (kW/m²)</div>
+        <div class="border border-dashed rounded-xl p-4">🌡️ Dissipation groupes froids</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-xs text-slate-500 mt-8 pb-8">
+    Formules : Lp = Lw + 10·log10(Q/4πr²) · ΔL = 11 − 10·log10(Q) + 20·log10(r) · Q : 1 = sphérique, 2 = sol, 4 = sol+mur, 8 = sol+2 murs.
+  </footer>
+</div>
+
+<script>
+const { createApp } = Vue;
+createApp({
+  data(){ return {
+    tab:'bruit', lw:90, r:200, Q:2, cible:55, fond:45,
+    presets:[{label:'Ventilateur',v:70},{label:'Groupe froid',v:85},{label:'Transfo',v:80},{label:'Data hall',v:95},{label:'GE secours',v:105}],
+    qopts:[{v:1,label:'Suspendue en l\'air (sphérique)'},{v:2,label:'Posée au sol (½ sphère)'},{v:4,label:'Sol + 1 mur (dièdre)'},{v:8,label:'Sol + 2 murs (trièdre)'}],
+    distances:[10,25,50,100,150,200,300,500,800,1000],
+    sources:[85,85,80],
+    tabs:[{id:'bruit',label:'🔊 1 · Atténuation'},{id:'cumul',label:'➕ 2 · Cumul sources'},{id:'todo',label:'⏳ Suivantes'}]
+  }},
+  computed:{
+    termQ(){ return 10*Math.log10(this.Q/(4*Math.PI*this.r*this.r)); },
+    lp(){ return this.r>0 ? this.lw + 10*Math.log10(this.Q/(4*Math.PI*this.r*this.r)) : NaN; },
+    deltaL(){ return this.r>0 ? 11 - 10*Math.log10(this.Q) + 20*Math.log10(this.r) : NaN; },
+    lsum(){ return 10*Math.log10(this.sources.reduce((a,v)=>a+Math.pow(10,v/10),0)); },
+    lpTotal(){ return 10*Math.log10(Math.pow(10,this.lp/10)+Math.pow(10,this.fond/10)); },
+    distanceCibleTxt(){
+      const d = Math.sqrt((this.Q*Math.pow(10,(this.lw-this.cible)/10))/(4*Math.PI));
+      return isFinite(d) ? (d<1000? d.toFixed(1)+' m' : (d/1000).toFixed(2)+' km') : '—';
+    },
+    feel(){
+      const v=this.lp;
+      if(v<45) return {cls:'bg-green-50 border-green-200',icon:'🟢',txt:'Calme — sous les seuils jour/nuit'};
+      if(v<55) return {cls:'bg-yellow-50 border-yellow-200',icon:'🟡',txt:'Modéré — OK jour, limite nuit'};
+      if(v<70) return {cls:'bg-orange-50 border-orange-200',icon:'🟠',txt:'Gênant — dépasse les seuils résidentiels'};
+      return {cls:'bg-red-50 border-red-200',icon:'🔴',txt:'Bruyant — émergence certaine, protections requises'};
+    }
+  },
+  methods:{
+    lpAt(d){ return this.lw + 10*Math.log10(this.Q/(4*Math.PI*d*d)); },
+    draw(){
+      const c=document.getElementById('chart'); if(!c) return;
+      const x=c.getContext('2d'); const W=c.width,H=c.height;
+      x.clearRect(0,0,W,H);
+      const xs=[]; for(let d=10;d<=1000;d+=10) xs.push(d);
+      const ys=xs.map(d=>this.lpAt(d));
+      const min=Math.min(...ys)-2, max=Math.max(...ys)+2;
+      const px=d=>40+(d-10)/(1000-10)*(W-60), py=v=>H-30-(v-min)/(max-min)*(H-60);
+      x.strokeStyle='#cbd5e1'; x.fillStyle='#64748b'; x.font='11px sans-serif';
+      [45,55,70].forEach(s=>{ if(s>min&&s<max){ x.setLineDash([5,4]); x.strokeStyle=s===55?'#ef4444':'#94a3b8';
+        x.beginPath(); x.moveTo(40,py(s)); x.lineTo(W-20,py(s)); x.stroke(); x.setLineDash([]);
+        x.fillText(s+' dB',W-70,py(s)-4); }});
+      x.strokeStyle='#2563eb'; x.lineWidth=2; x.beginPath();
+      xs.forEach((d,i)=>{ i?x.lineTo(px(d),py(ys[i])):x.moveTo(px(d),py(ys[i])); }); x.stroke();
+      x.fillStyle='#2563eb';
+      this.distances.forEach(d=>{ const v=this.lpAt(d); x.beginPath(); x.arc(px(d),py(v),4,0,7); x.fill(); });
+      x.fillStyle='#64748b'; [10,100,200,500,1000].forEach(d=>x.fillText(d+'m',px(d)-8,H-10));
+      x.fillText('dB',6,16);
+    }
+  },
+  watch:{ lw(){this.$nextTick(this.draw)}, r(){this.$nextTick(this.draw)}, Q(){this.$nextTick(this.draw)} },
+  mounted(){ this.draw(); }
+}).mount('#app');
+</script>
+</body>
+</html>
