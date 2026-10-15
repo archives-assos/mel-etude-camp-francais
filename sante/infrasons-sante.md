@@ -300,8 +300,8 @@ environnementales ordinaires `[4][8]`.
     (**document non évalué par les pairs**).
     https://www.academia.edu/165875697/
 13. Environmental and Energy Study Institute (EESI). *Communities Are Raising
-    Noise Pollution Concerns About Data Centers.* 23 mars 2026 (source secondaire
-    / note d'information). https://www.eesi.org/articles/view/communities-are-raising-noise-pollution-concernsabout-data-centers
+    Noise Pollution Concerns About Data Centers.* 23 mars 2026 (source secondaire,
+    note d'information). https://www.eesi.org/articles/view/communities-are-raising-noise-pollution-concernsabout-data-centers
 14. Joint Legislative Audit and Review Commission (JLARC), Commonwealth de
     Virginie. *Report on Data Centers (Rpt598-2).* 2024.
     https://jlarc.virginia.gov/pdfs/reports/Rpt598-2.pdf
@@ -346,7 +346,7 @@ environnementales ordinaires `[4][8]`.
 | **Defra** | *Department for Environment, Food and Rural Affairs* — ministère britannique de l'environnement (rapport 2003) `[8]` |
 | **DIN** | *Deutsches Institut für Normung* — organisme allemand de normalisation ; **DIN 45 680** = norme d'évaluation du bruit basse fréquence `[6]` |
 | **DOI** | *Digital Object Identifier* — identifiant pérenne d'une publication |
-| **EESI** | *Environmental and Energy Study Institute* — institut américain (note d'information sur le bruit des datacenters) `[13]` |
+| **EESI** | *Environmental and Energy Study Institute* — institut américain (note sur le bruit des datacenters) `[13]` |
 | **HVAC** | *Heating, Ventilation, and Air Conditioning* — voir **CVC** `[10]` |
 | **ILFN** | *Infrasound and Low-Frequency Noise* — infrasons et bruit basse fréquence `[10]` |
 | **ISBN** | *International Standard Book Number* — identifiant d'un livre/rapport `[1]` |
@@ -363,4 +363,4 @@ environnementales ordinaires `[4][8]`.
 | **SOSFS** | *Socialstyrelsens författningssamling* — recueil de règlements du Conseil national suédois de la santé et du bien-être ; **SOSFS 1996:7** = recommandations bruit basse fréquence `[6]` |
 | **SPL** | *Sound Pressure Level* — niveau de pression acoustique (voir dB SPL) `[3]` |
 | **US** | *United States* — États-Unis `[8]` |
-| **VFC** | variabilité de la fréquence cardiaque (en anglais *HRV*) — indicateur physiologique de stress `[3][7]` |
+| **VFC** | variabilité de la fréquence cardiaque (*HRV* = *Heart Rate Variability*) — indicateur physiologique de stress `[3][7]` |
