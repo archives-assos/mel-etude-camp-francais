@@ -366,8 +366,8 @@ surtout la nuit `[2][3]`.
     doi:10.1016/j.eehl.2025.100157 ; PMCID PMC12273412.
     https://pmc.ncbi.nlm.nih.gov/articles/PMC12273412/
 17. Environmental and Energy Study Institute (EESI). *Communities Are Raising
-    Noise Pollution Concerns About Data Centers.* 23 mars 2026 (source secondaire
-    / note d'information). https://www.eesi.org/articles/view/communities-are-raising-noise-pollution-concernsabout-data-centers
+    Noise Pollution Concerns About Data Centers.* 23 mars 2026 (source secondaire,
+    note d'information). https://www.eesi.org/articles/view/communities-are-raising-noise-pollution-concernsabout-data-centers
 18. Joint Legislative Audit and Review Commission (JLARC), Commonwealth de
     Virginie. *Report on Data Centers (Rpt598-2).* 2024.
     https://jlarc.virginia.gov/pdfs/reports/Rpt598-2.pdf
@@ -407,11 +407,11 @@ surtout la nuit `[2][3]`.
 | **AEE / EEA** | Agence européenne pour l'environnement / *European Environment Agency* `[4][5]` |
 | **BTP** | bâtiment et travaux publics (chantiers = source de bruit) `[2]` |
 | **CSP** | Code de la santé publique (France) — art. R. 1336-4 à R. 1336-8 `[11]` |
-| **CVC** | chauffage, ventilation, climatisation (anglais *HVAC*) — source de bruit des bâtiments et datacenters `[15]` |
+| **CVC** | chauffage, ventilation, climatisation (*HVAC* = *Heating, Ventilation, and Air Conditioning*) — source de bruit des bâtiments et datacenters `[15]` |
 | **DALY** | voir §11.1 (année de vie corrigée de l'incapacité) `[4]` |
 | **dB(A) / dBA** | voir §11.1 `[2]` |
 | **DOI** | *Digital Object Identifier* — identifiant pérenne d'une publication |
-| **EESI** | *Environmental and Energy Study Institute* — institut américain (note sur bruit des datacenters) `[17]` |
+| **EESI** | *Environmental and Energy Study Institute* — institut américain (note sur le bruit des datacenters) `[17]` |
 | **END** | *Environmental Noise Directive* — directive 2002/49/CE sur le bruit dans l'environnement `[9]` |
 | **HTA** | hypertension artérielle `[2][7]` |
 | **ICPE** | installation classée pour la protection de l'environnement (France) `[11]` |
